@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;button_interupt/src/helloworld.c&apos; to &apos;button_int.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="button_int.c" stamp="1580442019795" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;button_interupt/src/button_int.c&apos; to &apos;btn_int.c&apos;" description="Rename resource &apos;button_int.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/button_int.c" name="btn_int.c" stamp="1580442029077" updateReferences="true"/>
+</session>
