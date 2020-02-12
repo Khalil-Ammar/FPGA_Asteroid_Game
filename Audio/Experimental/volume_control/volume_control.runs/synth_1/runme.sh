@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/khali/ENSC_452_git/ENSC_452/Audio/Experimental/volume_control/volume_control.runs/synth_1'
+HD_PWD='U:/ENSC_452/Project_Modules/Audio/Experimental/volume_control/volume_control.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

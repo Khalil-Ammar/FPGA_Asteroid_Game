@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/khali/ENSC_452_git/ENSC_452/Audio/Experimental/volume_control/volume_control.srcs/constrs_1/new/myConstraints.xdc rfile:../../../volume_control.srcs/constrs_1/new/myConstraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:U:/ENSC_452/Project_Modules/Audio/Experimental/volume_control/volume_control.srcs/constrs_1/new/myConstraints.xdc rfile:../../../volume_control.srcs/constrs_1/new/myConstraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T22 [get_ports heartbeat]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
