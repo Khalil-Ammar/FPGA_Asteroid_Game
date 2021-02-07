@@ -29644,3 +29644,1158 @@ TRACE::2021-02-05.01:35:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_45
 C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2021-02-05.01:35:05::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:35::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:35::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:35::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:39::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:39::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:39::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:39::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWReader::Active system found as  zedboard_audio
+TRACE::2021-02-07.00:41:42::SCWReader::Handling sysconfig zedboard_audio
+TRACE::2021-02-07.00:41:42::SCWDomain::checking for install qemu data   : 
+TRACE::2021-02-07.00:41:42::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-02-07.00:41:42::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-02-07.00:41:42::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-02-07.00:41:42::SCWMssOS::updating the scw layer about changes
+TRACE::2021-02-07.00:41:42::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:42::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:42::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:42::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-02-07.00:41:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-02-07.00:41:42::SCWMssOS::Commit changes completed.
+TRACE::2021-02-07.00:41:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-02-07.00:41:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:42::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWReader::No isolation master present  
+TRACE::2021-02-07.00:41:42::SCWDomain::checking for install qemu data   : 
+TRACE::2021-02-07.00:41:42::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-02-07.00:41:42::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:42::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-02-07.00:41:42::SCWMssOS::updating the scw layer about changes
+TRACE::2021-02-07.00:41:42::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:42::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-02-07.00:41:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-02-07.00:41:42::SCWMssOS::Commit changes completed.
+TRACE::2021-02-07.00:41:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-02-07.00:41:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:42::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWReader::No isolation master present  
+LOG::2021-02-07.00:41:42::SCWPlatform::Started generating the artifacts platform zedboard_audio
+TRACE::2021-02-07.00:41:42::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-02-07.00:41:42::SCWPlatform::Started generating the artifacts for system configuration zedboard_audio
+LOG::2021-02-07.00:41:42::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-02-07.00:41:42::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-02-07.00:41:42::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-02-07.00:41:42::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:42::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:42::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:42::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:42::SCWBDomain::Completed writing the mss file at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2021-02-07.00:41:42::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-02-07.00:41:42::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-02-07.00:41:42::SCWBDomain::System Command Ran  C:&  cd  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl& make -C  zynq_fsbl_bsp & make 
+TRACE::2021-02-07.00:41:42::SCWBDomain::make: Entering directory 'C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_
+TRACE::2021-02-07.00:41:42::SCWBDomain::bsp'
+
+TRACE::2021-02-07.00:41:42::SCWBDomain::make --no-print-directory seq_libs
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_5/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:43::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:43::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2021-02-07.00:41:43::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2021-02-07.00:41:43::SCWBDomain::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2021-02-07.00:41:43::SCWBDomain::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2021-02-07.00:41:43::SCWBDomain::d -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:43::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:43::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:43::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:43::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_7/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:43::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:43::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_12/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-02-07.00:41:43::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-02-07.00:41:43::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_8/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:43::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:43::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_7/src"
+
+TRACE::2021-02-07.00:41:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:43::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:43::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_12/src"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::make -C ps7_cortexa9_0/libsrc/iicps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:44::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:44::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_8/src"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:44::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:44::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_3/src"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:44::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:44::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2021-02-07.00:41:44::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2021-02-07.00:41:44::SCWBDomain::startfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_3/src"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:44::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:44::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_10/src"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:44::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:44::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_3/src"
+
+TRACE::2021-02-07.00:41:44::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-02-07.00:41:44::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-02-07.00:41:44::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:45::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_12/src"
+
+TRACE::2021-02-07.00:41:45::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ttcps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:45::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:45::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:45::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_10/src"
+
+TRACE::2021-02-07.00:41:45::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-02-07.00:41:45::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-02-07.00:41:45::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:45::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_6/src"
+
+TRACE::2021-02-07.00:41:45::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:45::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:45::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:45::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_5/src"
+
+TRACE::2021-02-07.00:41:45::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:45::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:45::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_4/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:46::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:46::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:46::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:46::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:46::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:46::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::'Finished building libraries sequentially.'
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -j --no-print-directory par_libs
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_5/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:46::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:46::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2021-02-07.00:41:46::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2021-02-07.00:41:46::SCWBDomain::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2021-02-07.00:41:46::SCWBDomain::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2021-02-07.00:41:46::SCWBDomain::d -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:46::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:46::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:46::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:46::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_7/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_8/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_12/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_3/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_7/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_12/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:46::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:46::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_8/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_3/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:46::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:46::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-02-07.00:41:46::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-02-07.00:41:46::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_10/src"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:46::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:46::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/iicps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:46::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:46::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:46::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:46::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2021-02-07.00:41:46::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2021-02-07.00:41:46::SCWBDomain::startfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:46::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:46::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:46::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:46::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:46::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:47::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:47::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_12/src"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_3/src"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ttcps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:47::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:47::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-02-07.00:41:47::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-02-07.00:41:47::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_5/src"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_6/src"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_10/src"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_4/src"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:47::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:47::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-02-07.00:41:47::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-02-07.00:41:47::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:47::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:47::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:47::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:47::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+TRACE::2021-02-07.00:41:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:47::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:47::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_5/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/bram_v4_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-02-07.00:41:48::SCWBDomain::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-02-07.00:41:48::SCWBDomain::les -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-02-07.00:41:48::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-02-07.00:41:48::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-02-07.00:41:48::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-02-07.00:41:48::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_7/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_12/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_8/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_7/src"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-02-07.00:41:48::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-02-07.00:41:48::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:48::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:48::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-02-07.00:41:48::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-02-07.00:41:48::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:48::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:48::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:48::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:48::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-02-07.00:41:48::SCWBDomain::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-02-07.00:41:48::SCWBDomain::les -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_12/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_10/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_5/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_3/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_4/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_10/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_8/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_12/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:49::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:49::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/iicps_v3_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:49::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:49::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:49::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:49::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-02-07.00:41:49::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-02-07.00:41:49::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:49::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:49::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_6/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_3/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_3/src"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ttcps_v3_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:49::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:49::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:49::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:49::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:49::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:49::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:49::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:49::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:49::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:49::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-02-07.00:41:49::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-02-07.00:41:49::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-02-07.00:41:49::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-02-07.00:41:49::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:50::SCWBDomain::'Finished building libraries parallelly.'
+
+TRACE::2021-02-07.00:41:50::SCWBDomain::make --no-print-directory archive
+
+TRACE::2021-02-07.00:41:50::SCWBDomain::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/xadcps_selftest.o ps7_cortexa9_0/lib/xplatform_info.o ps7_c
+TRACE::2021-02-07.00:41:50::SCWBDomain::ortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/isatty.o ps7_cortexa9_0/lib/xusbps_sinit.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:50::SCWBDomain::/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xil_sleeptimer.o ps7_cortexa9_0/lib/xgpio_sinit.o ps7_cortexa9_0/lib/xqspips_options.o ps7
+TRACE::2021-02-07.00:41:50::SCWBDomain::_cortexa9_0/lib/xdmaps_g.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xil_misc_psre
+TRACE::2021-02-07.00:41:50::SCWBDomain::set_api.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xemacps_hw.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:50::SCWBDomain::/lib/inbyte.o ps7_cortexa9_0/lib/xdmaps_selftest.o ps7_cortexa9_0/lib/xbram_g.o ps7_cortexa9_0/lib/putnum.o ps7_cortexa9_0/lib/
+TRACE::2021-02-07.00:41:50::SCWBDomain::xttcps_selftest.o ps7_cortexa9_0/lib/xbram_sinit.o ps7_cortexa9_0/lib/xgpiops_g.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib
+TRACE::2021-02-07.00:41:50::SCWBDomain::/close.o ps7_cortexa9_0/lib/xemacps_g.o ps7_cortexa9_0/lib/xbram_selftest.o ps7_cortexa9_0/lib/xgpiops_sinit.o ps7_cortexa9_0/l
+TRACE::2021-02-07.00:41:50::SCWBDomain::ib/xgpiops_selftest.o ps7_cortexa9_0/lib/xgpio_g.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xil_clocking.o ps7_cortexa9_
+TRACE::2021-02-07.00:41:50::SCWBDomain::0/lib/xiicps_intr.o ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortexa9_0/lib/xgpio_selftest.o ps7_cortexa9_0/lib/xiicps_slave.o ps
+TRACE::2021-02-07.00:41:50::SCWBDomain::7_cortexa9_0/lib/xil_printf.o ps7_cortexa9_0/lib/kill.o ps7_cortexa9_0/lib/xiicps_g.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_
+TRACE::2021-02-07.00:41:50::SCWBDomain::0/lib/xuartps_selftest.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0/lib/outbyte.o ps7_cortexa9_0/lib/lseek.o ps7_cortexa9_0/
+TRACE::2021-02-07.00:41:50::SCWBDomain::lib/xil_testmem.o ps7_cortexa9_0/lib/xgpiops.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cortexa9_0/lib/xiicps_hw.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:50::SCWBDomain::/lib/asm_vectors.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/xdevcfg_g.o ps7_cortexa9_0/lib/getpid.o ps7_cortexa9_0/lib/xii
+TRACE::2021-02-07.00:41:50::SCWBDomain::cps_selftest.o ps7_cortexa9_0/lib/xil_testcache.o ps7_cortexa9_0/lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:50::SCWBDomain::/lib/xscutimer.o ps7_cortexa9_0/lib/xdevcfg_selftest.o ps7_cortexa9_0/lib/xttcps.o ps7_cortexa9_0/lib/xpm_counter.o ps7_cortexa
+TRACE::2021-02-07.00:41:50::SCWBDomain::9_0/lib/xiicps.o ps7_cortexa9_0/lib/xbram.o ps7_cortexa9_0/lib/xemacps_sinit.o ps7_cortexa9_0/lib/xusbps_endpoint.o ps7_cortexa
+TRACE::2021-02-07.00:41:50::SCWBDomain::9_0/lib/xiicps_options.o ps7_cortexa9_0/lib/xiicps_master.o ps7_cortexa9_0/lib/xqspips_g.o ps7_cortexa9_0/lib/xemacps_bdring.o 
+TRACE::2021-02-07.00:41:50::SCWBDomain::ps7_cortexa9_0/lib/xusbps_g.o ps7_cortexa9_0/lib/xqspips_sinit.o ps7_cortexa9_0/lib/_sbrk.o ps7_cortexa9_0/lib/xqspips_selftest
+TRACE::2021-02-07.00:41:50::SCWBDomain::.o ps7_cortexa9_0/lib/xil_exception.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/xusbps.o ps7_cortexa9_0/lib/xemacps_control.
+TRACE::2021-02-07.00:41:50::SCWBDomain::o ps7_cortexa9_0/lib/xdevcfg.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xusbps_intr.o ps7_c
+TRACE::2021-02-07.00:41:50::SCWBDomain::ortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xcoresightpsdcc.o ps7_cortexa9_0/lib/xiicps_xfer.o ps7_cortexa9_0/lib/xscugic_hw.
+TRACE::2021-02-07.00:41:50::SCWBDomain::o ps7_cortexa9_0/lib/xuartps.o ps7_cortexa9_0/lib/sleep.o ps7_cortexa9_0/lib/xil-crt0.o ps7_cortexa9_0/lib/cpputest_time.o ps7_
+TRACE::2021-02-07.00:41:50::SCWBDomain::cortexa9_0/lib/_open.o ps7_cortexa9_0/lib/fcntl.o ps7_cortexa9_0/lib/xttcps_options.o ps7_cortexa9_0/lib/print.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:50::SCWBDomain::/lib/read.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib/xadcps_intr.o ps7_cortexa9_0/lib/xqspips.o ps7_cortexa9_0/lib/
+TRACE::2021-02-07.00:41:50::SCWBDomain::xemacps.o ps7_cortexa9_0/lib/xil_cache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/transla
+TRACE::2021-02-07.00:41:50::SCWBDomain::tion_table.o ps7_cortexa9_0/lib/xusbps_hw.o ps7_cortexa9_0/lib/write.o ps7_cortexa9_0/lib/xil_mmu.o ps7_cortexa9_0/lib/boot.o p
+TRACE::2021-02-07.00:41:50::SCWBDomain::s7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/xsdps_sinit.o ps7_cortexa9_0/lib/usleep.o ps7_cortexa9_0/lib/xbram_intr.o ps7_c
+TRACE::2021-02-07.00:41:50::SCWBDomain::ortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xscugic_g.o ps7_cortexa9_0/lib/xgpiops_intr.o ps7_cortexa9_0/lib/xscugic_sin
+TRACE::2021-02-07.00:41:50::SCWBDomain::it.o ps7_cortexa9_0/lib/xuartps_hw.o ps7_cortexa9_0/lib/xgpio_intr.o ps7_cortexa9_0/lib/xttcps_g.o ps7_cortexa9_0/lib/xtime_l.o
+TRACE::2021-02-07.00:41:50::SCWBDomain:: ps7_cortexa9_0/lib/xscugic_selftest.o ps7_cortexa9_0/lib/xil_util.o ps7_cortexa9_0/lib/xuartps_intr.o ps7_cortexa9_0/lib/xsdps
+TRACE::2021-02-07.00:41:50::SCWBDomain::_card.o ps7_cortexa9_0/lib/xdmaps_hw.o ps7_cortexa9_0/lib/xttcps_sinit.o ps7_cortexa9_0/lib/xgpiops_hw.o ps7_cortexa9_0/lib/xsd
+TRACE::2021-02-07.00:41:50::SCWBDomain::ps_g.o ps7_cortexa9_0/lib/fstat.o ps7_cortexa9_0/lib/xqspips_hw.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/xgpio.o ps7_cor
+TRACE::2021-02-07.00:41:50::SCWBDomain::texa9_0/lib/xscutimer_selftest.o ps7_cortexa9_0/lib/xdevcfg_intr.o ps7_cortexa9_0/lib/xuartps_options.o ps7_cortexa9_0/lib/vect
+TRACE::2021-02-07.00:41:50::SCWBDomain::ors.o ps7_cortexa9_0/lib/xscuwdt_g.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xemacps_intr.o ps7_cortexa9_0/lib/xs
+TRACE::2021-02-07.00:41:50::SCWBDomain::cuwdt_selftest.o ps7_cortexa9_0/lib/xgpio_extra.o ps7_cortexa9_0/lib/xscugic.o ps7_cortexa9_0/lib/xiicps_sinit.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:50::SCWBDomain::/lib/xadcps_g.o ps7_cortexa9_0/lib/xadcps_sinit.o
+
+TRACE::2021-02-07.00:41:51::SCWBDomain::'Finished building libraries'
+
+TRACE::2021-02-07.00:41:51::SCWBDomain::make: Leaving directory 'C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_b
+TRACE::2021-02-07.00:41:51::SCWBDomain::sp'
+
+TRACE::2021-02-07.00:41:51::SCWBDomain::arm-none-eabi-gcc -o fsbl.elf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap
+TRACE::2021-02-07.00:41:51::SCWBDomain::.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-02-07.00:41:51::SCWBDomain::Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgc
+TRACE::2021-02-07.00:41:51::SCWBDomain::c,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                         -Wl,--gc-sections
+TRACE::2021-02-07.00:41:51::SCWBDomain:: -Lzynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2021-02-07.00:41:52::SCWSystem::Checking the domain standalone_domain
+LOG::2021-02-07.00:41:52::SCWSystem::Not a boot domain 
+LOG::2021-02-07.00:41:52::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-02-07.00:41:52::SCWDomain::Generating domain artifcats
+TRACE::2021-02-07.00:41:52::SCWMssOS::Generating standalone artifcats
+TRACE::2021-02-07.00:41:52::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/sw/zedboard_audio/qemu/
+TRACE::2021-02-07.00:41:52::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/sw/zedboard_audio/standalone_domain/qemu/
+TRACE::2021-02-07.00:41:52::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-02-07.00:41:52::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:52::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:52::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:52::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:52::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:52::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:52::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:52::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:52::SCWMssOS::Completed writing the mss file at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-02-07.00:41:52::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:52::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-02-07.00:41:52::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-02-07.00:41:52::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-02-07.00:41:52::SCWMssOS::doing bsp build ... 
+TRACE::2021-02-07.00:41:52::SCWMssOS::System Command Ran  C: & cd  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2021-02-07.00:41:52::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -j --no-print-directory par_libs
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_5/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:52::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:52::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2021-02-07.00:41:52::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2021-02-07.00:41:52::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2021-02-07.00:41:52::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2021-02-07.00:41:52::SCWMssOS::d -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:52::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:52::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_12/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_8/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_8/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:52::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:52::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_7/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_3/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-02-07.00:41:52::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-02-07.00:41:52::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:52::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:52::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:52::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:52::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:52::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:52::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_7/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:52::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:52::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+TRACE::2021-02-07.00:41:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_10/src"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:53::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:53::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:53::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_12/src"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2021-02-07.00:41:53::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2021-02-07.00:41:53::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_10/src"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_5/src"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_6/src"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_12/src"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_3/src"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iicps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_3/src"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-02-07.00:41:53::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-02-07.00:41:53::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ttcps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-02-07.00:41:53::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-02-07.00:41:53::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-02-07.00:41:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-02-07.00:41:53::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:53::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_5/src"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/bram_v4_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-02-07.00:41:54::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-02-07.00:41:54::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-02-07.00:41:54::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-02-07.00:41:54::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-02-07.00:41:54::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-02-07.00:41:54::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-02-07.00:41:54::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-02-07.00:41:54::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_7/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_3/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_12/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_10/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_12/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_5/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_7/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_8/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_12/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-02-07.00:41:55::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-02-07.00:41:55::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-02-07.00:41:55::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-02-07.00:41:55::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_6/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/iicps_v3_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-02-07.00:41:55::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-02-07.00:41:55::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-02-07.00:41:55::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-02-07.00:41:55::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ttcps_v3_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:55::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:55::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_3/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-02-07.00:41:55::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-02-07.00:41:55::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_8/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_10/src"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-02-07.00:41:55::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-02-07.00:41:55::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-02-07.00:41:55::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-02-07.00:41:55::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_3/src"
+
+TRACE::2021-02-07.00:41:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-02-07.00:41:56::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-02-07.00:41:56::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-02-07.00:41:56::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2021-02-07.00:41:56::SCWMssOS::make --no-print-directory archive
+
+TRACE::2021-02-07.00:41:56::SCWMssOS::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/xadcps_selftest.o ps7_cortexa9_0/lib/xplatform_info.o ps7_c
+TRACE::2021-02-07.00:41:56::SCWMssOS::ortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/isatty.o ps7_cortexa9_0/lib/xusbps_sinit.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:56::SCWMssOS::/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xil_sleeptimer.o ps7_cortexa9_0/lib/xgpio_sinit.o ps7_cortexa9_0/lib/xqspips_options.o ps7
+TRACE::2021-02-07.00:41:56::SCWMssOS::_cortexa9_0/lib/xdmaps_g.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xil_misc_psre
+TRACE::2021-02-07.00:41:56::SCWMssOS::set_api.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xemacps_hw.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:56::SCWMssOS::/lib/inbyte.o ps7_cortexa9_0/lib/xdmaps_selftest.o ps7_cortexa9_0/lib/xbram_g.o ps7_cortexa9_0/lib/putnum.o ps7_cortexa9_0/lib/
+TRACE::2021-02-07.00:41:56::SCWMssOS::xttcps_selftest.o ps7_cortexa9_0/lib/xbram_sinit.o ps7_cortexa9_0/lib/xgpiops_g.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib
+TRACE::2021-02-07.00:41:56::SCWMssOS::/close.o ps7_cortexa9_0/lib/xemacps_g.o ps7_cortexa9_0/lib/xbram_selftest.o ps7_cortexa9_0/lib/xgpiops_sinit.o ps7_cortexa9_0/l
+TRACE::2021-02-07.00:41:56::SCWMssOS::ib/xgpiops_selftest.o ps7_cortexa9_0/lib/xgpio_g.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xil_clocking.o ps7_cortexa9_
+TRACE::2021-02-07.00:41:56::SCWMssOS::0/lib/xiicps_intr.o ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortexa9_0/lib/xgpio_selftest.o ps7_cortexa9_0/lib/xiicps_slave.o ps
+TRACE::2021-02-07.00:41:56::SCWMssOS::7_cortexa9_0/lib/xil_printf.o ps7_cortexa9_0/lib/kill.o ps7_cortexa9_0/lib/xiicps_g.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_
+TRACE::2021-02-07.00:41:56::SCWMssOS::0/lib/xiicps_options.o ps7_cortexa9_0/lib/xuartps_selftest.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0/lib/outbyte.o ps7_co
+TRACE::2021-02-07.00:41:56::SCWMssOS::rtexa9_0/lib/lseek.o ps7_cortexa9_0/lib/xil_testmem.o ps7_cortexa9_0/lib/xusbps_hw.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cor
+TRACE::2021-02-07.00:41:56::SCWMssOS::texa9_0/lib/xiicps_hw.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/xdevcfg_g.o ps7_cortexa9
+TRACE::2021-02-07.00:41:56::SCWMssOS::_0/lib/getpid.o ps7_cortexa9_0/lib/xiicps_selftest.o ps7_cortexa9_0/lib/xil_testcache.o ps7_cortexa9_0/lib/xdevcfg_sinit.o ps7_
+TRACE::2021-02-07.00:41:56::SCWMssOS::cortexa9_0/lib/xgpiops.o ps7_cortexa9_0/lib/xscutimer.o ps7_cortexa9_0/lib/xdevcfg_selftest.o ps7_cortexa9_0/lib/xttcps.o ps7_c
+TRACE::2021-02-07.00:41:56::SCWMssOS::ortexa9_0/lib/xpm_counter.o ps7_cortexa9_0/lib/xiicps.o ps7_cortexa9_0/lib/xbram.o ps7_cortexa9_0/lib/xiicps_master.o ps7_corte
+TRACE::2021-02-07.00:41:56::SCWMssOS::xa9_0/lib/xqspips_g.o ps7_cortexa9_0/lib/xemacps_bdring.o ps7_cortexa9_0/lib/xusbps_endpoint.o ps7_cortexa9_0/lib/xusbps_g.o ps
+TRACE::2021-02-07.00:41:56::SCWMssOS::7_cortexa9_0/lib/xqspips_sinit.o ps7_cortexa9_0/lib/_sbrk.o ps7_cortexa9_0/lib/xqspips_selftest.o ps7_cortexa9_0/lib/xil_except
+TRACE::2021-02-07.00:41:56::SCWMssOS::ion.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/xusbps.o ps7_cortexa9_0/lib/xemacps_control.o ps7_cortexa9_0/lib/xdevcfg.o p
+TRACE::2021-02-07.00:41:56::SCWMssOS::s7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xusbps_intr.o ps7_cortexa9_0/lib/xsdps_host.o ps7_c
+TRACE::2021-02-07.00:41:56::SCWMssOS::ortexa9_0/lib/xcoresightpsdcc.o ps7_cortexa9_0/lib/xiicps_xfer.o ps7_cortexa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xuartps.o p
+TRACE::2021-02-07.00:41:56::SCWMssOS::s7_cortexa9_0/lib/sleep.o ps7_cortexa9_0/lib/xil-crt0.o ps7_cortexa9_0/lib/cpputest_time.o ps7_cortexa9_0/lib/_open.o ps7_corte
+TRACE::2021-02-07.00:41:56::SCWMssOS::xa9_0/lib/fcntl.o ps7_cortexa9_0/lib/xttcps_options.o ps7_cortexa9_0/lib/print.o ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/x
+TRACE::2021-02-07.00:41:56::SCWMssOS::scugic_intr.o ps7_cortexa9_0/lib/xadcps_intr.o ps7_cortexa9_0/lib/xqspips.o ps7_cortexa9_0/lib/xemacps.o ps7_cortexa9_0/lib/xil
+TRACE::2021-02-07.00:41:56::SCWMssOS::_cache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/translation_table.o ps7_cortexa9_0/lib/
+TRACE::2021-02-07.00:41:56::SCWMssOS::write.o ps7_cortexa9_0/lib/xil_mmu.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/xsdps_sinit.o p
+TRACE::2021-02-07.00:41:56::SCWMssOS::s7_cortexa9_0/lib/usleep.o ps7_cortexa9_0/lib/xbram_intr.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xgpiops_intr
+TRACE::2021-02-07.00:41:56::SCWMssOS::.o ps7_cortexa9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xuartps_hw.o ps7_cortexa9_0/lib/xgpio_intr.o ps7_cortexa9_0/lib/xttcps
+TRACE::2021-02-07.00:41:56::SCWMssOS::_g.o ps7_cortexa9_0/lib/xtime_l.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/lib/xemacps_sinit.o ps7_cortexa9_0/lib/xscugic_sel
+TRACE::2021-02-07.00:41:56::SCWMssOS::ftest.o ps7_cortexa9_0/lib/xil_util.o ps7_cortexa9_0/lib/xuartps_intr.o ps7_cortexa9_0/lib/xsdps_card.o ps7_cortexa9_0/lib/xdma
+TRACE::2021-02-07.00:41:56::SCWMssOS::ps_hw.o ps7_cortexa9_0/lib/xttcps_sinit.o ps7_cortexa9_0/lib/xgpiops_hw.o ps7_cortexa9_0/lib/xsdps_g.o ps7_cortexa9_0/lib/fstat
+TRACE::2021-02-07.00:41:56::SCWMssOS::.o ps7_cortexa9_0/lib/xqspips_hw.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/xgpio.o ps7_cortexa9_0/lib/xscutimer_selftest.
+TRACE::2021-02-07.00:41:56::SCWMssOS::o ps7_cortexa9_0/lib/xdevcfg_intr.o ps7_cortexa9_0/lib/xuartps_options.o ps7_cortexa9_0/lib/vectors.o ps7_cortexa9_0/lib/xscuwd
+TRACE::2021-02-07.00:41:56::SCWMssOS::t_g.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xemacps_intr.o ps7_cortexa9_0/lib/xscuwdt_selftest.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:56::SCWMssOS::/lib/xgpio_extra.o ps7_cortexa9_0/lib/xscugic_g.o ps7_cortexa9_0/lib/xscugic.o ps7_cortexa9_0/lib/xiicps_sinit.o ps7_cortexa9_0
+TRACE::2021-02-07.00:41:56::SCWMssOS::/lib/xadcps_g.o ps7_cortexa9_0/lib/xadcps_sinit.o
+
+TRACE::2021-02-07.00:41:57::SCWMssOS::'Finished building libraries'
+
+TRACE::2021-02-07.00:41:58::SCWMssOS::Copying to export directory.
+TRACE::2021-02-07.00:41:58::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-02-07.00:41:58::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-02-07.00:41:58::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-02-07.00:41:58::SCWSystem::Completed Processing the sysconfig zedboard_audio
+LOG::2021-02-07.00:41:58::SCWPlatform::Completed generating the artifacts for system configuration zedboard_audio
+TRACE::2021-02-07.00:41:58::SCWPlatform::Started preparing the platform 
+TRACE::2021-02-07.00:41:58::SCWSystem::Writing the bif file for system config zedboard_audio
+TRACE::2021-02-07.00:41:58::SCWSystem::dir created 
+TRACE::2021-02-07.00:41:58::SCWSystem::Writing the bif 
+TRACE::2021-02-07.00:41:58::SCWPlatform::Started writing the spfm file 
+TRACE::2021-02-07.00:41:58::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-02-07.00:41:58::SCWPlatform::Completed generating the platform
+TRACE::2021-02-07.00:41:58::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-02-07.00:41:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-02-07.00:41:58::SCWMssOS::Commit changes completed.
+TRACE::2021-02-07.00:41:58::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-02-07.00:41:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-02-07.00:41:58::SCWMssOS::Commit changes completed.
+TRACE::2021-02-07.00:41:58::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:58::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:58::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:58::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:58::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:58::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:58::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:58::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:58::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-02-07.00:41:58::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:58::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:58::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:58::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:58::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:58::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:58::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:58::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:58::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:58::SCWWriter::formatted JSON is {
+	"platformName":	"zedboard_audio",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zedboard_audio",
+	"platHandOff":	"C:/Users/khali/ENSC_452/adventures_with_ip/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zedboard_audio",
+	"systems":	[{
+			"systemName":	"zedboard_audio",
+			"systemDesc":	"zedboard_audio",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zedboard_audio",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"10b6d4b75fc9e5706a5834b3ab1939d1",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"changedDrivers":	{
+						"led_controller_0":	"led_controller:1.0",
+						"changedCells":	["led_controller_0"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"bd88b2dd51cf301e7d3abbbeca45eb6e",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"changedDrivers":	{
+						"led_controller_0":	"led_controller:1.0",
+						"changedCells":	["led_controller_0"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-02-07.00:41:58::SCWPlatform::updated the xpfm file.
+TRACE::2021-02-07.00:41:59::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:59::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:59::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:59::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw
+TRACE::2021-02-07.00:41:59::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/hw/design_1_wrapper.xsa
+TRACE::2021-02-07.00:41:59::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-02-07.00:41:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-02-07.00:41:59::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-02-07.00:41:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-07.00:41:59::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-07.00:41:59::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-02-07.00:41:59::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/ps7_cortexa9_0/standalone_domain/bsp/system.mss

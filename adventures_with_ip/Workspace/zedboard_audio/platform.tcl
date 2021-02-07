@@ -92,3 +92,4 @@ platform config -updatehw {C:/Users/khali/ENSC_452/adventures_with_ip/design_1_w
 platform generate
 platform clean
 platform generate
+platform generate

@@ -3,8 +3,9 @@
  *
  * Contains all functions which pertain to setup and use of IP periperals.
  */
-
+#include <math.h>
 #include "adventures_with_ip.h"
+
 
 
 
@@ -189,6 +190,61 @@ void audio_playback_us(u32 max_samples, u32 sample_count, u32 nbr_us){
 	else audio_playback_us(max_samples, sample_count, nbr_us);
 } // audio_playback()
 
+/* ---------------------------------------------------------------------------- *
+ * 								audio_playback()									*
+ * ---------------------------------------------------------------------------- *
+ * This function performs audio recording by sampling the input audio
+ * from the codec and then storing the sample in the On-Chip Memory
+ *
+ *
+ * The main menu can be accessed by entering 'r' on the keyboard.
+ * ---------------------------------------------------------------------------- */
+void generate_tone(u32 samples){
+	double amp = 1000000;
+	u32 offset = 0;
+	for(int i=0;i<samples;++i) {
+		u32 left = (u32) (cos((double)i/samples*2*M_PI) * amp);
+		u32 right = (u32) (sin((double)i/samples*2*M_PI) * amp);
+
+		Xil_Out32(BRAM_BASE + offset, left);
+		offset += 0x4;
+		Xil_Out32(BRAM_BASE + offset, right);
+		offset += 0x4;
+	}
+}// generate_sound
+
+/* ---------------------------------------------------------------------------- *
+ * 								audio_playback()									*
+ * ---------------------------------------------------------------------------- *
+ * This function performs audio recording by sampling the input audio
+ * from the codec and then storing the sample in the On-Chip Memory
+ *
+ *
+ * The main menu can be accessed by entering 'r' on the keyboard.
+ * ---------------------------------------------------------------------------- */
+void play_tone(u32 samples){
+
+	while(!XUartPs_IsReceiveData(UART_BASEADDR)){
+		u32 offset = 0;
+		for(int i=0;i<samples;++i) {
+			// read tone samples from BRAM
+			u32 out_left = Xil_In32(BRAM_BASE + offset);
+			offset += 0x4;
+			u32 out_right = Xil_In32(BRAM_BASE + offset);
+			offset += 0x4;
+
+			// Write audio sample to codec output
+			Xil_Out32(I2S_DATA_TX_L_REG , out_left);
+			Xil_Out32(I2S_DATA_TX_R_REG , out_right);
+		}
+	}
+	// return to menu if user presses 'q'
+	if(XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET) == 'q'){
+		menu(0);
+	}
+	else play_tone(samples);
+
+}// generate_sound
 
 
 /* ---------------------------------------------------------------------------- *

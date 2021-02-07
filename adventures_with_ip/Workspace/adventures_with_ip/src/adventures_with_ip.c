@@ -6,6 +6,7 @@
 #include "adventures_with_ip.h"
 
 #define MAX_RECORD_SAMPLES 10000000 // 7s of max recording time
+#define NBR_TONE_SAMPLES 1024
 
 /* ---------------------------------------------------------------------------- *
  * 									main()										*
@@ -65,6 +66,9 @@ void menu(u32 recorded_samples){
 				  ((CntrlRegister & ~XUARTPS_CR_EN_DIS_MASK) |
 				   XUARTPS_CR_TX_EN | XUARTPS_CR_RX_EN));
 
+	// generate sinusoidal tone to play later
+	generate_tone(NBR_TONE_SAMPLES);
+
 	xil_printf("\r\n\r\n");
 	xil_printf("Embedded Audio Controller Demo\r\n");
 	xil_printf("Enter 's' to stream pure audio, 'r' to record sound and 'p' to playback recording\r\n");
@@ -109,6 +113,12 @@ void menu(u32 recorded_samples){
 			}
 			audio_playback_us(recorded_samples, 0, 1);
 			break;
+	case 'g':
+			xil_printf("PLAYING GENERATED TONE FROM MEMORY\r\n");
+			xil_printf("Press 'q' to return to the main menu\r\n");
+			play_tone(NBR_TONE_SAMPLES);
+			break;
+
 	default:
 		menu(recorded_samples);
 		break;

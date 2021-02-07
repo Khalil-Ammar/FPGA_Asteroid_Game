@@ -1,15 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="FileSystemImportWizard">
-		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
-		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="true"/>
-		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="C:\Users\khali\ENSC_452\ip_repo\led_controller_1.0\drivers\led_controller_v1_0\src"/>
-			<item value="C:\Users\khali\ENSC_452\ip_repo\led_controller_1.0\drivers\led_controller_v1_0\data"/>
-			<item value="C:\Users\khali\ENSC_452\ip_repo\led_controller_1.0\drivers\led_controller_v1_0"/>
-			<item value="C:\Users\khali\ENSC_452\ip_repo\led_controller_1.0\drivers"/>
-			<item value="C:\Users\khali\ENSC_452\sources\zedboard\adventures_with_ip_integrator\software"/>
-			<item value="C:\Users\khali\ENSC_452\sources\zedboard\adventures_with_ip_integrator\drivers"/>
-		</list>
-	</section>
 </section>

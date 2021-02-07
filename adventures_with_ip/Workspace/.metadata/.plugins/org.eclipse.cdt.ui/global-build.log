@@ -1,6 +1,6 @@
 Nothing to build in platform 'zedboard_audio'
 
-00:20:06 **** Incremental Build of configuration Debug for project adventures_with_ip ****
+01:40:24 **** Incremental Build of configuration Debug for project adventures_with_ip ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,24 +8,24 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/ip_functions.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ip_functions.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/khali/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/sw/zedboard_audio/standalone_domain/bspinclude/include -MMD -MP -MF"src/ip_functions.d" -MT"src/ip_functions.o" -o "src/ip_functions.o" "../src/ip_functions.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ip_functions.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/sw/zedboard_audio/standalone_domain/bspinclude/include -MMD -MP -MF"src/ip_functions.d" -MT"src/ip_functions.o" -o "src/ip_functions.o" "../src/ip_functions.c"
 'Finished building: ../src/ip_functions.c'
 ' '
 'Building target: adventures_with_ip.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/sw/zedboard_audio/standalone_domain/bsplib/lib -o "adventures_with_ip.elf"  ./src/adventures_with_ip.o ./src/audio.o ./src/ip_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/sw/zedboard_audio/standalone_domain/bsplib/lib -o "adventures_with_ip.elf"  ./src/adventures_with_ip.o ./src/audio.o ./src/ip_functions.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: adventures_with_ip.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size adventures_with_ip.elf  |tee "adventures_with_ip.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  32448	   1192	  22664	  56304	   dbf0	adventures_with_ip.elf
+  37248	   1192	  22664	  61104	   eeb0	adventures_with_ip.elf
 'Finished building: adventures_with_ip.elf.size'
 ' '
-00:20:07 **** Incremental Build of configuration Debug for project adventures_with_ip_system ****
+01:40:27 **** Incremental Build of configuration Debug for project adventures_with_ip_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 50782 C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/zedboard_audio.xpfm standalone_domain C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/system.bif
-sdcard_gen --xpfm C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/zedboard_audio.xpfm --sys_config zedboard_audio --bif C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/system.bif --bitstream C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/Debug/adventures_with_ip.elf,ps7_cortexa9_0
-creating BOOT.BIN using C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/_ide/bitstream/design_1_wrapper.bit
-Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/khali/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+generate_system_bif.bat 51512 C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/zedboard_audio.xpfm standalone_domain C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/zedboard_audio.xpfm --sys_config zedboard_audio --bif C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/system.bif --bitstream C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/Debug/adventures_with_ip.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
