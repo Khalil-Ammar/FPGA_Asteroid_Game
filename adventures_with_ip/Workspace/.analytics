@@ -1,0 +1,156 @@
+timestamp=[2021-01-26 23:21:18], mode=WORKBENCH_START, duration=0:00:11.326, duration_ms=11326, data={}
+timestamp=[2021-01-26 23:21:19], mode=WORKBENCH_UI_INIT, duration=0:00:00.952, duration_ms=952, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-01-26 23:21:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:04.725, duration_ms=4725, data={}
+timestamp=[2021-01-27 12:26:00], mode=WORKBENCH_START, duration=0:00:14.231, duration_ms=14231, data={}
+timestamp=[2021-01-27 12:26:02], mode=WORKBENCH_UI_INIT, duration=0:00:02.177, duration_ms=2177, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2021-01-27 12:26:11], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:05.064, duration_ms=5064, data={}
+timestamp=[2021-01-27 13:06:39], mode=WORKBENCH_START, duration=0:00:13.481, duration_ms=13481, data={}
+timestamp=[2021-01-27 13:06:40], mode=WORKBENCH_UI_INIT, duration=0:00:01.394, duration_ms=1394, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2021-01-27 13:06:49], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:05.600, duration_ms=5600, data={}
+timestamp=[2021-01-27 13:50:26], mode=PLATFORM_CREATION, duration=0:00:39.836, duration_ms=39836, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2021-01-27 14:08:40], mode=APP_CREATION, duration=0:00:18.463, duration_ms=18463, data={name=adventures_with_ip, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zedboard_audio, application_type=application}
+timestamp=[2021-01-27 14:12:01], mode=PLATFORM_GENERATION, duration=0:00:24.791, duration_ms=24791, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:12:35], mode=PLATFORM_GENERATION, duration=0:00:12.890, duration_ms=12890, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:12:42], mode=BUILD, duration=0:00:06.137, duration_ms=6137, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-01-27 14:27:01], mode=PLATFORM_GENERATION, duration=0:00:10.479, duration_ms=10479, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:27:02], mode=BUILD, duration=0:00:01.010, duration_ms=1010, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-01-27 14:30:03], mode=PLATFORM_GENERATION, duration=0:00:09.888, duration_ms=9888, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:30:04], mode=BUILD, duration=0:00:01.494, duration_ms=1494, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-01-27 14:30:44], mode=PLATFORM_GENERATION, duration=0:00:09.172, duration_ms=9172, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:43:00], mode=PLATFORM_GENERATION, duration=0:00:11.393, duration_ms=11393, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:45:22], mode=PLATFORM_GENERATION, duration=0:00:08.935, duration_ms=8935, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:47:30], mode=PLATFORM_GENERATION, duration=0:00:10.877, duration_ms=10877, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:47:41], mode=PLATFORM_GENERATION, duration=0:00:03.541, duration_ms=3541, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:49:05], mode=PLATFORM_GENERATION, duration=0:00:11.073, duration_ms=11073, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:58:30], mode=PLATFORM_GENERATION, duration=0:00:09.519, duration_ms=9519, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:58:49], mode=PLATFORM_GENERATION, duration=0:00:11.066, duration_ms=11066, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:59:28], mode=PLATFORM_GENERATION, duration=0:00:09.262, duration_ms=9262, data={name=zedboard_audio}
+timestamp=[2021-01-27 14:59:42], mode=PLATFORM_GENERATION, duration=0:00:10.937, duration_ms=10937, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:01:51], mode=PLATFORM_GENERATION, duration=0:00:47.144, duration_ms=47144, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:02:27], mode=PLATFORM_GENERATION, duration=0:00:11.961, duration_ms=11961, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:02:27], mode=BUILD, duration=0:00:00.462, duration_ms=462, data={name=adventures_with_ip, configuration=Debug, clean_build=true}
+timestamp=[2021-01-27 15:03:15], mode=PLATFORM_GENERATION, duration=0:00:43.327, duration_ms=43327, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:03:20], mode=BUILD, duration=0:00:00.826, duration_ms=826, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-01-27 15:06:36], mode=PLATFORM_GENERATION, duration=0:00:04.334, duration_ms=4334, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:09:20], mode=PLATFORM_GENERATION, duration=0:00:16.824, duration_ms=16824, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:10:04], mode=PLATFORM_GENERATION, duration=0:00:04.111, duration_ms=4111, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:10:40], mode=PLATFORM_GENERATION, duration=0:00:28.319, duration_ms=28319, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:17:08], mode=PLATFORM_GENERATION, duration=0:00:13.829, duration_ms=13829, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:18:30], mode=PLATFORM_GENERATION, duration=0:00:08.445, duration_ms=8445, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:21:42], mode=PLATFORM_GENERATION, duration=0:00:09.025, duration_ms=9025, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:22:16], mode=PLATFORM_GENERATION, duration=0:00:26.359, duration_ms=26359, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:26:36], mode=PLATFORM_GENERATION, duration=0:00:10.738, duration_ms=10738, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:26:52], mode=PLATFORM_GENERATION, duration=0:00:09.658, duration_ms=9658, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:32:05], mode=PLATFORM_GENERATION, duration=0:00:23.726, duration_ms=23726, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:35:14], mode=PLATFORM_GENERATION, duration=0:00:31.106, duration_ms=31106, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:35:36], mode=PLATFORM_GENERATION, duration=0:00:12.011, duration_ms=12011, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:35:37], mode=BUILD, duration=0:00:00.436, duration_ms=436, data={name=adventures_with_ip, configuration=Debug, clean_build=true}
+timestamp=[2021-01-27 15:35:37], mode=BUILD, duration=0:00:00.469, duration_ms=469, data={name=adventures_with_ip_system, configuration=Debug, clean_build=true}
+timestamp=[2021-01-27 15:36:26], mode=PLATFORM_GENERATION, duration=0:00:42.080, duration_ms=42080, data={name=zedboard_audio}
+timestamp=[2021-01-27 15:36:31], mode=BUILD, duration=0:00:04.240, duration_ms=4240, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-01-27 15:36:45], mode=BUILD, duration=0:00:13.947, duration_ms=13947, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-01-27 16:36:15], mode=BUILD, duration=0:00:00.768, duration_ms=768, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-01-27 16:36:28], mode=BUILD, duration=0:00:12.133, duration_ms=12133, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-01 14:30:04], mode=WORKBENCH_START, duration=0:00:34.538, duration_ms=34538, data={}
+timestamp=[2021-02-01 14:30:06], mode=WORKBENCH_UI_INIT, duration=0:00:01.953, duration_ms=1953, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,adventures_with_ip,adventures_with_ip_system,zedboard_audio}
+timestamp=[2021-02-01 14:30:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.901, duration_ms=901, data={}
+timestamp=[2021-02-01 14:50:02], mode=BUILD, duration=0:00:07.990, duration_ms=7990, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-01 14:51:05], mode=BUILD, duration=0:00:03.139, duration_ms=3139, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-01 14:55:36], mode=PLATFORM_GENERATION, duration=0:00:43.682, duration_ms=43682, data={name=zedboard_audio}
+timestamp=[2021-02-01 14:55:37], mode=BUILD, duration=0:00:00.992, duration_ms=992, data={name=adventures_with_ip, configuration=Debug, clean_build=true}
+timestamp=[2021-02-01 14:55:38], mode=BUILD, duration=0:00:01.094, duration_ms=1094, data={name=adventures_with_ip_system, configuration=Debug, clean_build=true}
+timestamp=[2021-02-01 14:57:37], mode=PLATFORM_GENERATION, duration=0:01:00.422, duration_ms=60422, data={name=zedboard_audio}
+timestamp=[2021-02-01 14:57:42], mode=BUILD, duration=0:00:05.405, duration_ms=5405, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-01 14:58:04], mode=BUILD, duration=0:00:21.028, duration_ms=21028, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 13:30:05], mode=WORKBENCH_START, duration=0:00:30.527, duration_ms=30527, data={}
+timestamp=[2021-02-04 13:30:07], mode=WORKBENCH_UI_INIT, duration=0:00:02.295, duration_ms=2295, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,adventures_with_ip,adventures_with_ip_system,zedboard_audio}
+timestamp=[2021-02-04 13:30:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.166, duration_ms=1166, data={}
+timestamp=[2021-02-04 21:25:13], mode=WORKBENCH_START, duration=0:00:37.551, duration_ms=37551, data={}
+timestamp=[2021-02-04 21:25:15], mode=WORKBENCH_UI_INIT, duration=0:00:01.739, duration_ms=1739, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,adventures_with_ip,adventures_with_ip_system,zedboard_audio}
+timestamp=[2021-02-04 21:25:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.226, duration_ms=2226, data={}
+timestamp=[2021-02-04 21:53:28], mode=PLATFORM_GENERATION, duration=0:01:03.096, duration_ms=63096, data={name=zedboard_audio}
+timestamp=[2021-02-04 21:53:31], mode=BUILD, duration=0:00:02.986, duration_ms=2986, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 21:55:48], mode=BUILD, duration=0:00:04.244, duration_ms=4244, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:08:36], mode=PLATFORM_GENERATION, duration=0:00:17.393, duration_ms=17393, data={name=zedboard_audio}
+timestamp=[2021-02-04 22:08:36], mode=BUILD, duration=0:00:00.424, duration_ms=424, data={name=adventures_with_ip, configuration=Debug, clean_build=true}
+timestamp=[2021-02-04 22:08:37], mode=BUILD, duration=0:00:00.643, duration_ms=643, data={name=adventures_with_ip_system, configuration=Debug, clean_build=true}
+timestamp=[2021-02-04 22:09:52], mode=PLATFORM_GENERATION, duration=0:01:07.339, duration_ms=67339, data={name=zedboard_audio}
+timestamp=[2021-02-04 22:09:55], mode=BUILD, duration=0:00:02.848, duration_ms=2848, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:10:15], mode=BUILD, duration=0:00:18.950, duration_ms=18950, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:15:50], mode=BUILD, duration=0:00:03.278, duration_ms=3278, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:16:11], mode=BUILD, duration=0:00:20.144, duration_ms=20144, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:40:42], mode=BUILD, duration=0:00:04.538, duration_ms=4538, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:48:57], mode=BUILD, duration=0:00:01.207, duration_ms=1207, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:49:45], mode=BUILD, duration=0:00:01.200, duration_ms=1200, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:49:59], mode=BUILD, duration=0:00:13.575, duration_ms=13575, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:50:52], mode=BUILD, duration=0:00:02.275, duration_ms=2275, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:51:13], mode=BUILD, duration=0:00:19.998, duration_ms=19998, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:55:49], mode=BUILD, duration=0:00:02.309, duration_ms=2309, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 22:56:02], mode=BUILD, duration=0:00:12.826, duration_ms=12826, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 23:26:31], mode=PLATFORM_GENERATION, duration=0:00:15.696, duration_ms=15696, data={name=zedboard_audio}
+timestamp=[2021-02-04 23:26:59], mode=PLATFORM_GENERATION, duration=0:00:14.726, duration_ms=14726, data={name=zedboard_audio}
+timestamp=[2021-02-04 23:27:55], mode=PLATFORM_GENERATION, duration=0:00:41.898, duration_ms=41898, data={name=zedboard_audio}
+timestamp=[2021-02-04 23:31:33], mode=PLATFORM_GENERATION, duration=0:00:36.365, duration_ms=36365, data={name=zedboard_audio}
+timestamp=[2021-02-04 23:33:48], mode=PLATFORM_GENERATION, duration=0:00:29.542, duration_ms=29542, data={name=zedboard_audio}
+timestamp=[2021-02-04 23:41:24], mode=PLATFORM_GENERATION, duration=0:00:23.890, duration_ms=23890, data={name=zedboard_audio}
+timestamp=[2021-02-04 23:41:28], mode=BUILD, duration=0:00:03.565, duration_ms=3565, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-04 23:42:28], mode=PLATFORM_GENERATION, duration=0:00:14.627, duration_ms=14627, data={name=zedboard_audio}
+timestamp=[2021-02-04 23:43:22], mode=PLATFORM_GENERATION, duration=0:00:48.527, duration_ms=48527, data={name=zedboard_audio}
+timestamp=[2021-02-05 00:02:08], mode=PLATFORM_GENERATION, duration=0:02:11.718, duration_ms=131718, data={name=zedboard_audio}
+timestamp=[2021-02-05 00:02:38], mode=BUILD, duration=0:00:06.096, duration_ms=6096, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 01:27:18], mode=WORKBENCH_START, duration=0:00:26.449, duration_ms=26449, data={}
+timestamp=[2021-02-05 01:27:20], mode=WORKBENCH_UI_INIT, duration=0:00:01.921, duration_ms=1921, data={editors_count=8, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,adventures_with_ip,adventures_with_ip_system,zedboard_audio}
+timestamp=[2021-02-05 01:27:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.128, duration_ms=1128, data={}
+timestamp=[2021-02-05 01:33:59], mode=PLATFORM_GENERATION, duration=0:00:23.874, duration_ms=23874, data={name=zedboard_audio}
+timestamp=[2021-02-05 01:34:00], mode=BUILD, duration=0:00:00.431, duration_ms=431, data={name=adventures_with_ip, configuration=Debug, clean_build=true}
+timestamp=[2021-02-05 01:35:05], mode=PLATFORM_GENERATION, duration=0:00:46.707, duration_ms=46707, data={name=zedboard_audio}
+timestamp=[2021-02-05 01:35:14], mode=BUILD, duration=0:00:01.798, duration_ms=1798, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 01:36:20], mode=BUILD, duration=0:00:02.778, duration_ms=2778, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 01:46:32], mode=BUILD, duration=0:00:01.665, duration_ms=1665, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 01:46:49], mode=BUILD, duration=0:00:16.432, duration_ms=16432, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 02:16:09], mode=BUILD, duration=0:00:03.701, duration_ms=3701, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 14:08:20], mode=BUILD, duration=0:00:03.025, duration_ms=3025, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 14:32:31], mode=BUILD, duration=0:00:04.120, duration_ms=4120, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 14:33:54], mode=BUILD, duration=0:00:01.260, duration_ms=1260, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 14:41:39], mode=BUILD, duration=0:00:02.100, duration_ms=2100, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 14:41:56], mode=BUILD, duration=0:00:17.163, duration_ms=17163, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 14:45:42], mode=BUILD, duration=0:00:03.308, duration_ms=3308, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 14:45:56], mode=BUILD, duration=0:00:13.606, duration_ms=13606, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:07:10], mode=BUILD, duration=0:00:01.146, duration_ms=1146, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:07:25], mode=BUILD, duration=0:00:14.166, duration_ms=14166, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:08:10], mode=BUILD, duration=0:00:00.894, duration_ms=894, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:08:22], mode=BUILD, duration=0:00:11.473, duration_ms=11473, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:08:28], mode=BUILD, duration=0:00:00.877, duration_ms=877, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:08:38], mode=BUILD, duration=0:00:09.901, duration_ms=9901, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:10:24], mode=BUILD, duration=0:00:00.825, duration_ms=825, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:10:34], mode=BUILD, duration=0:00:09.905, duration_ms=9905, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:10:46], mode=BUILD, duration=0:00:02.092, duration_ms=2092, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:10:56], mode=BUILD, duration=0:00:09.811, duration_ms=9811, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:26:16], mode=BUILD, duration=0:00:01.432, duration_ms=1432, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:26:29], mode=BUILD, duration=0:00:12.221, duration_ms=12221, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:26:38], mode=BUILD, duration=0:00:01.789, duration_ms=1789, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:26:51], mode=BUILD, duration=0:00:12.932, duration_ms=12932, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:26:58], mode=BUILD, duration=0:00:02.209, duration_ms=2209, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-05 15:27:12], mode=BUILD, duration=0:00:13.018, duration_ms=13018, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:22:17], mode=WORKBENCH_START, duration=0:00:21.273, duration_ms=21273, data={}
+timestamp=[2021-02-06 23:22:19], mode=WORKBENCH_UI_INIT, duration=0:00:01.491, duration_ms=1491, data={editors_count=6, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,adventures_with_ip,adventures_with_ip_system,zedboard_audio}
+timestamp=[2021-02-06 23:22:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.314, duration_ms=1314, data={}
+timestamp=[2021-02-06 23:41:16], mode=BUILD, duration=0:00:01.879, duration_ms=1879, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:41:34], mode=BUILD, duration=0:00:17.439, duration_ms=17439, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:42:01], mode=BUILD, duration=0:00:02.447, duration_ms=2447, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:42:12], mode=BUILD, duration=0:00:10.493, duration_ms=10493, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:50:29], mode=BUILD, duration=0:00:01.466, duration_ms=1466, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:50:41], mode=BUILD, duration=0:00:10.959, duration_ms=10959, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:52:35], mode=BUILD, duration=0:00:00.854, duration_ms=854, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:52:47], mode=BUILD, duration=0:00:11.183, duration_ms=11183, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-06 23:53:02], mode=BUILD, duration=0:00:01.800, duration_ms=1800, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:03:13], mode=BUILD, duration=0:00:01.058, duration_ms=1058, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:03:26], mode=BUILD, duration=0:00:11.614, duration_ms=11614, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:04:24], mode=BUILD, duration=0:00:00.937, duration_ms=937, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:04:35], mode=BUILD, duration=0:00:10.829, duration_ms=10829, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:04:40], mode=BUILD, duration=0:00:02.224, duration_ms=2224, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:04:51], mode=BUILD, duration=0:00:10.056, duration_ms=10056, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:13:31], mode=BUILD, duration=0:00:01.566, duration_ms=1566, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:13:42], mode=BUILD, duration=0:00:09.977, duration_ms=9977, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:20:07], mode=BUILD, duration=0:00:01.401, duration_ms=1401, data={name=adventures_with_ip, configuration=Debug, clean_build=false}
+timestamp=[2021-02-07 00:20:17], mode=BUILD, duration=0:00:09.731, duration_ms=9731, data={name=adventures_with_ip_system, configuration=Debug, clean_build=false}

@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_adventures_with_ip-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_adventures_with_ip-GDB_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_adventures_with_ip-Default
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_adventures_with_ip-Default/activeLaunchMode=embdebug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_adventures_with_ip-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_adventures_with_ip-GDB/activeLaunchMode=embrun
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_adventures_with_ip-GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
