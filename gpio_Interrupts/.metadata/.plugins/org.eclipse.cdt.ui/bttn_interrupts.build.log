@@ -1,0 +1,25 @@
+16:12:34 **** Incremental Build of configuration Debug for project bttn_interrupts ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/gpio_interrupts/export/gpio_interrupts/sw/gpio_interrupts/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bttn_interrupts.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/gpio_interrupts/export/gpio_interrupts/sw/gpio_interrupts/standalone_domain/bsplib/lib -o "bttn_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bttn_interrupts.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size bttn_interrupts.elf  |tee "bttn_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24864	   1952	  22632	  49448	   c128	bttn_interrupts.elf
+'Finished building: bttn_interrupts.elf.size'
+' '
+
+16:12:36 Build Finished (took 1s.878ms)
+

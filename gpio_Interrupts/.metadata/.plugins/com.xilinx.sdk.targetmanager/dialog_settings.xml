@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="bttn_interrupts_system-bitFile" value="${project_loc:bttn_interrupts}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="bttn_interrupts_system-bmmFile" value=""/>
+	<item key="bttn_interrupts_system-target" value="Local"/>
+	<item key="bttn_interrupts_system-device" value="Auto Detect"/>
+	<item key="bttn_interrupts_system-partial_bit" value="false"/>
+	<item key="bttn_interrupts_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="bttn_interrupts_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zed 210248469160&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zed-210248469160-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zed-210248469160-03727093-0&quot;}}]}"/>
+</section>

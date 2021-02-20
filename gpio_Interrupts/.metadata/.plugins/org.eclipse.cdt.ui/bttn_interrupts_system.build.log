@@ -1,0 +1,10 @@
+16:12:37 **** Incremental Build of configuration Debug for project bttn_interrupts_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 53643 C:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/gpio_interrupts/export/gpio_interrupts/gpio_interrupts.xpfm standalone_domain C:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/bttn_interrupts_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/gpio_interrupts/export/gpio_interrupts/gpio_interrupts.xpfm --sys_config gpio_interrupts --bif C:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/bttn_interrupts_system/Debug/system.bif --bitstream C:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/bttn_interrupts/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/bttn_interrupts/Debug/bttn_interrupts.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/bttn_interrupts/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/khali/ENSC_452_git/ENSC_452/gpio_Interrupts/bttn_interrupts_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+16:12:48 Build Finished (took 10s.995ms)
+

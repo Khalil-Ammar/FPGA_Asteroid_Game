@@ -1,0 +1,10 @@
+2021-02-08T15:12:02.574298900255-15:12:02 **** Incremental Build of configuration Debug for project adventures_with_ip_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 58046 C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/zedboard_audio.xpfm standalone_domain C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/system.bif
+000-sdcard_gen --xpfm C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/zedboard_audio.xpfm --sys_config zedboard_audio --bif C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/system.bif --bitstream C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/Debug/adventures_with_ip.elf,ps7_cortexa9_0
+000-creating BOOT.BIN using C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip/_ide/bitstream/design_1_wrapper.bit
+000-Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/adventures_with_ip_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+00255-
+15:12:17 Build Finished (took 14s.812ms)
+

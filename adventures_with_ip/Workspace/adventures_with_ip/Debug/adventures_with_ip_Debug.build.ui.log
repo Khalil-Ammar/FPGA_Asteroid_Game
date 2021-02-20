@@ -1,0 +1,32 @@
+2021-02-08T15:14:13.640666200255-15:14:13 **** Incremental Build of configuration Debug for project adventures_with_ip ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/adventures_with_ip.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/adventures_with_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/sw/zedboard_audio/standalone_domain/bspinclude/include -MMD -MP -MF"src/adventures_with_ip.d" -MT"src/adventures_with_ip.o" -o "src/adventures_with_ip.o" "../src/adventures_with_ip.c"
+000-../src/adventures_with_ip.c: In function 'menu':
+000/adventures_with_ip/src/adventures_with_ip.c84-1-1this 'while' clause does not guard... [-Wmisleading-indentation]1-../src/adventures_with_ip.c:84:2: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+000-   84 |  while (!XUartPs_IsReceiveData(UART_BASEADDR));
+000-      |  ^~~~~
+000/adventures_with_ip/src/adventures_with_ip.c85-1-1...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'0-../src/adventures_with_ip.c:85:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+000-   85 |    inp = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+000-      |    ^~~
+000-'Finished building: ../src/adventures_with_ip.c'
+000-' '
+000-'Building target: adventures_with_ip.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452_git/ENSC_452/adventures_with_ip/Workspace/zedboard_audio/export/zedboard_audio/sw/zedboard_audio/standalone_domain/bsplib/lib -o "adventures_with_ip.elf"  ./src/adventures_with_ip.o ./src/audio.o ./src/ip_functions.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: adventures_with_ip.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size adventures_with_ip.elf  |tee "adventures_with_ip.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  37376	   1192	  22664	  61232	   ef30	adventures_with_ip.elf
+000-'Finished building: adventures_with_ip.elf.size'
+000-' '
+00255-
+15:14:15 Build Finished (took 2s.98ms)
+
