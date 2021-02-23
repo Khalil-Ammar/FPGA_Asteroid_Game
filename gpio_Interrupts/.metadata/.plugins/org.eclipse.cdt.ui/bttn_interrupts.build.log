@@ -1,4 +1,4 @@
-16:12:34 **** Incremental Build of configuration Debug for project bttn_interrupts ****
+17:06:53 **** Incremental Build of configuration Debug for project bttn_interrupts ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size bttn_interrupts.elf  |tee "bttn_interrupts.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  24864	   1952	  22632	  49448	   c128	bttn_interrupts.elf
+  25032	   1952	  22632	  49616	   c1d0	bttn_interrupts.elf
 'Finished building: bttn_interrupts.elf.size'
 ' '
 
-16:12:36 Build Finished (took 1s.878ms)
+17:06:54 Build Finished (took 1s.279ms)
 

@@ -18,3 +18,25 @@ timestamp=[2021-02-19 16:12:21], mode=BUILD, duration=0:00:01.816, duration_ms=1
 timestamp=[2021-02-19 16:12:33], mode=BUILD, duration=0:00:11.310, duration_ms=11310, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
 timestamp=[2021-02-19 16:12:36], mode=BUILD, duration=0:00:01.895, duration_ms=1895, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
 timestamp=[2021-02-19 16:12:48], mode=BUILD, duration=0:00:11.008, duration_ms=11008, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:35:37], mode=WORKBENCH_START, duration=0:00:28.216, duration_ms=28216, data={}
+timestamp=[2021-02-22 16:35:40], mode=WORKBENCH_UI_INIT, duration=0:00:02.882, duration_ms=2882, data={editors_count=6, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,bttn_interrupts,bttn_interrupts_system,gpio_interrupts}
+timestamp=[2021-02-22 16:35:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.248, duration_ms=248, data={}
+timestamp=[2021-02-22 16:43:15], mode=BUILD, duration=0:00:09.430, duration_ms=9430, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:43:51], mode=BUILD, duration=0:00:34.472, duration_ms=34472, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:49:29], mode=BUILD, duration=0:00:02.287, duration_ms=2287, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:49:42], mode=BUILD, duration=0:00:12.491, duration_ms=12491, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:54:50], mode=BUILD, duration=0:00:00.992, duration_ms=992, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:55:03], mode=BUILD, duration=0:00:12.415, duration_ms=12415, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:55:36], mode=BUILD, duration=0:00:01.953, duration_ms=1953, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:55:50], mode=BUILD, duration=0:00:12.817, duration_ms=12817, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:59:07], mode=BUILD, duration=0:00:01.473, duration_ms=1473, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 16:59:18], mode=BUILD, duration=0:00:09.624, duration_ms=9624, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 17:03:38], mode=BUILD, duration=0:00:01.382, duration_ms=1382, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 17:03:48], mode=BUILD, duration=0:00:10.168, duration_ms=10168, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 17:05:40], mode=BUILD, duration=0:00:01.431, duration_ms=1431, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 17:05:51], mode=BUILD, duration=0:00:10.116, duration_ms=10116, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 17:06:54], mode=BUILD, duration=0:00:01.288, duration_ms=1288, data={name=bttn_interrupts, configuration=Debug, clean_build=false}
+timestamp=[2021-02-22 17:07:04], mode=BUILD, duration=0:00:09.456, duration_ms=9456, data={name=bttn_interrupts_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-23 09:39:59], mode=WORKBENCH_START, duration=0:01:01.555, duration_ms=61555, data={}
+timestamp=[2021-02-23 09:40:03], mode=WORKBENCH_UI_INIT, duration=0:00:04.081, duration_ms=4081, data={editors_count=7, platform_editors_count=6, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,bttn_interrupts,bttn_interrupts_system,gpio_interrupts}
+timestamp=[2021-02-23 09:40:11], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.189, duration_ms=189, data={}

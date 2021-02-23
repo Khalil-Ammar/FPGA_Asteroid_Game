@@ -46,6 +46,8 @@
  */
 
 #include <stdio.h>
+#include <time.h>
+#include <unistd.h>
 #include "platform.h"
 
 #include "xparameters.h"
@@ -89,8 +91,23 @@ void BTN_Intr_Handler(void *InstancePtr) {
 
 	//read BTN value and write it to the LEDs
 	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
+
 	if (btn_value != 0){
-		XGpio_DiscreteWrite(&LEDInst, 1, btn_value);
+		if (btn_value == 0b00001){	// BTNC
+			XGpio_DiscreteWrite(&LEDInst, 1, 0b00010000);
+		}
+		if (btn_value == 0b00010){	// BTND
+					XGpio_DiscreteWrite(&LEDInst, 1, 0b00000010);
+		}
+		if (btn_value == 0b00100){	// BTNL
+					XGpio_DiscreteWrite(&LEDInst, 1, 0b00000100);
+		}
+		if (btn_value == 0b01000){	// BTNR
+					XGpio_DiscreteWrite(&LEDInst, 1, 0b00001000);
+		}
+		if (btn_value == 0b10000){	// BTNU
+					XGpio_DiscreteWrite(&LEDInst, 1, 0b00000001);
+		}
 	}
 	(void) XGpio_InterruptClear(&BTNInst, BTN_INT);
 	// Enable GPIO interrupts
