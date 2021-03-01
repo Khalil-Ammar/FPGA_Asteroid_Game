@@ -1,0 +1,62 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.24486",
+   "Default View_TopLeft":"-854,-8",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1960 -y 50 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1960 -y 80 -defaultsOSRD
+preplace port sclk -pg 1 -lvl 6 -x 1960 -y 760 -defaultsOSRD
+preplace port ss -pg 1 -lvl 6 -x 1960 -y 820 -defaultsOSRD
+preplace port mosi -pg 1 -lvl 6 -x 1960 -y 790 -defaultsOSRD
+preplace port miso -pg 1 -lvl 0 -x -30 -y 850 -defaultsOSRD
+preplace port mclk -pg 1 -lvl 6 -x 1960 -y 530 -defaultsOSRD
+preplace port heartbeat -pg 1 -lvl 6 -x 1960 -y 320 -defaultsOSRD
+preplace port bclk -pg 1 -lvl 6 -x 1960 -y 430 -defaultsOSRD
+preplace port lrclk -pg 1 -lvl 6 -x 1960 -y 460 -defaultsOSRD
+preplace port sdata -pg 1 -lvl 6 -x 1960 -y 490 -defaultsOSRD
+preplace inst myPrescaler_0 -pg 1 -lvl 4 -x 1230 -y 610 -defaultsOSRD
+preplace inst myPrescaler_1 -pg 1 -lvl 5 -x 1670 -y 330 -defaultsOSRD
+preplace inst mySPIRxTx_0 -pg 1 -lvl 5 -x 1670 -y 970 -defaultsOSRD
+preplace inst myI2STx_0 -pg 1 -lvl 5 -x 1670 -y 550 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 860 -y 510 -defaultsOSRD
+preplace inst axi_fifo_mm_s_0 -pg 1 -lvl 4 -x 1230 -y 770 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1230 -y 480 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1670 -y 130 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 510 -y 630 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 170 -y 570 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -10 670 350 790 660 410 1060 380 1400 270 1870
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 0 860 NJ 860 NJ 860 NJ 860 NJ 860 1880
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 340 780 670 610 1050 870 1410
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 N 590
+preplace netloc mySPIRxTx_0_sclk 1 5 1 1890J 760n
+preplace netloc mySPIRxTx_0_ss 1 5 1 1920J 820n
+preplace netloc mySPIRxTx_0_mosi 1 5 1 1900J 790n
+preplace netloc miso_1 1 0 5 NJ 850 NJ 850 NJ 850 1020J 960 NJ
+preplace netloc myPrescaler_0_out 1 4 2 1420 640 1930J
+preplace netloc myPrescaler_1_prescale 1 5 1 1920J 320n
+preplace netloc myI2STx_0_bclk 1 5 1 1900J 430n
+preplace netloc myI2STx_0_lrclk 1 5 1 1910J 460n
+preplace netloc myI2STx_0_sdata 1 5 1 1920J 490n
+preplace netloc axi_dma_0_mm2s_introut 1 3 2 1020 160 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 360 770 680J 670 NJ 670 NJ 670 1890
+preplace netloc mySPIRxTx_0_M00_AXIS 1 3 3 1070 680 NJ 680 1870
+preplace netloc axi_fifo_mm_s_0_AXI_STR_TXD 1 4 1 1390 740n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 2 NJ 620 1030
+preplace netloc axi_dma_0_M_AXI_SG 1 3 1 1030 450n
+preplace netloc axi_smc_M00_AXI 1 4 1 1390 100n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 650 470n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1050 470n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 2 1040 390 1420J
+preplace netloc processing_system7_0_DDR 1 5 1 NJ 50
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 1870J 70n
+levelinfo -pg 1 -30 170 510 860 1230 1670 1960
+pagesize -pg 1 -db -bbox -sgen -110 -10 2070 1060
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_clkrst_cnt":"7",
+   "da_ps7_cnt":"1"
+}

@@ -1,0 +1,192 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jan  1 16:13:06 2018
+# Process ID: 5288
+# Current directory: C:/VivadoProjects/SPICodecDmaDemo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11592 C:\VivadoProjects\SPICodecDmaDemo\SPIRxTxDemo.xpr
+# Log file: C:/VivadoProjects/SPICodecDmaDemo/vivado.log
+# Journal file: C:/VivadoProjects/SPICodecDmaDemo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.xpr
+INFO: [Project 1-313] Project file moved from 'C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-9312-dennycrane/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.ipdefs/myIPCores_0_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/sim/libps7.so'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/sim/libps7.dll'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/sim/libremoteport.so'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/sim/libremoteport.dll'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 806.777 ; gain = 63.477
+update_compile_order -fileset sources_1
+open_bd_design {C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:myPrescaler:1.0 - myPrescaler_0
+Adding cell -- xilinx.com:user:myPrescaler:1.0 - myPrescaler_1
+Adding cell -- xilinx.com:user:mySPIRxTx:1.0 - mySPIRxTx_0
+Adding cell -- xilinx.com:ip:axi_fifo_mm_s:4.1 - axi_fifo_mm_s_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:user:myI2STx:1.0 - myI2STx_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 891.145 ; gain = 73.953
+startgroup
+set_property -dict [list CONFIG.c_sg_length_width {23}] [get_bd_cells axi_dma_0]
+endgroup
+save_bd_design
+Wrote  : <C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.sdk -hwspec C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.sdk -hwspec C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Wrote  : <C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/design_1.bd> 
+Verilog Output written to : C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mySPIRxTx_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_fifo_mm_s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myPrescaler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myPrescaler_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myI2STx_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+Exporting to file c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hdl/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+[Mon Jan  1 16:18:21 2018] Launched design_1_processing_system7_0_0_synth_1, design_1_rst_ps7_0_100M_0_synth_1, design_1_myPrescaler_0_0_synth_1, design_1_mySPIRxTx_0_0_synth_1, design_1_myPrescaler_1_0_synth_1, design_1_xbar_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_axi_smc_0_synth_1, design_1_myI2STx_0_0_synth_1, design_1_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_rst_ps7_0_100M_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_rst_ps7_0_100M_0_synth_1/runme.log
+design_1_myPrescaler_0_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_myPrescaler_0_0_synth_1/runme.log
+design_1_mySPIRxTx_0_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_mySPIRxTx_0_0_synth_1/runme.log
+design_1_myPrescaler_1_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_myPrescaler_1_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_axi_smc_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_axi_smc_0_synth_1/runme.log
+design_1_myI2STx_0_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_myI2STx_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/design_1_auto_pc_0_synth_1/runme.log
+synth_1: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/synth_1/runme.log
+[Mon Jan  1 16:18:21 2018] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1118.668 ; gain = 132.973
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 499 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane/dcp3/design_1_wrapper_board.xdc]
+Finished Parsing XDC File [C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane/dcp3/design_1_wrapper_board.xdc]
+Parsing XDC File [C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane/dcp3/design_1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane/dcp3/design_1_wrapper_early.xdc]
+Parsing XDC File [C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane/dcp3/design_1_wrapper.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/impl_1/.Xil/Vivado-13176-dennycrane/dbg_hub_CV.0/out/xsdbm.xdc:11]
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1958.023 ; gain = 516.691
+Finished Parsing XDC File [C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane/dcp3/design_1_wrapper.xdc]
+Parsing XDC File [C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane/dcp3/design_1_wrapper_late.xdc]
+Finished Parsing XDC File [C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane/dcp3/design_1_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1982.199 ; gain = 9.086
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1982.199 ; gain = 9.086
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 232 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 112 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 103 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 14 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 2 instances
+
+open_run: Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 2106.766 ; gain = 925.852
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2254.949 ; gain = 148.184
+file copy -force C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.runs/impl_1/design_1_wrapper.sysdef C:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.sdk/design_1_wrapper.hdf
+
+archive_project C:/VivadoProjects/SPIRxTxDemo.xpr.zip -temp_dir C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/VivadoProjects/SPICodecDmaDemo/.Xil/Vivado-5288-dennycrane' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VivadoProjects/SPICodecDmaDemo/SPIRxTxDemo.ipdefs/myIPCores_0_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_processing_system7_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_processing_system7_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_rst_ps7_0_100M_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps7_0_100M_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_myPrescaler_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_myPrescaler_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_mySPIRxTx_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_mySPIRxTx_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_myPrescaler_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_myPrescaler_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_xbar_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axi_dma_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_dma_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axi_smc_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_smc_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_myI2STx_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_myI2STx_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_auto_pc_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_auto_pc_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_processing_system7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps7_0_100M_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_myPrescaler_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_mySPIRxTx_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_myPrescaler_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_dma_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_smc_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_myI2STx_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_auto_pc_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_auto_pc_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_auto_pc_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_dma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_dma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_smc_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_smc_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_myI2STx_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_myI2STx_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_myPrescaler_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_myPrescaler_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_myPrescaler_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_myPrescaler_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_mySPIRxTx_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_mySPIRxTx_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rst_ps7_0_100M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rst_ps7_0_100M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

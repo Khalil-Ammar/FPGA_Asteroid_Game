@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;dma_audio_system&apos;" deleteContents="false" description="Delete resource &apos;dma_audio_system&apos;" element1="/dma_audio_system" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1614143302148"/>
+</session>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="dma_audio" location="C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Test/dma_audio" platform="C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Test/dma_audio_hw/export/dma_audio_hw/dma_audio_hw.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="dma_audio_system" sysConfig="dma_audio_hw" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="e47cb7af5c58eeb5d7f7f398de5f77a6">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.889665876">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1006863768" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

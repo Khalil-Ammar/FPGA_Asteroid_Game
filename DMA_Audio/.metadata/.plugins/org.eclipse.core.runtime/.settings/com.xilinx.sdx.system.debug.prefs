@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:heap-size=400000000
+com.xilinx.sdk.linkgen.prefs.dma_audio\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.dma_audio\:stack-size=1024
+eclipse.preferences.version=1
