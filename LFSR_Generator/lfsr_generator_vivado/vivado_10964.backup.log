@@ -1,0 +1,531 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Feb 28 22:44:59 2021
+# Process ID: 10964
+# Current directory: C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2716 C:\Users\khali\ENSC_452_git\ENSC_452\LFSR_Generator\lfsr_generator_vivado\lfsr_generator_vivado.xpr
+# Log file: C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/vivado.log
+# Journal file: C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 1100.906 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'lfsr' remains a black box since it has no binding entity [C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd:52]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_lfsr.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1100.906 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_lfsr_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1100.906 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_lfsr'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'lfsr' remains a black box since it has no binding entity [C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture test of entity xil_defaultlib.tb_lfsr
+Built simulation snapshot tb_lfsr_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_lfsr.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_lfsr_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1100.906 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_lfsr/o_lsfr}} 
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd} 29
+remove_bps -file {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd} -line 29
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd} 29
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lfsr_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_lfsr'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture rtl of entity xil_defaultlib.lfsr_7 [lfsr_7_default]
+Compiling architecture test of entity xil_defaultlib.tb_lfsr
+Built simulation snapshot tb_lfsr_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_lfsr.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd" Line 29
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_lfsr_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1100.906 ; gain = 0.000
+remove_bps -file {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd} -line 29
+run all
+Failure: End of simulation.
+Time: 3115 ns  Iteration: 0  Process: /tb_lfsr/stop_pr  File: C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd
+$finish called at time : 3115 ns : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd" Line 48
+run all
+Failure: End of simulation.
+Time: 3125 ns  Iteration: 0  Process: /tb_lfsr/stop_pr  File: C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd
+$finish called at time : 3125 ns : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd" Line 48
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_lfsr'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture rtl of entity xil_defaultlib.lfsr_7 [lfsr_7_default]
+Compiling architecture test of entity xil_defaultlib.tb_lfsr
+Built simulation snapshot tb_lfsr_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_lfsr.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_lfsr_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1107.652 ; gain = 6.746
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_lfsr'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture rtl of entity xil_defaultlib.lfsr_7 [lfsr_7_default]
+Compiling architecture test of entity xil_defaultlib.tb_lfsr
+Built simulation snapshot tb_lfsr_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_lfsr.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_lfsr_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1108.398 ; gain = 0.523
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 22
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_lfsr.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd" Line 22
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_lfsr_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1108.398 ; gain = 0.000
+remove_bps -file {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} -line 22
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 24
+run all
+Stopped at time : 0 fs : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd" Line 24
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 25
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 26
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 27
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 28
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 29
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 30
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 31
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 32
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 33
+add_bp {C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd} 34
+run all
+Stopped at time : 5 ns : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd" Line 24
+run all
+Stopped at time : 5 ns : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd" Line 25
+run all
+Stopped at time : 5 ns : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd" Line 27
+run all
+Stopped at time : 5 ns : File "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd" Line 28
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/tb_lfsr_1.0/tb_lfsr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_lfsr'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture rtl of entity xil_defaultlib.lfsr_7 [lfsr_7_default]
+Compiling architecture test of entity xil_defaultlib.tb_lfsr
+Built simulation snapshot tb_lfsr_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhdC:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1108.398 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhdC:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1108.398 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: lfsr_7
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1678.496 ; gain = 252.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lfsr_7' [C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'lfsr_7' (1#1) [C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1753.238 ; gain = 327.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1753.238 ; gain = 327.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1753.238 ; gain = 327.586
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1753.238 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1797.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1908.063 ; gain = 482.410
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1908.063 ; gain = 799.664
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lfsr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_lfsr_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+"xelab -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb51b1385a464b90be8cb805d1bc6c65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_lfsr_behav xil_defaultlib.tb_lfsr -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr_generator_vivado/lfsr_generator_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lfsr_behav -key {Behavioral:sim_1:Functional:tb_lfsr} -tclbatch {tb_lfsr.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhdC:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/ip_sources/lfsr_1.0/lfsr.vhd' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1908.063 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 28 23:04:58 2021...
