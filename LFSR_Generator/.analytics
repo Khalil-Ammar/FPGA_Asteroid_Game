@@ -1,0 +1,53 @@
+timestamp=[2021-03-02 19:02:49], mode=WORKBENCH_START, duration=0:00:12.638, duration_ms=12638, data={}
+timestamp=[2021-03-02 19:02:51], mode=WORKBENCH_UI_INIT, duration=0:00:01.151, duration_ms=1151, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-03-02 19:03:05], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:10.370, duration_ms=10370, data={}
+timestamp=[2021-03-02 19:06:19], mode=PLATFORM_CREATION, duration=0:00:34.582, duration_ms=34582, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2021-03-02 19:06:53], mode=PLATFORM_GENERATION, duration=0:00:22.881, duration_ms=22881, data={name=lfsr_hw}
+timestamp=[2021-03-02 19:10:09], mode=PLATFORM_GENERATION, duration=0:00:08.519, duration_ms=8519, data={name=lfsr_hw}
+timestamp=[2021-03-02 19:11:02], mode=PLATFORM_GENERATION, duration=0:00:06.974, duration_ms=6974, data={name=lfsr_hw}
+timestamp=[2021-03-02 19:12:34], mode=PLATFORM_GENERATION, duration=0:00:40.614, duration_ms=40614, data={name=lfsr_hw}
+timestamp=[2021-03-02 19:13:58], mode=APP_CREATION, duration=0:00:11.717, duration_ms=11717, data={name=lfsr, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=lfsr_hw, application_type=application}
+timestamp=[2021-03-02 19:14:25], mode=BUILD, duration=0:00:03.262, duration_ms=3262, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:14:37], mode=BUILD, duration=0:00:11.009, duration_ms=11009, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:17:56], mode=BUILD, duration=0:00:00.587, duration_ms=587, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:18:05], mode=BUILD, duration=0:00:08.638, duration_ms=8638, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:18:54], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:19:03], mode=BUILD, duration=0:00:08.271, duration_ms=8271, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:25:13], mode=PLATFORM_CREATION, duration=0:00:22.424, duration_ms=22424, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2021-03-02 19:25:56], mode=PLATFORM_GENERATION, duration=0:00:14.528, duration_ms=14528, data={name=LFSR_HW}
+timestamp=[2021-03-02 19:29:01], mode=PLATFORM_GENERATION, duration=0:00:33.853, duration_ms=33853, data={name=LFSR_HW}
+timestamp=[2021-03-02 19:31:53], mode=WORKBENCH_START, duration=0:00:12.581, duration_ms=12581, data={}
+timestamp=[2021-03-02 19:31:55], mode=WORKBENCH_UI_INIT, duration=0:00:01.929, duration_ms=1929, data={editors_count=3, platform_editors_count=3, projects_count=2, platform_projects_count=1, active_platform_editor=true, projects=LFSR_HW,RemoteSystemsTempFiles}
+timestamp=[2021-03-02 19:32:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:05.720, duration_ms=5720, data={}
+timestamp=[2021-03-02 19:32:38], mode=APP_CREATION, duration=0:00:12.186, duration_ms=12186, data={name=lfsr, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=LFSR_HW, application_type=application}
+timestamp=[2021-03-02 19:33:01], mode=BUILD, duration=0:00:01.974, duration_ms=1974, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:33:14], mode=BUILD, duration=0:00:11.670, duration_ms=11670, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:36:39], mode=BUILD, duration=0:00:00.552, duration_ms=552, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:36:52], mode=BUILD, duration=0:00:11.947, duration_ms=11947, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:37:03], mode=BUILD, duration=0:00:00.568, duration_ms=568, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:37:14], mode=BUILD, duration=0:00:10.050, duration_ms=10050, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:50:41], mode=PLATFORM_GENERATION, duration=0:00:03.885, duration_ms=3885, data={name=LFSR_HW}
+timestamp=[2021-03-02 19:50:42], mode=BUILD, duration=0:00:00.879, duration_ms=879, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:50:53], mode=BUILD, duration=0:00:10.570, duration_ms=10570, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:51:37], mode=BUILD, duration=0:00:00.847, duration_ms=847, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:51:48], mode=BUILD, duration=0:00:10.704, duration_ms=10704, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:52:16], mode=BUILD, duration=0:00:01.305, duration_ms=1305, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:52:27], mode=BUILD, duration=0:00:10.245, duration_ms=10245, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:54:09], mode=BUILD, duration=0:00:01.320, duration_ms=1320, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 19:54:20], mode=BUILD, duration=0:00:09.890, duration_ms=9890, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:00:33], mode=BUILD, duration=0:00:02.900, duration_ms=2900, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:00:41], mode=BUILD, duration=0:00:06.823, duration_ms=6823, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:01:27], mode=BUILD, duration=0:00:02.428, duration_ms=2428, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:01:41], mode=BUILD, duration=0:00:13.969, duration_ms=13969, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:04:13], mode=BUILD, duration=0:00:02.721, duration_ms=2721, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:04:28], mode=BUILD, duration=0:00:14.502, duration_ms=14502, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:05:14], mode=BUILD, duration=0:00:02.070, duration_ms=2070, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:05:28], mode=BUILD, duration=0:00:12.851, duration_ms=12851, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:08:22], mode=BUILD, duration=0:00:01.916, duration_ms=1916, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:08:37], mode=BUILD, duration=0:00:14.409, duration_ms=14409, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:21:11], mode=BUILD, duration=0:00:02.872, duration_ms=2872, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:21:23], mode=BUILD, duration=0:00:11.239, duration_ms=11239, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:24:47], mode=BUILD, duration=0:00:00.751, duration_ms=751, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:25:01], mode=BUILD, duration=0:00:12.450, duration_ms=12450, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:38:01], mode=BUILD, duration=0:00:00.770, duration_ms=770, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-02 20:38:13], mode=BUILD, duration=0:00:11.494, duration_ms=11494, data={name=lfsr_system, configuration=Debug, clean_build=false}

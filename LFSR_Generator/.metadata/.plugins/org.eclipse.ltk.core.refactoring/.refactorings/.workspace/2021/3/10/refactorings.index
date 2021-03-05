@@ -1,0 +1,4 @@
+1614741036414	Delete resource 'lfsr_hw/ps7_cortexa9_0/standalone_domain/bsp/ps7_cortexa9_0/libsrc/lfsr_7_v1_0'
+1614741052809	Delete resource 'lfsr_hw/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/lfsr_7_v1_0'
+1614741815851	Delete resource 'lfsr_hw'
+1614741822423	Delete resource 'lfsr_system'
