@@ -1,0 +1,26 @@
+#ifndef __HELLOWORLD_H_
+#define __HELLOWORLD_H_
+
+#include <sleep.h>
+
+#define LFSR_BASE_ADDR	XPAR_LFSR_7_0_S00_AXI_BASEADDR
+#define SET_LFSR_SEED_MASK	0x1
+#define UNSET_LFSR_SEED_MASK	0x0
+#define LFSR_ENABLE				0x2
+
+
+void init_lfsr(u32 seed){
+		//write seed
+	    Xil_Out32(LFSR_BASE_ADDR + 20, seed);
+
+	    // enable set seed
+	    Xil_Out32(LFSR_BASE_ADDR, (u32)SET_LFSR_SEED_MASK);
+
+	    usleep(10);
+
+	    // disable set seed
+	    Xil_Out32(LFSR_BASE_ADDR, (u32)UNSET_LFSR_SEED_MASK);
+
+	    // enable LFSR
+	    Xil_Out32(LFSR_BASE_ADDR, (u32)LFSR_ENABLE);
+}

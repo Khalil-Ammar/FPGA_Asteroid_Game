@@ -51,3 +51,14 @@ timestamp=[2021-03-02 20:24:47], mode=BUILD, duration=0:00:00.751, duration_ms=7
 timestamp=[2021-03-02 20:25:01], mode=BUILD, duration=0:00:12.450, duration_ms=12450, data={name=lfsr_system, configuration=Debug, clean_build=false}
 timestamp=[2021-03-02 20:38:01], mode=BUILD, duration=0:00:00.770, duration_ms=770, data={name=lfsr, configuration=Debug, clean_build=false}
 timestamp=[2021-03-02 20:38:13], mode=BUILD, duration=0:00:11.494, duration_ms=11494, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-07 17:11:47], mode=WORKBENCH_START, duration=0:00:26.343, duration_ms=26343, data={}
+timestamp=[2021-03-07 17:11:49], mode=WORKBENCH_UI_INIT, duration=0:00:02.006, duration_ms=2006, data={editors_count=10, platform_editors_count=9, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=LFSR_HW,RemoteSystemsTempFiles,lfsr,lfsr_system}
+timestamp=[2021-03-07 17:11:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.168, duration_ms=168, data={}
+timestamp=[2021-03-07 17:23:02], mode=PLATFORM_GENERATION, duration=0:00:31.778, duration_ms=31778, data={name=LFSR_HW}
+timestamp=[2021-03-07 17:23:07], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-07 17:23:13], mode=BUILD, duration=0:00:04.692, duration_ms=4692, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-07 17:23:46], mode=BUILD, duration=0:00:03.330, duration_ms=3330, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-07 17:23:57], mode=BUILD, duration=0:00:10.580, duration_ms=10580, data={name=lfsr_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-07 17:32:53], mode=BUILD, duration=0:00:00.364, duration_ms=364, data={name=lfsr, configuration=Debug, clean_build=true}
+timestamp=[2021-03-07 17:32:55], mode=BUILD, duration=0:00:01.509, duration_ms=1509, data={name=lfsr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-07 17:33:05], mode=BUILD, duration=0:00:09.517, duration_ms=9517, data={name=lfsr_system, configuration=Debug, clean_build=false}

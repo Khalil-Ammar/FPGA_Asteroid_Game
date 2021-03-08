@@ -605,3 +605,200 @@ con
 
 20:38:30 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\LFSR_Generator\lfsr_system\_ide\scripts\debugger_lfsr-default.tcl'
 20:39:38 INFO  : Disconnected from the channel tcfchan#22.
+17:11:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\khali\ENSC_452_git\ENSC_452\LFSR_Generator\temp_xsdb_launch_script.tcl
+17:11:38 INFO  : XSCT server has started successfully.
+17:11:38 INFO  : plnx-install-location is set to ''
+17:11:38 INFO  : Successfully done setting XSCT server connection channel  
+17:11:38 INFO  : Successfully done setting workspace for the tool. 
+17:11:53 INFO  : Registering command handlers for Vitis TCF services
+17:11:53 INFO  : Platform repository initialization has completed.
+17:11:54 INFO  : Successfully done query RDI_DATADIR 
+17:23:01 INFO  : Result from executing command 'getProjects': LFSR_HW
+17:23:01 INFO  : Result from executing command 'getPlatforms': LFSR_HW|C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/LFSR_HW.xpfm
+17:23:02 INFO  : Checking for BSP changes to sync application flags for project 'lfsr'...
+17:23:43 INFO  : Checking for BSP changes to sync application flags for project 'lfsr'...
+17:31:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:08 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+17:31:08 INFO  : 'jtag frequency' command is executed.
+17:31:08 INFO  : Context for 'APU' is selected.
+17:31:08 INFO  : System reset is completed.
+17:31:11 INFO  : 'after 3000' command is executed.
+17:31:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+17:31:14 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/bitstream/design_1_wrapper.bit"
+17:31:14 INFO  : Context for 'APU' is selected.
+17:31:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/hw/design_1_wrapper.xsa'.
+17:31:14 INFO  : 'configparams force-mem-access 1' command is executed.
+17:31:14 INFO  : Context for 'APU' is selected.
+17:31:14 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/psinit/ps7_init.tcl' is done.
+17:31:14 INFO  : 'ps7_init' command is executed.
+17:31:14 INFO  : 'ps7_post_config' command is executed.
+17:31:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:14 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/Debug/lfsr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:31:15 INFO  : 'configparams force-mem-access 0' command is executed.
+17:31:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/Debug/lfsr.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:31:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:15 INFO  : 'con' command is executed.
+17:31:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:31:15 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\LFSR_Generator\lfsr_system\_ide\scripts\systemdebugger_lfsr_system_standalone.tcl'
+17:31:42 INFO  : Disconnected from the channel tcfchan#4.
+17:31:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:44 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+17:31:44 INFO  : 'jtag frequency' command is executed.
+17:31:44 INFO  : Context for 'APU' is selected.
+17:31:44 INFO  : System reset is completed.
+17:31:47 INFO  : 'after 3000' command is executed.
+17:31:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+17:31:50 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/bitstream/design_1_wrapper.bit"
+17:31:50 INFO  : Context for 'APU' is selected.
+17:31:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/hw/design_1_wrapper.xsa'.
+17:31:50 INFO  : 'configparams force-mem-access 1' command is executed.
+17:31:50 INFO  : Context for 'APU' is selected.
+17:31:50 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/psinit/ps7_init.tcl' is done.
+17:31:50 INFO  : 'ps7_init' command is executed.
+17:31:50 INFO  : 'ps7_post_config' command is executed.
+17:31:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:51 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/Debug/lfsr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:31:51 INFO  : 'configparams force-mem-access 0' command is executed.
+17:31:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/Debug/lfsr.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:31:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:51 INFO  : 'con' command is executed.
+17:31:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:31:51 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\LFSR_Generator\lfsr_system\_ide\scripts\systemdebugger_lfsr_system_standalone.tcl'
+17:32:00 INFO  : Disconnected from the channel tcfchan#5.
+17:32:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:00 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+17:32:00 INFO  : 'jtag frequency' command is executed.
+17:32:00 INFO  : Context for 'APU' is selected.
+17:32:01 INFO  : System reset is completed.
+17:32:04 INFO  : 'after 3000' command is executed.
+17:32:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+17:32:06 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/bitstream/design_1_wrapper.bit"
+17:32:06 INFO  : Context for 'APU' is selected.
+17:32:06 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/hw/design_1_wrapper.xsa'.
+17:32:06 INFO  : 'configparams force-mem-access 1' command is executed.
+17:32:06 INFO  : Context for 'APU' is selected.
+17:32:06 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/psinit/ps7_init.tcl' is done.
+17:32:07 INFO  : 'ps7_init' command is executed.
+17:32:07 INFO  : 'ps7_post_config' command is executed.
+17:32:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:32:07 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/Debug/lfsr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:32:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:32:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/Debug/lfsr.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:32:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:32:07 INFO  : 'con' command is executed.
+17:32:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:32:07 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\LFSR_Generator\lfsr_system\_ide\scripts\systemdebugger_lfsr_system_standalone.tcl'
+17:32:11 INFO  : Disconnected from the channel tcfchan#6.
+17:32:53 INFO  : Checking for BSP changes to sync application flags for project 'lfsr'...
+17:33:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:29 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+17:33:29 INFO  : 'jtag frequency' command is executed.
+17:33:29 INFO  : Context for 'APU' is selected.
+17:33:29 INFO  : System reset is completed.
+17:33:32 INFO  : 'after 3000' command is executed.
+17:33:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+17:33:34 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/bitstream/design_1_wrapper.bit"
+17:33:34 INFO  : Context for 'APU' is selected.
+17:33:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/hw/design_1_wrapper.xsa'.
+17:33:34 INFO  : 'configparams force-mem-access 1' command is executed.
+17:33:34 INFO  : Context for 'APU' is selected.
+17:33:34 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/psinit/ps7_init.tcl' is done.
+17:33:35 INFO  : 'ps7_init' command is executed.
+17:33:35 INFO  : 'ps7_post_config' command is executed.
+17:33:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:35 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/Debug/lfsr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:33:35 INFO  : 'configparams force-mem-access 0' command is executed.
+17:33:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/LFSR_HW/export/LFSR_HW/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/LFSR_Generator/lfsr/Debug/lfsr.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:33:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:35 INFO  : 'con' command is executed.
+17:33:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:33:35 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\LFSR_Generator\lfsr_system\_ide\scripts\systemdebugger_lfsr_system_standalone.tcl'
+17:33:47 INFO  : Disconnected from the channel tcfchan#8.

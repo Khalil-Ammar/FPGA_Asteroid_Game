@@ -18,3 +18,4 @@ platform active {LFSR_HW}
 platform generate
 platform active {LFSR_HW}
 platform generate -domains 
+platform generate -domains standalone_domain,zynq_fsbl 
