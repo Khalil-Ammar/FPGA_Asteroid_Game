@@ -321,10 +321,14 @@ void BTN_Intr_Handler(void *InstancePtr)
 			BTN_INT) {
 			return;
 		}
-	// read button value
-	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
 
-	//make sure only one move per click is registered
+	//debounce
+	int new_btn_value;
+	do{
+	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
+	usleep(50);
+	new_btn_value = XGpio_DiscreteRead(&BTNInst, 1);
+	}while(new_btn_value != btn_value);
 	if(hasMoved == 0){
 		if(btn_value == 16) {
 			hasMoved = 1;

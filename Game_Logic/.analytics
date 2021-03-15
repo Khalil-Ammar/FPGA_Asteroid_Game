@@ -240,3 +240,8 @@ timestamp=[2021-03-14 23:15:33], mode=BUILD, duration=0:00:02.865, duration_ms=2
 timestamp=[2021-03-14 23:15:46], mode=BUILD, duration=0:00:12.223, duration_ms=12223, data={name=APP_system, configuration=Debug, clean_build=false}
 timestamp=[2021-03-14 23:17:58], mode=BUILD, duration=0:00:02.735, duration_ms=2735, data={name=APP, configuration=Debug, clean_build=false}
 timestamp=[2021-03-14 23:18:10], mode=BUILD, duration=0:00:12.021, duration_ms=12021, data={name=APP_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-14 23:25:30], mode=WORKBENCH_START, duration=0:00:23.926, duration_ms=23926, data={}
+timestamp=[2021-03-14 23:25:32], mode=WORKBENCH_UI_INIT, duration=0:00:02.069, duration_ms=2069, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APP,APP_system,PPP,RemoteSystemsTempFiles}
+timestamp=[2021-03-14 23:25:36], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.146, duration_ms=146, data={}
+timestamp=[2021-03-14 23:26:56], mode=BUILD, duration=0:00:02.370, duration_ms=2370, data={name=APP, configuration=Debug, clean_build=false}
+timestamp=[2021-03-14 23:27:12], mode=BUILD, duration=0:00:15.707, duration_ms=15707, data={name=APP_system, configuration=Debug, clean_build=false}

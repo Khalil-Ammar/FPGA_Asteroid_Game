@@ -3650,3 +3650,14 @@ con
 
 23:18:55 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\Game_Logic\APP_system\_ide\scripts\debugger_app-default.tcl'
 23:19:44 INFO  : Disconnected from the channel tcfchan#45.
+23:25:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\khali\ENSC_452_git\ENSC_452\Game_Logic\temp_xsdb_launch_script.tcl
+23:25:25 INFO  : XSCT server has started successfully.
+23:25:25 INFO  : plnx-install-location is set to ''
+23:25:25 INFO  : Successfully done setting XSCT server connection channel  
+23:25:25 INFO  : Successfully done setting workspace for the tool. 
+23:25:36 INFO  : Platform repository initialization has completed.
+23:25:36 INFO  : Registering command handlers for Vitis TCF services
+23:25:38 INFO  : Successfully done query RDI_DATADIR 
+23:26:49 INFO  : Checking for BSP changes to sync application flags for project 'APP'...
+23:27:04 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/export/PPP/hw/AST_2.0.xsa is already opened
+
