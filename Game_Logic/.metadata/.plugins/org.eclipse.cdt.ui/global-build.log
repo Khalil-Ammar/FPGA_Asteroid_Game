@@ -1,0 +1,31 @@
+Nothing to build in platform 'PPP'
+
+23:17:55 **** Incremental Build of configuration Debug for project APP ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\Users\AKS\Documents\ENSC452\FreshStart\VIT\PPP\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/export/PPP/sw/PPP/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: APP.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/export/PPP/sw/PPP/standalone_domain/bsplib/lib -o "APP.elf"  ./src/gpu.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: APP.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size APP.elf  |tee "APP.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36504	   1952	  22808	  61264	   ef50	APP.elf
+'Finished building: APP.elf.size'
+' '
+23:17:58 **** Incremental Build of configuration Debug for project APP_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 62990 C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/export/PPP/PPP.xpfm standalone_domain C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/APP_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/export/PPP/PPP.xpfm --sys_config PPP --bif C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/APP_system/Debug/system.bif --bitstream C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/APP/_ide/bitstream/AST_2.0.bit --elf C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/APP/Debug/APP.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/APP/_ide/bitstream/AST_2.0.bit
+Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/APP_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

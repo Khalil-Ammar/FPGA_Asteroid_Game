@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;APP/src/Drawing.h&apos; to &apos;gpu.h&apos;" description="Rename resource &apos;Drawing.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Drawing.h" name="gpu.h" stamp="1615784876566" updateReferences="true"/>
+</session>
