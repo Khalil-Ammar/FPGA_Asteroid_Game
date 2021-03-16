@@ -27,6 +27,7 @@ XScuGic INTCInst;
 int btn_value;
 struct SpaceShip shipInstance;
 struct EnemySaucer enemySaucerInstance;
+int score = 0;
 int fire = 0;
 int frame = 1;
 int asteroidCount = 0;
@@ -82,7 +83,7 @@ int main (void)
 		hasMoved = 0;
 	}
 
-	// Enemy saucer shoots every 3 second
+	// Enemy saucer shoots every "ENEMY_SHOOTING_DELAY" seconds up to a maximum of "MAX_ENEMY_BULLET_COUNT" bullets
 	if(((frame % 24*ENEMY_SHOOTING_DELAY) == 0) && (enemyBulletCount < MAX_ENEMY_BULLET_COUNT)){
 		struct Bullet enemyBullet;
 		enemyBullet.x = enemySaucerInstance.x + 18;
@@ -93,6 +94,7 @@ int main (void)
 		float delta_y = (enemyBullet.y - (shipInstance.y + 18));
 		float delta_x = (enemyBullet.x - (shipInstance.x + 18));
 		float slope = delta_y / delta_x;
+
 		//set dx and dy for bullet based on spaceship's current position
 		if(shipInstance.x > enemyBullet.x){
 			enemyBullet.dx = 5;
@@ -164,7 +166,7 @@ int main (void)
 				enemyBulletArray[i].y = ceil(enemyBulletArray[i].y + enemyBulletArray[i].dy);
 				UpdateEnemyBullet(oldBulletInstance, enemyBulletArray[i]);
 
-				// check for out-of-bounds condition
+				// destroy bullet if out-of-bounds
 				if(enemyBulletArray[i].x >= 640 || enemyBulletArray[i].x <= 0 || enemyBulletArray[i].y >= 480 || enemyBulletArray[i].y <= 0) {
 					enemyBulletArray[i].isValid = 0;
 					enemyBulletCount--;
@@ -187,7 +189,7 @@ int main (void)
 			bulletArray[i].y = bulletArray[i].y-5;
 			UpdateBullet(oldBulletInstance, bulletArray[i]);
 
-			// check for out-of-bounds condition
+			// destroy bullet if out-of-bounds
 			if(bulletArray[i].x >= 640 || bulletArray[i].x <= 0 || bulletArray[i].y >= 480 || bulletArray[i].y <= 0) {
 				bulletArray[i].isValid = 0;
 				bulletCount--;
@@ -236,7 +238,7 @@ int main (void)
 			}
 
 			// Test asteroid/ship collision
-			else if(testOverlap(shipInstance.x, shipInstance.x+15, astx, astx+15) && testOverlap(shipInstance.y, shipInstance.y+15, asty, asty+15))
+			else if(testOverlap(shipInstance.x, shipInstance.x+36, astx, astx+36) && testOverlap(shipInstance.y, shipInstance.y+36, asty, asty+36))
 		    {
 			  //reset ship and decrease lives
 			  ResetShip();
@@ -252,13 +254,14 @@ int main (void)
 				for(int j = 0; j < MAX_BULLET_COUNT; j++){
 					firex = bulletArray[j].x;
 					firey = bulletArray[j].y;
-					if(testOverlap(firex, firex+1, astx+1, astx+36) && testOverlap(firey, firey+1, asty, asty+36)){
+					if(testOverlap(firex, firex+1, astx, astx+36) && testOverlap(firey, firey+1, asty, asty+36)){
 						asteroidCount--;
 						bulletCount--;
 						bulletArray[j].isValid = 0;
 						asteroidArray[i].isValid = 0;
 						DestroyAsteroid(asteroidArray[i]);
 						DestroyBullet(bulletArray[j]);
+						score += SCORE_PER_ASTEROID;
 						if(asteroidCount == 0){
 							GameOver(1); //Player won
 						}
@@ -479,9 +482,11 @@ void ResetShip(){
 void GameOver(bool hasWon){
 	if(hasWon){
 		xil_printf("Game Over, You Win!");
+		xil_printf("Score: %i", score);
 	}
 	else{
 		xil_printf("Game Over, You Lost!");
+		xil_printf("Score: %i", score);
 	}
 	RenderGameOverScreen();
 }

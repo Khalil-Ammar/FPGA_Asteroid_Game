@@ -38,6 +38,8 @@
 #define MAX_ENEMY_BULLET_COUNT 1
 #define INIT_ASTRD_NBR	1
 #define	INIT_LIVES 3
+#define SCORE_PER_ASTEROID 1000
+
 
 //
 //----------------------------------------------------
@@ -78,6 +80,7 @@ extern XScuGic INTCInst;
 extern int btn_value;
 extern struct SpaceShip shipInstance;
 extern struct EnemySaucer enemySaucerInstance;
+extern int score;
 extern int fire;
 extern int frame;
 extern int asteroidCount;
