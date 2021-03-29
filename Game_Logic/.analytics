@@ -254,3 +254,20 @@ timestamp=[2021-03-15 12:31:38], mode=BUILD, duration=0:00:01.763, duration_ms=1
 timestamp=[2021-03-15 12:31:48], mode=BUILD, duration=0:00:09.856, duration_ms=9856, data={name=APP_system, configuration=Debug, clean_build=false}
 timestamp=[2021-03-15 12:33:51], mode=BUILD, duration=0:00:00.518, duration_ms=518, data={name=APP, configuration=Debug, clean_build=false}
 timestamp=[2021-03-15 12:34:00], mode=BUILD, duration=0:00:09.456, duration_ms=9456, data={name=APP_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-28 23:02:56], mode=WORKBENCH_START, duration=0:00:35.403, duration_ms=35403, data={}
+timestamp=[2021-03-28 23:02:59], mode=WORKBENCH_UI_INIT, duration=0:00:02.759, duration_ms=2759, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APP,APP_system,PPP,RemoteSystemsTempFiles}
+timestamp=[2021-03-28 23:03:05], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.406, duration_ms=406, data={}
+timestamp=[2021-03-28 23:06:53], mode=PLATFORM_GENERATION, duration=0:01:26.792, duration_ms=86792, data={name=PPP}
+timestamp=[2021-03-28 23:09:45], mode=PLATFORM_GENERATION, duration=0:00:56.152, duration_ms=56152, data={name=pp_}
+timestamp=[2021-03-28 23:09:47], mode=BUILD, duration=0:00:01.518, duration_ms=1518, data={name=APP, configuration=Debug, clean_build=true}
+timestamp=[2021-03-28 23:09:49], mode=BUILD, duration=0:00:01.224, duration_ms=1224, data={name=APP, configuration=Debug, clean_build=false}
+timestamp=[2021-03-28 23:09:57], mode=BUILD, duration=0:00:06.817, duration_ms=6817, data={name=APP_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-28 23:11:22], mode=PLATFORM_GENERATION, duration=0:00:14.865, duration_ms=14865, data={name=pp_}
+timestamp=[2021-03-28 23:12:17], mode=PLATFORM_GENERATION, duration=0:00:51.219, duration_ms=51219, data={name=pp_}
+timestamp=[2021-03-28 23:14:08], mode=BUILD, duration=0:00:01.048, duration_ms=1048, data={name=APP, configuration=Debug, clean_build=false}
+timestamp=[2021-03-28 23:14:15], mode=BUILD, duration=0:00:05.449, duration_ms=5449, data={name=APP_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-28 23:14:33], mode=PLATFORM_GENERATION, duration=0:00:12.769, duration_ms=12769, data={name=pp_}
+timestamp=[2021-03-28 23:14:34], mode=BUILD, duration=0:00:00.421, duration_ms=421, data={name=APP, configuration=Debug, clean_build=true}
+timestamp=[2021-03-28 23:15:27], mode=PLATFORM_GENERATION, duration=0:00:45.634, duration_ms=45634, data={name=pp_}
+timestamp=[2021-03-28 23:15:28], mode=BUILD, duration=0:00:01.034, duration_ms=1034, data={name=APP, configuration=Debug, clean_build=false}
+timestamp=[2021-03-28 23:15:36], mode=BUILD, duration=0:00:05.853, duration_ms=5853, data={name=APP_system, configuration=Debug, clean_build=false}

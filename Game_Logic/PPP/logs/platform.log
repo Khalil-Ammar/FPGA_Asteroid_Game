@@ -43618,3 +43618,738 @@ TRACE::2021-03-14.22:02:39::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_45
 C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2021-03-14.22:02:39::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:16::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:16::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:16::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:22::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:22::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:22::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:22::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-28.23:04:26::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2021-03-28.23:04:26::SCWReader::Active system found as  PPP
+TRACE::2021-03-28.23:04:26::SCWReader::Handling sysconfig PPP
+TRACE::2021-03-28.23:04:26::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-28.23:04:27::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-03-28.23:04:27::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-28.23:04:27::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-28.23:04:27::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-28.23:04:27::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:27::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:27::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-03-28.23:04:27::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-28.23:04:27::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-28.23:04:27::SCWMssOS::Commit changes completed.
+TRACE::2021-03-28.23:04:27::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-28.23:04:27::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:27::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWReader::No isolation master present  
+TRACE::2021-03-28.23:04:27::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-28.23:04:27::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-03-28.23:04:27::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:27::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-28.23:04:27::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-28.23:04:27::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-28.23:04:27::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-28.23:04:27::SCWMssOS::Commit changes completed.
+TRACE::2021-03-28.23:04:27::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-28.23:04:27::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-28.23:04:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:27::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:27::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWReader::No isolation master present  
+TRACE::2021-03-28.23:04:27::SCWPlatform::Clearing the existing platform
+TRACE::2021-03-28.23:04:27::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-03-28.23:04:27::SCWBDomain::clearing the fsbl build
+TRACE::2021-03-28.23:04:27::SCWMssOS::Removing the swdes entry for  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWMssOS::Removing the swdes entry for  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:27::SCWSystem::Clearing the domains completed.
+TRACE::2021-03-28.23:04:27::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform location is C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Removing the HwDB with name C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:27::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:27::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWReader::Active system found as  PPP
+TRACE::2021-03-28.23:04:32::SCWReader::Handling sysconfig PPP
+TRACE::2021-03-28.23:04:32::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-28.23:04:32::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-03-28.23:04:32::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-28.23:04:32::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-28.23:04:32::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-28.23:04:32::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:32::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:32::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-03-28.23:04:32::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-28.23:04:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-28.23:04:32::SCWMssOS::Commit changes completed.
+TRACE::2021-03-28.23:04:32::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-28.23:04:32::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:32::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWReader::No isolation master present  
+TRACE::2021-03-28.23:04:32::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-28.23:04:32::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-03-28.23:04:32::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:32::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-28.23:04:32::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-28.23:04:32::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-28.23:04:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-28.23:04:32::SCWMssOS::Commit changes completed.
+TRACE::2021-03-28.23:04:32::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-28.23:04:32::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:04:32::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:04:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:04:32::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:04:32::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:04:32::SCWReader::No isolation master present  
+TRACE::2021-03-28.23:04:57::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:04:57::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:04:57::SCWPlatform:: Platform location is C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa
+TRACE::2021-03-28.23:04:57::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:04:57::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:03::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:03::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:05:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:05:03::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:03::SCWPlatform::update - Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-28.23:05:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:03::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST_2.0.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-28.23:05:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:03::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:05:03::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:03::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/tempdsa/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:03::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:03::SCWPlatform::update - Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-28.23:05:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:03::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:05:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-28.23:05:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-28.23:05:03::SCWMssOS::Commit changes completed.
+TRACE::2021-03-28.23:05:03::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2021-03-28.23:05:03::SCWMssOS::Removing the swdes entry for  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:05:03::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-03-28.23:05:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-03-28.23:05:03::SCWMssOS::Commit changes completed.
+TRACE::2021-03-28.23:05:03::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2021-03-28.23:05:03::SCWMssOS::Removing the swdes entry for  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:04::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:04::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:04::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:04::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:05:04::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:04::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:04::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-28.23:05:09::SCWPlatform::Opened new HwDB with name design_1_wrapper_2
+TRACE::2021-03-28.23:05:09::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:05:09::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-28.23:05:09::SCWMssOS::Writing the mss file completed C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:05:09::SCWMssOS::Commit changes completed.
+TRACE::2021-03-28.23:05:09::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:09::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-28.23:05:09::SCWMssOS::Writing the mss file completed C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:09::SCWMssOS::Commit changes completed.
+TRACE::2021-03-28.23:05:09::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:09::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:09::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:09::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:05:09::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:09::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:09::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2021-03-28.23:05:09::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2021-03-28.23:05:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:09::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:05:09::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:05:09::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:05:09::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:09::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:09::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:09::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:05:09::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:09::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:09::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2021-03-28.23:05:09::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2021-03-28.23:05:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:09::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:09::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:05:09::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:09::SCWWriter::formatted JSON is {
+	"platformName":	"PPP",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"PPP",
+	"platHandOff":	"C:/Users/khali/ENSC_452_git/ENSC_452/AST2.0_LivesNScore.xsa",
+	"platIntHandOff":	"<platformDir>/hw/AST2.0_LivesNScore.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"PPP",
+	"systems":	[{
+			"systemName":	"PPP",
+			"systemDesc":	"PPP",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"PPP",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"b0e693e0fcfadd99af212d46513ed363",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/PF/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"D:/PF/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"5ad0046cc0d05077a8b3259c37dc61fe",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-03-28.23:05:31::SCWPlatform::Started generating the artifacts platform PPP
+TRACE::2021-03-28.23:05:31::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-03-28.23:05:31::SCWPlatform::Started generating the artifacts for system configuration PPP
+LOG::2021-03-28.23:05:31::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-03-28.23:05:31::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-03-28.23:05:31::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-03-28.23:05:31::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2021-03-28.23:05:31::SCWSystem::Checking the domain standalone_domain
+LOG::2021-03-28.23:05:31::SCWSystem::Not a boot domain 
+LOG::2021-03-28.23:05:31::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-03-28.23:05:31::SCWDomain::Generating domain artifcats
+TRACE::2021-03-28.23:05:31::SCWMssOS::Generating standalone artifcats
+TRACE::2021-03-28.23:05:31::SCWMssOS::Copying the qemu file from  D:/PF/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/export/PPP/sw/PPP/qemu/
+TRACE::2021-03-28.23:05:31::SCWMssOS::Copying the qemu file from  D:/PF/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/export/PPP/sw/PPP/standalone_domain/qemu/
+TRACE::2021-03-28.23:05:31::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-03-28.23:05:31::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:31::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:31::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:31::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw
+TRACE::2021-03-28.23:05:31::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:05:31::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-03-28.23:05:31::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2021-03-28.23:05:31::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2021-03-28.23:05:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-28.23:05:31::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:31::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-28.23:05:31::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:31::SCWMssOS::Completed writing the mss file at C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-03-28.23:05:31::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:05:31::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2021-03-28.23:05:34::SCWMssOS::doing bsp build ... 
+TRACE::2021-03-28.23:05:34::SCWMssOS::System Command Ran  C: & cd  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2021-03-28.23:05:34::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2021-03-28.23:05:35::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2021-03-28.23:05:35::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2021-03-28.23:05:35::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2021-03-28.23:05:35::SCWMssOS::d -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-28.23:05:35::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-28.23:05:35::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-28.23:05:35::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-28.23:05:35::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_7/src"
+
+TRACE::2021-03-28.23:05:35::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-28.23:05:35::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-28.23:05:35::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_12/src"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-03-28.23:05:36::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-03-28.23:05:36::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_8/src"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-28.23:05:36::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-28.23:05:36::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_7/src"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-03-28.23:05:36::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-03-28.23:05:36::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/GPU_controller_v1_0/src"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/GPU_controller_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2021-03-28.23:05:36::SCWMssOS::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2021-03-28.23:05:36::SCWMssOS::rd -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/lfsr_7_v1_0/src"
+
+TRACE::2021-03-28.23:05:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/lfsr_7_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-28.23:05:36::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-28.23:05:36::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_8/src"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-28.23:05:37::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-28.23:05:37::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_3/src"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-28.23:05:37::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-28.23:05:37::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2021-03-28.23:05:37::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2021-03-28.23:05:37::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_3/src"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-28.23:05:37::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-28.23:05:37::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_10/src"
+
+TRACE::2021-03-28.23:05:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-28.23:05:37::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-28.23:05:37::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:38::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_3/src"
+
+TRACE::2021-03-28.23:05:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-03-28.23:05:38::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-03-28.23:05:38::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_12/src"
+
+TRACE::2021-03-28.23:05:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ttcps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-28.23:05:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-28.23:05:40::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_10/src"
+
+TRACE::2021-03-28.23:05:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-03-28.23:05:40::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-03-28.23:05:40::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_6/src"
+
+TRACE::2021-03-28.23:05:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-28.23:05:40::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-28.23:05:40::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:41::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_5/src"
+
+TRACE::2021-03-28.23:05:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-28.23:05:41::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-28.23:05:41::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/GPU_controller_v1_0/src"
+
+TRACE::2021-03-28.23:05:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/GPU_controller_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2021-03-28.23:05:41::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2021-03-28.23:05:41::SCWMssOS::-nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-28.23:05:41::SCWMssOS::"Compiling GPU_controller..."
+
+ERROR::2021-03-28.23:05:45::SCWMssOS::Failed to build  the bsp sources for domain - standalone_domain
+ERROR::2021-03-28.23:05:45::SCWSystem::Error in Processing the domain standalone_domain
+TRACE::2021-03-28.23:08:33::SCWPlatform::Clearing the existing platform
+TRACE::2021-03-28.23:08:33::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-03-28.23:08:33::SCWBDomain::clearing the fsbl build
+TRACE::2021-03-28.23:08:33::SCWMssOS::Removing the swdes entry for  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-28.23:08:33::SCWMssOS::Removing the swdes entry for  C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-28.23:08:33::SCWSystem::Clearing the domains completed.
+TRACE::2021-03-28.23:08:33::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-03-28.23:08:33::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:08:33::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw/AST2.0_LivesNScore.xsa
+TRACE::2021-03-28.23:08:33::SCWPlatform:: Platform location is C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/PPP/hw

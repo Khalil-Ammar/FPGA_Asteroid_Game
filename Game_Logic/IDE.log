@@ -3934,3 +3934,30 @@ con
 
 12:50:53 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\Game_Logic\APP_system\_ide\scripts\debugger_app-default.tcl'
 19:40:38 INFO  : Disconnected from the channel tcfchan#7.
+23:02:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\khali\ENSC_452_git\ENSC_452\Game_Logic\temp_xsdb_launch_script.tcl
+23:02:45 INFO  : XSCT server has started successfully.
+23:02:45 INFO  : plnx-install-location is set to ''
+23:02:45 INFO  : Successfully done setting XSCT server connection channel  
+23:02:45 INFO  : Successfully done setting workspace for the tool. 
+23:03:04 INFO  : Registering command handlers for Vitis TCF services
+23:03:05 INFO  : Platform repository initialization has completed.
+23:03:07 INFO  : Successfully done query RDI_DATADIR 
+23:05:10 INFO  : Hardware specification for platform project 'PPP' is updated.
+23:07:39 INFO  : Platform 'pp_' is added to custom repositories.
+23:08:06 INFO  : The hardware specfication used by project 'APP' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+23:08:11 INFO  : The file 'C:\Users\khali\ENSC_452_git\ENSC_452\Game_Logic\APP\_ide\bitstream\AST_2.0.bit' stored in project is removed.
+23:08:11 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\khali\ENSC_452_git\ENSC_452\Game_Logic\APP\_ide\bitstream' in project 'APP'.
+23:08:11 INFO  : The file 'C:\Users\khali\ENSC_452_git\ENSC_452\Game_Logic\APP\_ide\psinit\ps7_init.tcl' stored in project is removed.
+23:08:24 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\khali\ENSC_452_git\ENSC_452\Game_Logic\APP\_ide\psinit' in project 'APP'.
+23:08:45 ERROR : An unexpected exception occurred in the module 'reading platform'
+23:09:44 INFO  : Result from executing command 'getProjects': pp_
+23:09:44 INFO  : Result from executing command 'getPlatforms': pp_|C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/pp_/export/pp_/pp_.xpfm
+23:09:47 INFO  : Checking for BSP changes to sync application flags for project 'APP'...
+23:09:47 INFO  : Updating application flags with new BSP settings...
+23:09:48 INFO  : Successfully updated application flags for project APP.
+23:12:16 INFO  : Result from executing command 'getProjects': pp_
+23:12:16 INFO  : Result from executing command 'getPlatforms': pp_|C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/pp_/export/pp_/pp_.xpfm
+23:14:07 INFO  : Checking for BSP changes to sync application flags for project 'APP'...
+23:15:27 INFO  : Result from executing command 'getProjects': pp_
+23:15:27 INFO  : Result from executing command 'getPlatforms': pp_|C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic/pp_/export/pp_/pp_.xpfm
+23:15:27 INFO  : Checking for BSP changes to sync application flags for project 'APP'...

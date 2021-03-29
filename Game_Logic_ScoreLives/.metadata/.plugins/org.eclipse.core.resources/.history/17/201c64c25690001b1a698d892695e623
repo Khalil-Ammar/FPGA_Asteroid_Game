@@ -1,0 +1,342 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+#include "xil_printf.h"
+#include <stdio.h>
+#include "xil_types.h"
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "platform.h"
+#include "GPU_controller.h"
+#include <math.h>
+#include "stdbool.h"
+#include "lfsr.h"
+#include <sleep.h>
+#include "xuartps.h"
+
+#define NUM_OF_BYTE 1
+// Parameter definitions
+#define GPU_CONTROLLER_S00_AXI_SLV_REG0_OFFSET 0
+#define GPU_CONTROLLER_S00_AXI_SLV_REG1_OFFSET 4
+#define GPU_CONTROLLER_S00_AXI_SLV_REG2_OFFSET 8
+#define GPU_CONTROLLER_S00_AXI_SLV_REG3_OFFSET 12
+#define GPU_CONTROLLER_S00_AXI_SLV_REG4_OFFSET 16
+#define GPU_CONTROLLER_S00_AXI_SLV_REG5_OFFSET 20
+#define GPU_CONTROLLER_S00_AXI_SLV_REG6_OFFSET 24
+#define GPU_CONTROLLER_S00_AXI_SLV_REG7_OFFSET 28
+#define GPU_CONTROLLER_S00_AXI_SLV_REG8_OFFSET 32
+#define GPU_CONTROLLER_S00_AXI_SLV_REG9_OFFSET 36
+#define GPU_CONTROLLER_S00_AXI_SLV_REG10_OFFSET 40
+#define GPU_CONTROLLER_S00_AXI_SLV_REG11_OFFSET 44
+#define GPU_CONTROLLER_S00_AXI_SLV_REG12_OFFSET 48
+#define GPU_CONTROLLER_S00_AXI_SLV_REG13_OFFSET 52
+#define GPU_CONTROLLER_S00_AXI_SLV_REG14_OFFSET 56
+
+#define INTC_DEVICE_ID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
+#define BTNS_DEVICE_ID		XPAR_AXI_GPIO_0_DEVICE_ID
+#define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 480
+#define BTN_INT 			XGPIO_IR_CH1_MASK
+#define bottom 492160
+#define LFSR_SEED				0x5
+
+XGpio BTNInst;
+XScuGic INTCInst;
+static int btn_value;
+int x = SCREEN_WIDTH>>1;
+int y = SCREEN_HEIGHT>>1;
+int firex = 640;
+int firey = 480;
+int fire = 0;
+double astdx = 0;
+double astdy = 0;
+double astx = 1;
+double asty = 1;
+int time = 0;
+int asteroid = 0;
+int slow = 10;
+int difficulty = 20;
+//----------------------------------------------------
+// PROTOTYPE FUNCTIONS
+//----------------------------------------------------
+static void BTN_Intr_Handler(void *baseaddr_p);
+static int InterruptSystemSetup(XScuGic *XScuGicInstancePtr);
+static int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr);
+
+//----------------------------------------------------
+// INTERRUPT HANDLER FUNCTIONS
+// - called by the timer, button interrupt, performs
+// - LED flashing
+//----------------------------------------------------
+
+void BTN_Intr_Handler(void *InstancePtr)
+{
+
+	// Disable GPIO interrupts
+	XGpio_InterruptDisable(&BTNInst, BTN_INT);
+	// Ignore additional button presses
+	if ((XGpio_InterruptGetStatus(&BTNInst) & BTN_INT) !=
+			BTN_INT) {
+			return;
+		}
+	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
+	// Increment counter based on button value
+	// Reset if centre button pressed
+	if(btn_value == 16) {
+		y = y - 6;
+		if (y<0) y=y+480;
+	}
+
+	if(btn_value == 2){
+		y = y + 6;
+		if(y > 480) y = y-480;
+	}
+
+	if(btn_value == 8){
+		x = x + 6;
+		if(x> 640) x = x-640;
+	}
+
+	if(btn_value == 4){
+		x = x - 6;
+		if(x<0) x = x+640;
+	}
+
+	if(btn_value == 1) {
+			fire = 1;
+			firex = x+15;
+			firey = y+3;
+	}
+
+
+    (void)XGpio_InterruptClear(&BTNInst, BTN_INT);
+    // Enable GPIO interrupts
+    XGpio_InterruptEnable(&BTNInst, BTN_INT);
+}
+
+void sleepy()
+{
+   int i = 0;
+   while (i < 1e6)  { i++; }
+}
+
+bool testOverlap(int x1, int x2, int y1, int y2) {
+  return (x1 >= y1 && x1 <= y2) ||
+         (x2 >= y1 && x2 <= y2) ||
+         (y1 >= x1 && y1 <= x2) ||
+         (y2 >= x1 && y2 <= x2);
+}
+
+XUartPs_Config *Config_1;
+XUartPs Uart_PS_1;
+
+//----------------------------------------------------
+// MAIN FUNCTION
+//----------------------------------------------------
+int main (void)
+{
+
+	int status;
+  //----------------------------------------------------
+  // INITIALIZE THE PERIPHERALS & SET DIRECTIONS OF GPIO
+  //----------------------------------------------------
+  // Initialise LEDs
+  //status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+  //if(status != XST_SUCCESS) return XST_FAILURE;
+  // Initialise Push Buttons
+  status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
+  if(status != XST_SUCCESS) return XST_FAILURE;
+  // Set LEDs direction to outputs
+  //XGpio_SetDataDirection(&LEDInst, 1, 0x00);
+  // Set all buttons direction to inputs
+  XGpio_SetDataDirection(&BTNInst, 1, 0xFF);
+  lfsr_init(LFSR_SEED);
+  // Initialize interrupt controller
+  status = IntcInitFunction(INTC_DEVICE_ID, &BTNInst);
+  if(status != XST_SUCCESS) return XST_FAILURE;
+
+  /** *************************
+  	 * UART 1 initialization *
+  	 /*************************
+  	Config_1 = XUartPs_LookupConfig(XPAR_XUARTPS_1_DEVICE_ID);
+  	if (NULL == Config_1) {
+  		return XST_FAILURE;
+  	}
+  	Status = XUartPs_CfgInitialize(&Uart_PS_1, Config_1, Config_1->BaseAddress);
+  	if (Status != XST_SUCCESS) {
+  		return XST_FAILURE;
+  	}**/
+
+  int asteroid = 0;
+  int shipc = 0;
+  int firec= 0;
+  int astc = 0;
+  int i13 = 0;
+  int i14 = 0;
+  int r13 = 0;
+  int r14 = 0;
+
+  //GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG0_OFFSET, bottom);
+  //GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG1_OFFSET, bottom);
+ // GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG2_OFFSET, bottom);
+
+  while(1){
+	  /**
+	  int r0 = (y << 10) + x ; // Spaceship Y 19 to 10 || Spaceship X 9 to 0
+	  int r1 = (20 << 10) + 20 ;// Ast 1 -  Y 19 to 10 || Ast 1 - X 9 to 0
+	  int r2 = (20 << 10) + 50 ;  // Ast 2 -  Y 19 to 10 || Ast 2 - X 9 to 0
+	  int r3 = (20 << 10) + 80 ;  // Ast 3 -  Y 19 to 10 || Ast 3 - X 9 to 0
+	  int r4 = (20 << 10) + 110 ;  // Ast 4 -  Y 19 to 10 || Ast 4 - X 9 to 0
+	  int r5 = (20 << 10) + 140 ;  // Ast 5 -  Y 19 to 10 || Ast 5 - X 9 to 0
+	  int r6 = (190 << 20) + (20 << 10) + 170 ; // Laser 1 - Y 19 to 10|| Laser 1 - X 9 to 0
+	  int r7 =  (20 << 10) + 180 ; // Laser 2 - Y 19 to 10|| Laser 2 - X 9 to 0
+	  int r8 = (20 << 10) + 190; // Laser 3 - Y 19 to 10|| Laser 2 - X 9 to 0
+	  int r9 = (20 << 10) +  200; // Enemy Saucer Y 19 to 10 || Spaceship X 9 to 0
+	  int r10 = (20 << 10) + 240; // Enemy Bullet 1 - Y 19 to 10 || Spaceship X 9 to 0
+	  int r11 = (20 << 10) + 250;// Enemy Bullet 2 - Y 19 to 10 || Spaceship X 9 to 0
+	  int r12 = (20 << 10) + 260;// Enemy Bullet 3 - Y 19 to 10 || Spaceship X 9 to 0
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG0_OFFSET, r0);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG1_OFFSET, r1);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG2_OFFSET, r2);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG3_OFFSET, r3);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG4_OFFSET, r4);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG5_OFFSET, r5);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG6_OFFSET, r6);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG7_OFFSET, r7);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG8_OFFSET, r8);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG9_OFFSET, r9);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG10_OFFSET, r10);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG11_OFFSET, r11);
+	  GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG12_OFFSET, r12);
+
+**/
+	 /** u8 BufferPtr_rx[10]={0,0x0a,0x0d,0,0,0,0,0,0,0};
+
+	  Status = 0;
+	  		while (Status < NUM_OF_BYTE) {
+	  			Status +=	XUartPs_Recv(&Uart_PS_0, BufferPtr_rx, (NUM_OF_BYTE - Status));
+	  		}
+**/
+
+	  if(fire == 1){
+	  		firey = firey-5;
+	  		if(firex >= 640 || firex <= 0 || firey >= 480 || firey <= 0) {
+	  			fire=0;
+	  			GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG6_OFFSET, bottom);
+	  		}
+	  	}
+
+	  if(asteroid == 0){
+		  astdx = (lfsr_read() % 100);
+		  astdy = (lfsr_read() % 100);
+		  astx = astdx;
+		  asty = astdy;
+		  time = 1;
+		  asteroid = 1;
+	  }
+
+	  if(asteroid == 1){
+		 astx = (astdx/difficulty * time);
+		 asty = (astdy/difficulty * time);
+	  if(astx >= 640 || astx <= 0 || asty >= 480 || asty <= 0) asteroid=0;
+	  else time++;
+      }
+
+	  if(testOverlap(x, x+31, astx, astx+15) && testOverlap(y, y+31, asty, asty+15))
+	  {
+		  asteroid=0;
+		  x = SCREEN_WIDTH>>1;
+		  y = SCREEN_HEIGHT>>1;
+	  }
+
+	  if(testOverlap(firex, firex+1, astx+1, astx+31) && testOverlap(firey, firey+1, asty, asty+31))
+	  	  {
+	  		  asteroid = 0;
+	  		  fire = 0;
+	  		  firex = 640;
+	  		  firey = 480;
+	  	  }
+
+	shipc =  (y<<10) + (x);
+	astc = ((int)(asty)<<10) + (int) astx;
+	firec = (firey<<10) + firex;
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG0_OFFSET, shipc);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG1_OFFSET, astc);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG6_OFFSET, firec);
+
+    int r2 = 10000000;
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG2_OFFSET, r2);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG3_OFFSET, r2);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG4_OFFSET, r2);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG5_OFFSET, r2);
+
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG7_OFFSET, r2);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG8_OFFSET, r2);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG9_OFFSET, r2);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG10_OFFSET, r2);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG11_OFFSET, r2);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG12_OFFSET, r2);
+	r13 = (6 << 8) + (4 <<4) + (3);
+	r14 = 2;
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG13_OFFSET, r13);
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, GPU_CONTROLLER_S00_AXI_SLV_REG14_OFFSET, r14);
+	sleepy();
+
+  }
+	cleanup_platform();
+  return 0;
+}
+
+//----------------------------------------------------
+// INITIAL SETUP FUNCTIONS
+//----------------------------------------------------
+
+int InterruptSystemSetup(XScuGic *XScuGicInstancePtr)
+{
+	// Enable interrupt
+	XGpio_InterruptEnable(&BTNInst, BTN_INT);
+	XGpio_InterruptGlobalEnable(&BTNInst);
+
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			 	 	 	 	 	 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+			 	 	 	 	 	 XScuGicInstancePtr);
+	Xil_ExceptionEnable();
+
+
+	return XST_SUCCESS;
+
+}
+
+int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr)
+{
+	XScuGic_Config *IntcConfig;
+	int status;
+
+	// Interrupt controller initialisation
+	IntcConfig = XScuGic_LookupConfig(DeviceId);
+	status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	// Call to interrupt setup
+	status = InterruptSystemSetup(&INTCInst);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	// Connect GPIO interrupt to handler
+	status = XScuGic_Connect(&INTCInst,
+					  	  	 INTC_GPIO_INTERRUPT_ID,
+					  	  	 (Xil_ExceptionHandler)BTN_Intr_Handler,
+					  	  	 (void *)GpioInstancePtr);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	// Enable GPIO interrupts interrupt
+	XGpio_InterruptEnable(GpioInstancePtr, 1);
+	XGpio_InterruptGlobalEnable(GpioInstancePtr);
+
+	// Enable GPIO and timer interrupts in the controller
+	XScuGic_Enable(&INTCInst, INTC_GPIO_INTERRUPT_ID);
+
+	return XST_SUCCESS;
+}
+

@@ -1,0 +1,31 @@
+Nothing to build in platform 'pp_'
+
+02:07:55 **** Incremental Build of configuration Debug for project APP ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -IC:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/pp_/export/pp_/sw/pp_/standalone_domain/bspinclude/include -I"C:\Users\AKS\Documents\drivers" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: APP.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/pp_/export/pp_/sw/pp_/standalone_domain/bsplib/lib -o "APP.elf"  ./src/gpu.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: APP.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size APP.elf  |tee "APP.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37028	   1960	  22808	  61796	   f164	APP.elf
+'Finished building: APP.elf.size'
+' '
+02:07:57 **** Incremental Build of configuration Debug for project APP_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 57144 C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/pp_/export/pp_/pp_.xpfm standalone_domain C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/APP_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/pp_/export/pp_/pp_.xpfm --sys_config pp_ --bif C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/APP_system/Debug/system.bif --bitstream C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/APP/_ide/bitstream/AST2.0_LivesNScore.bit --elf C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/APP/Debug/APP.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/APP/_ide/bitstream/AST2.0_LivesNScore.bit
+Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/khali/ENSC_452_git/ENSC_452/Game_Logic_ScoreLives/APP_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
