@@ -72,3 +72,39 @@ timestamp=[2021-02-27 22:34:08], mode=BUILD, duration=0:00:02.756, duration_ms=2
 timestamp=[2021-02-27 22:34:23], mode=BUILD, duration=0:00:14.637, duration_ms=14637, data={name=dma_audio_system, configuration=Debug, clean_build=false}
 timestamp=[2021-02-27 22:41:18], mode=BUILD, duration=0:00:02.339, duration_ms=2339, data={name=dma_audio, configuration=Debug, clean_build=false}
 timestamp=[2021-02-27 22:41:30], mode=BUILD, duration=0:00:11.494, duration_ms=11494, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 20:15:57], mode=WORKBENCH_START, duration=0:00:27.244, duration_ms=27244, data={}
+timestamp=[2021-03-30 20:15:59], mode=WORKBENCH_UI_INIT, duration=0:00:02.271, duration_ms=2271, data={editors_count=2, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,dma_audio,dma_audio_hw,dma_audio_system}
+timestamp=[2021-03-30 20:16:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.075, duration_ms=75, data={}
+timestamp=[2021-03-30 20:17:59], mode=PLATFORM_GENERATION, duration=0:01:01.002, duration_ms=61002, data={name=dma_audio_hw}
+timestamp=[2021-03-30 20:18:11], mode=BUILD, duration=0:00:03.855, duration_ms=3855, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 20:18:30], mode=BUILD, duration=0:00:17.876, duration_ms=17876, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 20:36:17], mode=BUILD, duration=0:00:02.262, duration_ms=2262, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 20:36:36], mode=BUILD, duration=0:00:18.045, duration_ms=18045, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:39:20], mode=PLATFORM_GENERATION, duration=0:00:14.684, duration_ms=14684, data={name=dma_audio_hw}
+timestamp=[2021-03-30 21:39:20], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=dma_audio, configuration=Debug, clean_build=true}
+timestamp=[2021-03-30 21:39:21], mode=BUILD, duration=0:00:00.542, duration_ms=542, data={name=dma_audio_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-30 21:40:18], mode=PLATFORM_GENERATION, duration=0:00:55.710, duration_ms=55710, data={name=dma_audio_hw}
+timestamp=[2021-03-30 21:40:23], mode=BUILD, duration=0:00:05.163, duration_ms=5163, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:40:48], mode=BUILD, duration=0:00:24.071, duration_ms=24071, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:45:07], mode=BUILD, duration=0:00:01.263, duration_ms=1263, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:45:20], mode=BUILD, duration=0:00:12.264, duration_ms=12264, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:45:28], mode=BUILD, duration=0:00:00.922, duration_ms=922, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:45:42], mode=BUILD, duration=0:00:13.387, duration_ms=13387, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:45:50], mode=BUILD, duration=0:00:01.441, duration_ms=1441, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:46:03], mode=BUILD, duration=0:00:12.410, duration_ms=12410, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:46:05], mode=BUILD, duration=0:00:01.075, duration_ms=1075, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:46:18], mode=BUILD, duration=0:00:11.958, duration_ms=11958, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:46:28], mode=BUILD, duration=0:00:01.996, duration_ms=1996, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:46:42], mode=BUILD, duration=0:00:12.896, duration_ms=12896, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:46:44], mode=BUILD, duration=0:00:01.936, duration_ms=1936, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:46:51], mode=BUILD, duration=0:00:05.623, duration_ms=5623, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:47:05], mode=BUILD, duration=0:00:01.805, duration_ms=1805, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:47:19], mode=BUILD, duration=0:00:12.972, duration_ms=12972, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:51:14], mode=BUILD, duration=0:00:01.022, duration_ms=1022, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:51:28], mode=BUILD, duration=0:00:14.039, duration_ms=14039, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:53:29], mode=BUILD, duration=0:00:01.459, duration_ms=1459, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:53:43], mode=BUILD, duration=0:00:12.746, duration_ms=12746, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:54:41], mode=BUILD, duration=0:00:02.006, duration_ms=2006, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:54:55], mode=BUILD, duration=0:00:13.015, duration_ms=13015, data={name=dma_audio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:59:06], mode=BUILD, duration=0:00:01.835, duration_ms=1835, data={name=dma_audio, configuration=Debug, clean_build=false}
+timestamp=[2021-03-30 21:59:20], mode=BUILD, duration=0:00:13.952, duration_ms=13952, data={name=dma_audio_system, configuration=Debug, clean_build=false}

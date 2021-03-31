@@ -1627,3 +1627,345 @@ con
 
 22:45:09 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Test\dma_audio_system\_ide\scripts\debugger_dma_audio-default.tcl'
 22:48:57 INFO  : Disconnected from the channel tcfchan#21.
+20:15:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\temp_xsdb_launch_script.tcl
+20:15:51 INFO  : XSCT server has started successfully.
+20:15:51 INFO  : Successfully done setting XSCT server connection channel  
+20:15:51 INFO  : plnx-install-location is set to ''
+20:15:51 INFO  : Successfully done setting workspace for the tool. 
+20:16:02 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+20:16:02 INFO  : Platform repository initialization has completed.
+20:16:02 INFO  : Registering command handlers for Vitis TCF services
+20:16:05 INFO  : Successfully done query RDI_DATADIR 
+20:17:58 INFO  : Result from executing command 'getProjects': dma_audio_hw
+20:17:58 INFO  : Result from executing command 'getPlatforms': 
+20:17:59 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+20:23:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:23:17 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+20:23:17 INFO  : 'jtag frequency' command is executed.
+20:23:17 INFO  : Context for 'APU' is selected.
+20:23:17 INFO  : System reset is completed.
+20:23:20 INFO  : 'after 3000' command is executed.
+20:23:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+20:23:23 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit"
+20:23:23 INFO  : Context for 'APU' is selected.
+20:23:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa'.
+20:23:24 INFO  : 'configparams force-mem-access 1' command is executed.
+20:23:24 INFO  : Context for 'APU' is selected.
+20:23:24 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl' is done.
+20:23:25 INFO  : 'ps7_init' command is executed.
+20:23:25 INFO  : 'ps7_post_config' command is executed.
+20:23:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:23:25 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:23:25 INFO  : 'configparams force-mem-access 0' command is executed.
+20:23:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:23:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:23:26 INFO  : 'con' command is executed.
+20:23:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:23:26 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\dma_audio_system\_ide\scripts\debugger_dma_audio-default.tcl'
+20:24:59 INFO  : Disconnected from the channel tcfchan#3.
+20:34:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:34:24 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+20:34:24 INFO  : 'jtag frequency' command is executed.
+20:34:24 INFO  : Context for 'APU' is selected.
+20:34:24 INFO  : System reset is completed.
+20:34:27 INFO  : 'after 3000' command is executed.
+20:34:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+20:34:30 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit"
+20:34:30 INFO  : Context for 'APU' is selected.
+20:34:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa'.
+20:34:30 INFO  : 'configparams force-mem-access 1' command is executed.
+20:34:30 INFO  : Context for 'APU' is selected.
+20:34:30 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl' is done.
+20:34:32 INFO  : 'ps7_init' command is executed.
+20:34:32 INFO  : 'ps7_post_config' command is executed.
+20:34:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:34:32 ERROR : Cannot halt processor core, timeout
+20:34:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf
+----------------End of Script----------------
+
+20:34:32 ERROR : Cannot halt processor core, timeout
+20:34:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:34:39 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+20:34:39 INFO  : 'jtag frequency' command is executed.
+20:34:39 INFO  : Context for 'APU' is selected.
+20:34:40 INFO  : System reset is completed.
+20:34:43 INFO  : 'after 3000' command is executed.
+20:34:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+20:34:46 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit"
+20:34:46 INFO  : Context for 'APU' is selected.
+20:34:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa'.
+20:34:46 INFO  : 'configparams force-mem-access 1' command is executed.
+20:34:46 INFO  : Context for 'APU' is selected.
+20:34:46 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl' is done.
+20:34:47 INFO  : 'ps7_init' command is executed.
+20:34:47 INFO  : 'ps7_post_config' command is executed.
+20:34:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:34:48 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:34:48 INFO  : 'configparams force-mem-access 0' command is executed.
+20:34:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:34:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:34:48 INFO  : 'con' command is executed.
+20:34:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:34:48 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\dma_audio_system\_ide\scripts\debugger_dma_audio-default.tcl'
+20:35:43 INFO  : Disconnected from the channel tcfchan#4.
+20:35:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:35:46 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+20:35:46 INFO  : 'jtag frequency' command is executed.
+20:35:46 INFO  : Context for 'APU' is selected.
+20:35:46 INFO  : System reset is completed.
+20:35:49 INFO  : 'after 3000' command is executed.
+20:35:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+20:35:52 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit"
+20:35:52 INFO  : Context for 'APU' is selected.
+20:35:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa'.
+20:35:52 INFO  : 'configparams force-mem-access 1' command is executed.
+20:35:52 INFO  : Context for 'APU' is selected.
+20:35:52 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl' is done.
+20:35:54 INFO  : 'ps7_init' command is executed.
+20:35:54 INFO  : 'ps7_post_config' command is executed.
+20:35:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:35:55 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:35:55 INFO  : 'configparams force-mem-access 0' command is executed.
+20:35:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:35:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:35:56 INFO  : 'con' command is executed.
+20:35:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:35:56 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\dma_audio_system\_ide\scripts\debugger_dma_audio-default.tcl'
+20:36:13 INFO  : Disconnected from the channel tcfchan#5.
+20:36:15 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+20:43:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:43:04 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+20:43:04 INFO  : 'jtag frequency' command is executed.
+20:43:04 INFO  : Context for 'APU' is selected.
+20:43:04 INFO  : System reset is completed.
+20:43:07 INFO  : 'after 3000' command is executed.
+20:43:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+20:43:10 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit"
+20:43:10 INFO  : Context for 'APU' is selected.
+20:43:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa'.
+20:43:10 INFO  : 'configparams force-mem-access 1' command is executed.
+20:43:10 INFO  : Context for 'APU' is selected.
+20:43:10 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl' is done.
+20:43:12 INFO  : 'ps7_init' command is executed.
+20:43:12 INFO  : 'ps7_post_config' command is executed.
+20:43:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:43:13 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:43:13 INFO  : 'configparams force-mem-access 0' command is executed.
+20:43:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:43:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:43:13 INFO  : 'con' command is executed.
+20:43:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:43:13 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\dma_audio_system\_ide\scripts\debugger_dma_audio-default.tcl'
+20:43:56 INFO  : Disconnected from the channel tcfchan#7.
+21:40:17 INFO  : Result from executing command 'getProjects': dma_audio_hw
+21:40:17 INFO  : Result from executing command 'getPlatforms': dma_audio_hw|C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/dma_audio_hw.xpfm
+21:40:18 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:45:05 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:45:27 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:45:48 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:46:04 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:46:26 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:46:42 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:47:03 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:51:12 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:53:28 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:54:39 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:58:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:58:08 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+21:58:08 INFO  : 'jtag frequency' command is executed.
+21:58:09 INFO  : Context for 'APU' is selected.
+21:58:09 INFO  : System reset is completed.
+21:58:12 INFO  : 'after 3000' command is executed.
+21:58:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+21:58:15 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit"
+21:58:15 INFO  : Context for 'APU' is selected.
+21:58:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa'.
+21:58:15 INFO  : 'configparams force-mem-access 1' command is executed.
+21:58:15 INFO  : Context for 'APU' is selected.
+21:58:15 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl' is done.
+21:58:17 INFO  : 'ps7_init' command is executed.
+21:58:17 INFO  : 'ps7_post_config' command is executed.
+21:58:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:58:18 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:58:18 INFO  : 'configparams force-mem-access 0' command is executed.
+21:58:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:58:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:58:18 INFO  : 'con' command is executed.
+21:58:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:58:18 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\dma_audio_system\_ide\scripts\debugger_dma_audio-default.tcl'
+21:58:49 INFO  : Disconnected from the channel tcfchan#21.
+21:59:04 INFO  : Checking for BSP changes to sync application flags for project 'dma_audio'...
+21:59:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:59:24 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+21:59:24 INFO  : 'jtag frequency' command is executed.
+21:59:24 INFO  : Context for 'APU' is selected.
+21:59:24 INFO  : System reset is completed.
+21:59:27 INFO  : 'after 3000' command is executed.
+21:59:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+21:59:30 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit"
+21:59:31 INFO  : Context for 'APU' is selected.
+21:59:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa'.
+21:59:31 INFO  : 'configparams force-mem-access 1' command is executed.
+21:59:31 INFO  : Context for 'APU' is selected.
+21:59:31 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl' is done.
+21:59:32 INFO  : 'ps7_init' command is executed.
+21:59:32 INFO  : 'ps7_post_config' command is executed.
+21:59:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:33 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:59:34 INFO  : 'configparams force-mem-access 0' command is executed.
+21:59:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio/Debug/dma_audio.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:59:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:34 INFO  : 'con' command is executed.
+21:59:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:59:34 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\dma_audio_system\_ide\scripts\debugger_dma_audio-default.tcl'
+22:44:35 INFO  : Disconnected from the channel tcfchan#23.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Test\dma_audio_hw\export\dma_audio_hw"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Test\dma_audio_hw\export\dma_audio_hw"/>
+	<item key="sdx.custom.platform.repository.locations" value="C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Test\dma_audio_hw\export\dma_audio_hw;C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\dma_audio_hw\export\dma_audio_hw"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\Users\khali\ENSC_452_git\ENSC_452\DMA_Audio\dma_audio_hw\export\dma_audio_hw"/>
 </section>

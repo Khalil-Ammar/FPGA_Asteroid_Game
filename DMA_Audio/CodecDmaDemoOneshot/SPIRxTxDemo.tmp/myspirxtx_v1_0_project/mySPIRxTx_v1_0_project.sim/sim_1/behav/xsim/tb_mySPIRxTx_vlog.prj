@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog   \
+"../../../../../../SPIRxTxDemo.ipdefs/myIPCores_0_0_0_0/mySPIRxTx_1.0/hdl/mySPIRxTx_v1_0.v" \
+"../../../../../../SPIRxTxDemo.ipdefs/myIPCores_0_0_0_0/mySPIRxTx_1.0/hdl/tb_mySPIRxTx.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

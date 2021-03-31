@@ -1,17 +1,17 @@
-22:41:16 **** Incremental Build of configuration Debug for project dma_audio ****
+21:59:04 **** Incremental Build of configuration Debug for project dma_audio ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/helloworld.c'
+'Building file: ../src/audio.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/khali/ENSC_452_git/ENSC_452/DMA_Test/dma_audio_hw/export/dma_audio_hw/sw/dma_audio_hw/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/sw/dma_audio_hw/standalone_domain/bspinclude/include -MMD -MP -MF"src/audio.d" -MT"src/audio.o" -o "src/audio.o" "../src/audio.c"
+'Finished building: ../src/audio.c'
 ' '
 'Building target: dma_audio.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452_git/ENSC_452/DMA_Test/dma_audio_hw/export/dma_audio_hw/sw/dma_audio_hw/standalone_domain/bsplib/lib -o "dma_audio.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452_git/ENSC_452/DMA_Audio/dma_audio_hw/export/dma_audio_hw/sw/dma_audio_hw/standalone_domain/bsplib/lib -o "dma_audio.elf"  ./src/audio.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
 'Finished building target: dma_audio.elf'
 ' '
 'Invoking: ARM v7 Print Size'
@@ -21,5 +21,5 @@ arm-none-eabi-size dma_audio.elf  |tee "dma_audio.elf.size"
 'Finished building: dma_audio.elf.size'
 ' '
 
-22:41:18 Build Finished (took 2s.320ms)
+21:59:06 Build Finished (took 1s.812ms)
 
