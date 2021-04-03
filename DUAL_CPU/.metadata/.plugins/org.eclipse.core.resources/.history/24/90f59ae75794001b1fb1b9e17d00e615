@@ -1,0 +1,36 @@
+#ifndef ARM1_H
+#define ARM1_H
+
+#include <sleep.h>
+#include <stdio.h>
+#include "xil_mmu.h"
+#include "platform.h"
+#include "xil_printf.h"
+#include "xpseudo_asm.h"
+#include "xil_exception.h"
+
+#define sev() 				__asm__("sev")
+#define ARM1_STARTADR 		0xFFFFFFF0
+#define ARM1_BASEADDR 		0x10080000
+#define COMM_VAL			(*(volatile unsigned long *)(0xFFFF0000))
+#define BACKGROUND_SONG		(*(volatile unsigned long *)(0xFFFF0010))
+#define LASER				(*(volatile unsigned long *)(0xFFFF0020))
+#define DEATH				(*(volatile unsigned long *)(0xFFFF0030))
+#define THRUST				(*(volatile unsigned long *)(0xFFFF0040))
+#define STOP				(*(volatile unsigned long *)(0xFFFF0040))
+
+
+#endif
+
+
+//    //Disable cache on OCM
+//    // S=b1 TEX=b100 AP=b11, Domain=b1111, C=b0, B=b0
+//    Xil_SetTlbAttributes(0xFFFF0000,0x14de2);
+//
+//    while(1){
+//        while(COMM_VAL == 0){
+//        };
+//
+//        print("Hello World - ARM1\n\r");
+//        sleep(1);
+//        COMM_VAL = 0;

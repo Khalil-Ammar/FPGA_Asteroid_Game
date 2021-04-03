@@ -1,0 +1,38 @@
+Nothing to build in platform 'dual_core_hw'
+
+18:40:33 **** Incremental Build of configuration Debug for project dual_core ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+18:40:39 **** Incremental Build of configuration Debug for project second_core ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/game_logic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game_logic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/sw/dual_core_hw/dual_arm_zynq/bspinclude/include -MMD -MP -MF"src/game_logic.d" -MT"src/game_logic.o" -o "src/game_logic.o" "../src/game_logic.c"
+'Finished building: ../src/game_logic.c'
+' '
+'Building target: second_core.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/sw/dual_core_hw/dual_arm_zynq/bsplib/lib -o "second_core.elf"  ./src/game_logic.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: second_core.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size second_core.elf  |tee "second_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27180	   2184	  22632	  51996	   cb1c	second_core.elf
+'Finished building: second_core.elf.size'
+' '
+18:40:42 **** Incremental Build of configuration Debug for project dual_core_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 49225 C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/dual_core_hw.xpfm standalone_domain,dual_arm_zynq C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/dual_core_hw.xpfm --sys_config dual_core_hw --bif C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_system/Debug/system.bif --bitstream C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf,ps7_cortexa9_0 --elf C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf,ps7_cortexa9_1
+creating BOOT.BIN using C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

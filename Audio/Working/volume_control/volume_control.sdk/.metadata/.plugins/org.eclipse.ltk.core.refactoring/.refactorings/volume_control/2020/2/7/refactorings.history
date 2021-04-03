@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;volume_control/src/helloworld.c&apos; to &apos;volume_control.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="volume_control.c" stamp="1581406717583" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;volume_control/src/helloworld.c&apos; to &apos;volume_control.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="volume_control.c" stamp="1581470491884" updateReferences="true"/>
-</session>
