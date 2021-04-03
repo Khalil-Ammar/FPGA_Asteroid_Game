@@ -31,56 +31,6 @@
  
  
 /******************************************************************/
-/* Definitions for driver AXIDMA */
-#define XPAR_XAXIDMA_NUM_INSTANCES 1
-
-/* Definitions for peripheral AXI_DMA_0 */
-#define XPAR_AXI_DMA_0_DEVICE_ID 0
-#define XPAR_AXI_DMA_0_BASEADDR 0x40400000
-#define XPAR_AXI_DMA_0_HIGHADDR 0x4040FFFF
-#define XPAR_AXI_DMA_0_SG_INCLUDE_STSCNTRL_STRM 0
-#define XPAR_AXI_DMA_0_INCLUDE_MM2S_DRE 0
-#define XPAR_AXI_DMA_0_INCLUDE_S2MM_DRE 0
-#define XPAR_AXI_DMA_0_INCLUDE_MM2S 1
-#define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
-#define XPAR_AXI_DMA_0_M_AXI_MM2S_DATA_WIDTH 32
-#define XPAR_AXI_DMA_0_M_AXI_S2MM_DATA_WIDTH 32
-#define XPAR_AXI_DMA_0_INCLUDE_SG 1
-#define XPAR_AXI_DMA_0_ENABLE_MULTI_CHANNEL 0
-#define XPAR_AXI_DMA_0_NUM_MM2S_CHANNELS 1
-#define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
-#define XPAR_AXI_DMA_0_MM2S_BURST_SIZE 16
-#define XPAR_AXI_DMA_0_S2MM_BURST_SIZE 16
-#define XPAR_AXI_DMA_0_MICRO_DMA 0
-#define XPAR_AXI_DMA_0_ADDR_WIDTH 32
-#define XPAR_AXI_DMA_0_SG_LENGTH_WIDTH 23
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral AXI_DMA_0 */
-#define XPAR_AXIDMA_0_DEVICE_ID XPAR_AXI_DMA_0_DEVICE_ID
-#define XPAR_AXIDMA_0_BASEADDR 0x40400000
-#define XPAR_AXIDMA_0_SG_INCLUDE_STSCNTRL_STRM 0
-#define XPAR_AXIDMA_0_INCLUDE_MM2S 1
-#define XPAR_AXIDMA_0_INCLUDE_MM2S_DRE 0
-#define XPAR_AXIDMA_0_M_AXI_MM2S_DATA_WIDTH 32
-#define XPAR_AXIDMA_0_INCLUDE_S2MM 0
-#define XPAR_AXIDMA_0_INCLUDE_S2MM_DRE 0
-#define XPAR_AXIDMA_0_M_AXI_S2MM_DATA_WIDTH 32
-#define XPAR_AXIDMA_0_INCLUDE_SG 1
-#define XPAR_AXIDMA_0_ENABLE_MULTI_CHANNEL 0
-#define XPAR_AXIDMA_0_NUM_MM2S_CHANNELS 1
-#define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
-#define XPAR_AXIDMA_0_MM2S_BURST_SIZE 16
-#define XPAR_AXIDMA_0_S2MM_BURST_SIZE 16
-#define XPAR_AXIDMA_0_MICRO_DMA 0
-#define XPAR_AXIDMA_0_c_addr_width 32
-#define XPAR_AXIDMA_0_c_sg_length_width 23
-
-
-/******************************************************************/
-
 
 /* Definitions for peripheral PS7_DDR_0 */
 #define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000
@@ -270,6 +220,29 @@
 
 /******************************************************************/
 
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_GPIO_0 */
+#define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
+#define XPAR_AXI_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_AXI_GPIO_0_DEVICE_ID 0
+#define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_0_IS_DUAL 0
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_GPIO_0 */
+#define XPAR_GPIO_0_BASEADDR 0x41200000
+#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_0_IS_DUAL 0
+
+
+/******************************************************************/
+
 /* Definitions for driver GPIOPS */
 #define XPAR_XGPIOPS_NUM_INSTANCES 1
 
@@ -285,29 +258,6 @@
 #define XPAR_XGPIOPS_0_DEVICE_ID XPAR_PS7_GPIO_0_DEVICE_ID
 #define XPAR_XGPIOPS_0_BASEADDR 0xE000A000
 #define XPAR_XGPIOPS_0_HIGHADDR 0xE000AFFF
-
-
-/******************************************************************/
-
-/* Definitions for driver LLFIFO */
-#define XPAR_XLLFIFO_NUM_INSTANCES 1U
-
-/* Definitions for peripheral AXI_FIFO_MM_S_0 */
-#define XPAR_AXI_FIFO_MM_S_0_DEVICE_ID 0U
-#define XPAR_AXI_FIFO_MM_S_0_BASEADDR 0x43C00000U
-#define XPAR_AXI_FIFO_MM_S_0_HIGHADDR 0x43C0FFFFU
-#define XPAR_AXI_FIFO_MM_S_0_AXI4_BASEADDR 0U
-#define XPAR_AXI_FIFO_MM_S_0_AXI4_HIGHADDR 0U
-#define XPAR_AXI_FIFO_MM_S_0_DATA_INTERFACE_TYPE 0U
-
-/* Canonical definitions for peripheral AXI_FIFO_MM_S_0 */
-#define XPAR_AXI_FIFO_0_DEVICE_ID 0U
-#define XPAR_AXI_FIFO_0_BASEADDR 0x43C00000U
-#define XPAR_AXI_FIFO_0_HIGHADDR 0x43C0FFFFU
-#define XPAR_AXI_FIFO_0_AXI4_BASEADDR 0U
-#define XPAR_AXI_FIFO_0_AXI4_HIGHADDR 0U
-#define XPAR_AXI_FIFO_0_DATA_INTERFACE_TYPE 0U
-
 
 
 /******************************************************************/
@@ -530,11 +480,4 @@
 
 /******************************************************************/
 
-/* Xilinx FAT File System Library (XilFFs) User Settings */
-#define FILE_SYSTEM_INTERFACE_SD
-#define FILE_SYSTEM_USE_MKFS
-#define FILE_SYSTEM_NUM_LOGIC_VOL 2
-#define FILE_SYSTEM_USE_STRFUNC 0
-#define FILE_SYSTEM_SET_FS_RPATH 0
-#define FILE_SYSTEM_WORD_ACCESS
 #endif  /* end of protection macro */

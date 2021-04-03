@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Fri Apr  2 03:04:28 2021
+--Date        : Tue Mar 30 23:30:54 2021
 --Host        : DESKTOP-P28JKS5 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -34,15 +34,7 @@ entity design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    bclk : out STD_LOGIC;
-    heartbeat : out STD_LOGIC;
-    lrclk : out STD_LOGIC;
-    mclk : out STD_LOGIC;
-    miso : in STD_LOGIC;
-    mosi : out STD_LOGIC;
-    sclk : out STD_LOGIC;
-    sdata : out STD_LOGIC;
-    ss : out STD_LOGIC
+    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
 end design_1_wrapper;
 
@@ -70,15 +62,7 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    heartbeat : out STD_LOGIC;
-    mclk : out STD_LOGIC;
-    bclk : out STD_LOGIC;
-    lrclk : out STD_LOGIC;
-    sdata : out STD_LOGIC;
-    miso : in STD_LOGIC;
-    mosi : out STD_LOGIC;
-    sclk : out STD_LOGIC;
-    ss : out STD_LOGIC
+    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
   end component design_1;
 begin
@@ -105,14 +89,6 @@ design_1_i: component design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      bclk => bclk,
-      heartbeat => heartbeat,
-      lrclk => lrclk,
-      mclk => mclk,
-      miso => miso,
-      mosi => mosi,
-      sclk => sclk,
-      sdata => sdata,
-      ss => ss
+      btns_5bits_tri_i(4 downto 0) => btns_5bits_tri_i(4 downto 0)
     );
 end STRUCTURE;
