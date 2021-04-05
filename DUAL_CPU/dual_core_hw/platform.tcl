@@ -94,3 +94,5 @@ platform clean
 platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
 platform active {dual_core_hw}
 platform generate
+platform active {dual_core_hw}
+platform generate -domains 

@@ -1,4 +1,4 @@
-20:44:21 **** Incremental Build of configuration Debug for project second_core ****
+21:55:53 **** Incremental Build of configuration Debug for project second_core ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,5 +6,5 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
 
-20:44:22 Build Finished (took 716ms)
+21:55:54 Build Finished (took 688ms)
 

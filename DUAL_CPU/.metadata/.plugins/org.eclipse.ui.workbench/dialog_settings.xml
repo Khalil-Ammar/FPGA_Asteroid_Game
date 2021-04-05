@@ -22,4 +22,11 @@
 			<item value="xs"/>
 		</list>
 	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\khali\Downloads\ENSC_452-khalil-lives_score\ENSC_452-khalil-lives_score\Game_Logic_ScoreLives\APP\src"/>
+		</list>
+	</section>
 </section>

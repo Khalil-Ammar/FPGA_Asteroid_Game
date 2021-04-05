@@ -1,5 +1,13 @@
+#include <stdbool.h>
 #include "audio.h"
 #include "arm0.h"
+#include "xgpio.h"
+#include "xgpio.h"
+
+
+#define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+#define BTN_INT 			XGPIO_IR_CH1_MASK
+#define BTNS_DEVICE_ID		XPAR_AXI_GPIO_0_DEVICE_ID
 
 
 #define fatalError(msg) throwFatalError(__PRETTY_FUNCTION__,msg)
@@ -11,6 +19,7 @@ void throwFatalError(const char *func,const char *msg) {
 
 FATFS FS_instance;
 adau1761_config codec;
+
 
 /*
  * Flags interrupt handlers use to notify the application context the events.
@@ -25,6 +34,159 @@ u8 *deathBuffer = NULL;
 u8 *thrustBuffer= NULL;
 size_t audioBufferSize = 0;
 
+struct SpaceShip{
+	int x;
+	int y;
+};
+
+XScuGic InterruptController; /* Instance of the Interrupt Controller */
+XGpio BTNInst;
+XScuGic INTCInst;
+int btn_value;
+struct SpaceShip shipInstance;
+bool hasMoved;
+bool hasFired;
+
+
+
+
+void BTN_Intr_Handler(void *InstancePtr)
+{
+
+	// Disable GPIO interrupts
+	XGpio_InterruptDisable(&BTNInst, BTN_INT);
+
+	// Ignore additional button presses
+	if ((XGpio_InterruptGetStatus(&BTNInst) & BTN_INT) !=
+			BTN_INT) {
+			return;
+		}
+	// read button value
+	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
+
+	//make sure only one move per click is registered
+	if(hasMoved == 0){
+		if(btn_value == 16) {
+			hasMoved = 1;
+			shipInstance.y = shipInstance.y - 6;
+			if (shipInstance.y<0){
+				shipInstance.y=shipInstance.y+480;
+			}
+		}
+
+		if(btn_value == 2){
+			hasMoved = 1;
+			shipInstance.y = shipInstance.y + 6;
+			if(shipInstance.y > 480){
+				shipInstance.y = shipInstance.y-480;
+			}
+		}
+
+		if(btn_value == 8){
+			hasMoved = 1;
+			shipInstance.x = shipInstance.x + 6;
+			if(shipInstance.x> 640){
+				shipInstance.x = shipInstance.x-640;
+			}
+		}
+
+		if(btn_value == 4){
+			hasMoved = 1;
+			shipInstance.x = shipInstance.x - 6;
+			if(shipInstance.x<0){
+				shipInstance.x = shipInstance.x+640;
+			}
+		}
+	}
+
+	if(btn_value == 1) {
+			hasFired = 1;
+	}
+
+    (void)XGpio_InterruptClear(&BTNInst, BTN_INT);
+
+    // Enable GPIO interrupts
+    XGpio_InterruptEnable(&BTNInst, BTN_INT);
+}
+
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr){
+	/*
+	* Connect the interrupt controller interrupt handler to the hardware
+	* interrupt handling logic in the ARM processor.
+	*/
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+	(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+	XScuGicInstancePtr);
+	/*
+	* Enable interrupts in the ARM
+	*/
+	Xil_ExceptionEnable();
+	return XST_SUCCESS;
+}
+
+int InterruptSystemSetup(XScuGic *XScuGicInstancePtr)
+{
+	// Enable interrupt
+	XGpio_InterruptEnable(&BTNInst, BTN_INT);
+	XGpio_InterruptGlobalEnable(&BTNInst);
+
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			 	 	 	 	 	 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+			 	 	 	 	 	 XScuGicInstancePtr);
+	Xil_ExceptionEnable();
+
+
+	return XST_SUCCESS;
+
+}
+
+int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr)
+{
+	XScuGic_Config *IntcConfig;
+	int status;
+	int intr_target_reg;
+
+
+	// Interrupt controller initialisation
+	IntcConfig = XScuGic_LookupConfig(DeviceId);
+	status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	/*
+	 * set gpio interrupt target cpu
+	 */
+
+	intr_target_reg = XScuGic_DistReadReg(&INTCInst,
+			XSCUGIC_SPI_TARGET_OFFSET_CALC(INTC_GPIO_INTERRUPT_ID));
+
+	intr_target_reg &= ~(0x000000FF << ((INTC_GPIO_INTERRUPT_ID%4)*8));
+	intr_target_reg |=  (0x00000002 << ((INTC_GPIO_INTERRUPT_ID%4)*8));//CPU1 ack gpio
+
+	XScuGic_DistWriteReg(&INTCInst,
+			XSCUGIC_SPI_TARGET_OFFSET_CALC(INTC_GPIO_INTERRUPT_ID),
+			intr_target_reg);
+
+	// Call to interrupt setup
+	status = InterruptSystemSetup(&INTCInst);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	// Connect GPIO interrupt to handler
+	status = XScuGic_Connect(&INTCInst,
+					  	  	 INTC_GPIO_INTERRUPT_ID,
+					  	  	 (Xil_ExceptionHandler)BTN_Intr_Handler,
+					  	  	 (void *)GpioInstancePtr);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	// Enable GPIO interrupts interrupt
+	XGpio_InterruptEnable(GpioInstancePtr, 1);
+	XGpio_InterruptGlobalEnable(GpioInstancePtr);
+
+	// Enable GPIO and timer interrupts in the controller
+	XScuGic_Enable(&INTCInst, INTC_GPIO_INTERRUPT_ID);
+
+	return XST_SUCCESS;
+}
+
 //########################################################
 //#############		Main Function		##################
 //########################################################
@@ -33,6 +195,21 @@ int main()
 {
     init_platform();
     COMM_VAL = 0;
+
+    // Initialise Push Buttons
+	int status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
+	if(status != XST_SUCCESS){
+	  return XST_FAILURE;
+	}
+
+	// Set all buttons direction to inputs
+	XGpio_SetDataDirection(&BTNInst, 1, 0xFF);
+
+    // Initialize interrupt controller
+	status = IntcInitFunction(INTC_DEVICE_ID, &BTNInst);
+	if(status != XST_SUCCESS){
+	  return XST_FAILURE;
+	}
 
     // Disable cache on OCM
 	// S=b1 TEX=b100 AP=b11, Domain=b1111, C=b0, B=b0
@@ -46,6 +223,11 @@ int main()
 	sev();
 
     setvbuf(stdin, NULL, _IONBF, 0);
+
+    COMM_VAL = 1;
+    while(COMM_VAL == 1){
+    	// wait
+    }
 
 	print("Initializing Codec\r\n");
     adau1761_init(&codec, XPAR_AXI_FIFO_MM_S_0_DEVICE_ID, XPAR_AXI_DMA_0_DEVICE_ID);

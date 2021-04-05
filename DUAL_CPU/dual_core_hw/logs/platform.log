@@ -42010,3 +42010,616 @@ C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_a
 C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2021-04-04.20:39:37::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:05::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:05::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:05::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:21::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:21::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:21::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:21::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWReader::Active system found as  dual_core_hw
+TRACE::2021-04-04.20:51:26::SCWReader::Handling sysconfig dual_core_hw
+TRACE::2021-04-04.20:51:26::SCWDomain::checking for install qemu data   : 
+TRACE::2021-04-04.20:51:26::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-04-04.20:51:26::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-04-04.20:51:26::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-04-04.20:51:26::SCWMssOS::updating the scw layer about changes
+TRACE::2021-04-04.20:51:26::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-04-04.20:51:26::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-04-04.20:51:26::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-04-04.20:51:26::SCWMssOS::Commit changes completed.
+TRACE::2021-04-04.20:51:26::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-04-04.20:51:26::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWReader::No isolation master present  
+TRACE::2021-04-04.20:51:26::SCWDomain::checking for install qemu data   : 
+TRACE::2021-04-04.20:51:26::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-04-04.20:51:26::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-04-04.20:51:26::SCWMssOS::updating the scw layer about changes
+TRACE::2021-04-04.20:51:26::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-04-04.20:51:26::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-04-04.20:51:26::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-04-04.20:51:26::SCWMssOS::Commit changes completed.
+TRACE::2021-04-04.20:51:26::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-04-04.20:51:26::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWReader::No isolation master present  
+TRACE::2021-04-04.20:51:26::SCWDomain::checking for install qemu data   : 
+TRACE::2021-04-04.20:51:26::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-04-04.20:51:26::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::No sw design opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::mss exists loading the mss file  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Opened the sw design from mss  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Adding the swdes entry C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss with des name system_1
+TRACE::2021-04-04.20:51:26::SCWMssOS::updating the scw layer about changes
+TRACE::2021-04-04.20:51:26::SCWMssOS::Opened the sw design.  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-04-04.20:51:26::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-04-04.20:51:26::SCWMssOS::Commit changes completed.
+TRACE::2021-04-04.20:51:26::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-04-04.20:51:26::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.20:51:26::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.20:51:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.20:51:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.20:51:26::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.20:51:26::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.20:51:26::SCWReader::No isolation master present  
+LOG::2021-04-04.21:00:20::SCWPlatform::Started generating the artifacts platform dual_core_hw
+TRACE::2021-04-04.21:00:20::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-04-04.21:00:21::SCWPlatform::Started generating the artifacts for system configuration dual_core_hw
+LOG::2021-04-04.21:00:21::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-04-04.21:00:21::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-04-04.21:00:21::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-04-04.21:00:21::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2021-04-04.21:00:21::SCWSystem::Checking the domain standalone_domain
+LOG::2021-04-04.21:00:21::SCWSystem::Not a boot domain 
+LOG::2021-04-04.21:00:21::SCWSystem::Checking the domain dual_arm_zynq
+LOG::2021-04-04.21:00:21::SCWSystem::Not a boot domain 
+LOG::2021-04-04.21:00:21::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-04-04.21:00:21::SCWDomain::Generating domain artifcats
+TRACE::2021-04-04.21:00:21::SCWMssOS::Generating standalone artifcats
+TRACE::2021-04-04.21:00:21::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/sw/dual_core_hw/qemu/
+TRACE::2021-04-04.21:00:21::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/sw/dual_core_hw/standalone_domain/qemu/
+TRACE::2021-04-04.21:00:21::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-04-04.21:00:21::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:21::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:21::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:21::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.21:00:21::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:21::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.21:00:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.21:00:21::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.21:00:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.21:00:21::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.21:00:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.21:00:21::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.21:00:21::SCWMssOS::Completed writing the mss file at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-04-04.21:00:21::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.21:00:21::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-04-04.21:00:21::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-04-04.21:00:21::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2021-04-04.21:00:21::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-04-04.21:00:21::SCWMssOS::Copying to export directory.
+TRACE::2021-04-04.21:00:22::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-04-04.21:00:22::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-04-04.21:00:22::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-04-04.21:00:22::SCWSystem::Started Processing the domain dual_arm_zynq
+TRACE::2021-04-04.21:00:22::SCWDomain::Generating domain artifcats
+TRACE::2021-04-04.21:00:22::SCWMssOS::Generating standalone artifcats
+TRACE::2021-04-04.21:00:22::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/sw/dual_core_hw/dual_arm_zynq/qemu/
+TRACE::2021-04-04.21:00:22::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-04-04.21:00:22::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:22::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:22::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:22::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.21:00:22::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:22::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.21:00:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.21:00:22::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.21:00:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.21:00:22::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.21:00:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.21:00:22::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.21:00:22::SCWMssOS::Completed writing the mss file at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp
+TRACE::2021-04-04.21:00:22::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.21:00:22::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-04-04.21:00:22::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-04-04.21:00:22::SCWDomain::Skipping the build for domain :  dual_arm_zynq
+TRACE::2021-04-04.21:00:22::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-04-04.21:00:22::SCWMssOS::Copying to export directory.
+TRACE::2021-04-04.21:00:22::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-04-04.21:00:22::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-04-04.21:00:22::SCWSystem::Completed Processing the domain dual_arm_zynq
+LOG::2021-04-04.21:00:22::SCWSystem::Completed Processing the sysconfig dual_core_hw
+LOG::2021-04-04.21:00:22::SCWPlatform::Completed generating the artifacts for system configuration dual_core_hw
+TRACE::2021-04-04.21:00:22::SCWPlatform::Started preparing the platform 
+TRACE::2021-04-04.21:00:23::SCWSystem::Writing the bif file for system config dual_core_hw
+TRACE::2021-04-04.21:00:23::SCWSystem::dir created 
+TRACE::2021-04-04.21:00:23::SCWSystem::Writing the bif 
+TRACE::2021-04-04.21:00:23::SCWPlatform::Started writing the spfm file 
+TRACE::2021-04-04.21:00:23::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-04-04.21:00:23::SCWPlatform::Completed generating the platform
+TRACE::2021-04-04.21:00:23::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-04-04.21:00:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-04-04.21:00:23::SCWMssOS::Commit changes completed.
+TRACE::2021-04-04.21:00:23::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-04-04.21:00:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-04-04.21:00:23::SCWMssOS::Commit changes completed.
+TRACE::2021-04-04.21:00:23::SCWMssOS::Saving the mss changes C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-04-04.21:00:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-04-04.21:00:23::SCWMssOS::Commit changes completed.
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.21:00:23::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.21:00:23::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.21:00:23::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.21:00:23::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.21:00:23::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.21:00:23::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWWriter::formatted JSON is {
+	"platformName":	"dual_core_hw",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dual_core_hw",
+	"platHandOff":	"C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dual_core_hw",
+	"systems":	[{
+			"systemName":	"dual_core_hw",
+			"systemDesc":	"dual_core_hw",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dual_core_hw",
+			"sysActiveDom":	"dual_arm_zynq",
+			"sysDefaultDom":	"dual_arm_zynq",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"277ffe7432bdbcc6da9d459cb521847d",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"277ffe7432bdbcc6da9d459cb521847d",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"dual_arm_zynq",
+					"domainDispName":	"dual_arm_zynq",
+					"domainDesc":	"",
+					"processors":	"ps7_cortexa9_1",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"473f92d492e6d7c00d079e544250b5a8",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"ps7_cortexa9_1":	{
+							"extra_compiler_flags":	"-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUSE_AMP=1",
+							"libOptionNames":	["extra_compiler_flags"]
+						},
+						"libsContainingOptions":	["ps7_cortexa9_1"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-04-04.21:00:23::SCWPlatform::updated the xpfm file.
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.21:00:23::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.21:00:23::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to open the hw design at C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA given C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA absoulate path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform::DSA directory C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Platform Path C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/hw/design_1_wrapper.xsa
+TRACE::2021-04-04.21:00:23::SCWPlatform:: Unique name xilinx:zed::0.0
+TRACE::2021-04-04.21:00:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-04-04.21:00:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-04-04.21:00:23::SCWMssOS::Checking the sw design at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss
+TRACE::2021-04-04.21:00:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss|system_1||
+C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-04-04.21:00:23::SCWMssOS::Sw design exists and opened at  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/ps7_cortexa9_1/dual_arm_zynq/bsp/system.mss

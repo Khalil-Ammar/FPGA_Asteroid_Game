@@ -1,10 +1,10 @@
-20:44:22 **** Incremental Build of configuration Debug for project dual_core_system ****
+21:55:55 **** Incremental Build of configuration Debug for project dual_core_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 58472 C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/dual_core_hw.xpfm standalone_domain,dual_arm_zynq C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_system/Debug/system.bif
+generate_system_bif.bat 59447 C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/dual_core_hw.xpfm standalone_domain,dual_arm_zynq C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_system/Debug/system.bif
 sdcard_gen --xpfm C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/dual_core_hw.xpfm --sys_config dual_core_hw --bif C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_system/Debug/system.bif --bitstream C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit --elf C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf,ps7_cortexa9_0 --elf C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf,ps7_cortexa9_1
 creating BOOT.BIN using C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
 Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-20:44:40 Build Finished (took 18s.70ms)
+21:56:08 Build Finished (took 13s.562ms)
 
