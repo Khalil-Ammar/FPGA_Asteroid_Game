@@ -82,3 +82,15 @@ domain active {dual_arm_zynq}
 bsp reload
 platform generate -domains 
 platform generate -domains 
+platform active {dual_core_hw}
+platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
+platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
+domain active {zynq_fsbl}
+bsp reload
+platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
+platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
+platform clean
+platform clean
+platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
+platform active {dual_core_hw}
+platform generate

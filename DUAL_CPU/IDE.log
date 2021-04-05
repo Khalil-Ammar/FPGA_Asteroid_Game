@@ -1944,3 +1944,365 @@ con
 
 18:43:23 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
 18:45:13 INFO  : Disconnected from the channel tcfchan#56.
+17:25:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\temp_xsdb_launch_script.tcl
+17:25:49 INFO  : XSCT server has started successfully.
+17:25:49 INFO  : plnx-install-location is set to ''
+17:25:49 INFO  : Successfully done setting XSCT server connection channel  
+17:25:49 INFO  : Successfully done setting workspace for the tool. 
+17:26:02 INFO  : Platform repository initialization has completed.
+17:26:02 INFO  : Registering command handlers for Vitis TCF services
+17:26:04 INFO  : Successfully done query RDI_DATADIR 
+18:02:03 INFO  : Hardware specification for platform project 'dual_core_hw' is updated.
+18:08:44 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+18:08:44 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+18:08:44 ERROR : Failed to update application flags from BSP for 'second_core'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+18:13:03 INFO  : Hardware specification for platform project 'dual_core_hw' is updated.
+19:55:37 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+19:55:37 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:55:37 ERROR : Failed to update application flags from BSP for 'dual_core'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+19:55:44 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+19:55:44 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:55:44 ERROR : Failed to update application flags from BSP for 'second_core'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+19:55:47 ERROR : Failed to compute checksum of hardware specification file used by project 'dual_core'
+19:55:47 ERROR : Failed to compute checksum of hardware specification file used by project 'second_core'
+19:55:47 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:55:47 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:55:47 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:55:47 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:55:47 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:59:17 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+19:59:17 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:59:17 ERROR : Failed to update application flags from BSP for 'dual_core'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+20:01:30 INFO  : Hardware specification for platform project 'dual_core_hw' is updated.
+20:13:31 INFO  : Hardware specification for platform project 'dual_core_hw' is updated.
+20:15:10 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+20:15:10 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+20:15:10 ERROR : Failed to update application flags from BSP for 'dual_core'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+20:15:14 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+20:15:14 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+20:15:14 ERROR : Failed to update application flags from BSP for 'second_core'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+20:15:17 ERROR : Failed to compute checksum of hardware specification file used by project 'dual_core'
+20:15:17 ERROR : Failed to compute checksum of hardware specification file used by project 'second_core'
+20:15:17 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+20:15:17 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+20:15:17 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+20:15:17 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+20:15:17 ERROR : Failed to openhw "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+20:21:24 INFO  : Hardware specification for platform project 'dual_core_hw' is updated.
+20:22:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\temp_xsdb_launch_script.tcl
+20:22:18 INFO  : XSCT server has started successfully.
+20:22:18 INFO  : plnx-install-location is set to ''
+20:22:18 INFO  : Successfully done setting XSCT server connection channel  
+20:22:19 INFO  : Successfully done setting workspace for the tool. 
+20:22:26 INFO  : Successfully done query RDI_DATADIR 
+20:22:58 INFO  : Registering command handlers for Vitis TCF services
+20:22:59 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+20:22:59 INFO  : Platform repository initialization has completed.
+20:24:47 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+20:24:47 ERROR : Failed to get platform details for the project 'dual_core'. Cannot sync application flags.
+20:24:49 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+20:24:49 ERROR : Failed to get platform details for the project 'second_core'. Cannot sync application flags.
+20:26:44 ERROR : (XSDB Server)can't read "design_1_wrapper": no such variable
+20:26:44 ERROR : (XSDB Server)
+
+20:28:35 ERROR : (XSDB Server)couldn't read file "../export/update_platform_slim.tcl": no such file or directory
+
+20:28:54 ERROR : (XSDB Server)couldn't read file "../export/update_platform_slim.tcl": no such file or directory
+
+20:29:02 ERROR : (XSDB Server)couldn't read file "../update_platform_slim.tcl": no such file or directory
+
+20:29:08 ERROR : (XSDB Server)can't read "XSA_FILE": no such variable
+
+20:29:22 ERROR : (XSDB Server)can't read "XSA_FILE": no such variable
+
+20:29:56 ERROR : (XSDB Server)can't read "XSA_FILE": no such variable
+
+20:30:21 ERROR : (XSDB Server)can't read "XSA_FILE": no such variable
+20:30:21 ERROR : (XSDB Server)
+
+20:30:48 ERROR : (XSDB Server)can't read "XSA_FILE": no such variable
+20:30:48 ERROR : (XSDB Server)
+
+20:31:20 ERROR : (XSDB Server)can't read "XSA_FILE": no such variable
+20:31:20 ERROR : (XSDB Server)
+
+20:32:34 ERROR : (XSDB Server)Error: Hw specification provided does not have the HwDb, please check: C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\design_1_wrapper.xsa
+
+20:34:36 ERROR : (XSDB Server)GPU_controller_selftest.c: In function 'GPU_CONTROLLER_Reg_SelfTest':
+
+20:34:36 ERROR : (XSDB Server)GPU_controller_selftest.c:52:63: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+   52 |    if ( GPU_CONTROLLER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+      |                                                               ^~
+GPU_controller_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+   36 |  int Index;
+      |      ^~~~~
+
+20:34:36 ERROR : (XSDB Server)arm-none-eabi-ar: *.o: Invalid argument
+
+20:34:36 ERROR : (XSDB Server)make[2]: *** [Makefile:19: libs] Error 1
+
+20:34:36 ERROR : (XSDB Server)make[1]: *** [Makefile:46: ps7_cortexa9_0/libsrc/GPU_controller_v1_0/src/make.libs] Error 2
+
+20:34:36 ERROR : (XSDB Server)make: *** [Makefile:18: all] Error 2
+
+20:34:38 ERROR : (XSDB Server)In file included from main.c:115:
+zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+20:34:39 ERROR : (XSDB Server)In file included from pcap.c:78:
+zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+
+20:34:40 ERROR : (XSDB Server)c
+20:34:40 ERROR : (XSDB Server):/xilinx/vitis/2020.2/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/real-ld.exe: cannot find -lrsa
+20:34:40 ERROR : (XSDB Server)
+collect2.exe: error: ld returned 1 exit status
+
+20:34:40 ERROR : (XSDB Server)make: *** [Makefile:27: fsbl.elf] Error 1
+
+20:34:49 ERROR : (XSDB Server)GPU_controller_selftest.c: In function 'GPU_CONTROLLER_Reg_SelfTest':
+
+20:34:49 ERROR : (XSDB Server)GPU_controller_selftest.c:52:63: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+   52 |    if ( GPU_CONTROLLER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+      |                                                               ^~
+GPU_controller_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+   36 |  int Index;
+      |      ^~~~~
+
+20:34:49 ERROR : (XSDB Server)arm-none-eabi-ar: creating ../../../lib/libxil.a
+arm-none-eabi-ar: *.o: Invalid argument
+
+20:34:49 ERROR : (XSDB Server)make[2]: *** [Makefile:19: libs] Error 1
+
+20:34:49 ERROR : (XSDB Server)make[1]: *** [Makefile:46: ps7_cortexa9_0/libsrc/GPU_controller_v1_0/src/make.libs] Error 2
+
+20:34:49 ERROR : (XSDB Server)make: *** [Makefile:18: all] Error 2
+
+20:34:49 ERROR : (XSDB Server)Failed to build  the bsp sources for domain - standalone_domain
+
+20:34:49 ERROR : (XSDB Server)Failed to generate the platform.
+Reason: Failed to build  the bsp sources for domain - standalone_domain
+
+20:39:37 INFO  : Result from executing command 'getProjects': dual_core_hw
+20:39:37 INFO  : Result from executing command 'getPlatforms': 
+20:39:45 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+20:39:51 INFO  : Updating application flags with new BSP settings...
+20:39:52 INFO  : Successfully updated application flags for project dual_core.
+20:39:58 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+20:39:58 INFO  : Updating application flags with new BSP settings...
+20:39:59 INFO  : Successfully updated application flags for project second_core.
+20:40:04 INFO  : The hardware specfication used by project 'dual_core' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+20:40:04 INFO  : The file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+20:40:04 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core\_ide\bitstream' in project 'dual_core'.
+20:40:04 INFO  : The file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core\_ide\psinit\ps7_init.tcl' stored in project is removed.
+20:40:25 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core\_ide\psinit' in project 'dual_core'.
+20:40:25 INFO  : The hardware specfication used by project 'second_core' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+20:40:25 INFO  : The file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\second_core\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+20:40:25 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\second_core\_ide\bitstream' in project 'second_core'.
+20:40:25 INFO  : The file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\second_core\_ide\psinit\ps7_init.tcl' stored in project is removed.
+20:40:37 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\second_core\_ide\psinit' in project 'second_core'.
+20:44:19 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+20:44:21 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...

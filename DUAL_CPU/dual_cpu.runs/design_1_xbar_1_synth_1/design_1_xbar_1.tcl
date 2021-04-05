@@ -91,7 +91,7 @@ set_property ip_output_repo c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_c
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.xci
+read_ip -quiet C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

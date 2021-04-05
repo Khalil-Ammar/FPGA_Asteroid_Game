@@ -1,4 +1,5 @@
 set_property SRC_FILE_INFO {cfile:C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/myConstraints.xdc rfile:../../../dual_cpu.srcs/constrs_1/new/myConstraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc rfile:../../../dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T22 [get_ports heartbeat]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
@@ -197,3 +198,39 @@ set_property src_info {type:XDC file:1 line:111 export:INPUT save:INPUT read:REA
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
 set_property src_info {type:XDC file:1 line:112 export:INPUT save:INPUT read:READ} [current_design]
 connect_debug_port dbg_hub/clk [get_nets u_ila_0_FCLK_CLK0]
+set_property src_info {type:XDC file:2 line:187 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y21  [get_ports {VGA_B[0]}];  # "VGA-B1"
+set_property src_info {type:XDC file:2 line:189 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y20  [get_ports {VGA_B[1]}];  # "VGA-B2"
+set_property src_info {type:XDC file:2 line:191 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB20 [get_ports {VGA_B[2]}];  # "VGA-B3"
+set_property src_info {type:XDC file:2 line:193 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB19 [get_ports {VGA_B[3]}];  # "VGA-B4"
+set_property src_info {type:XDC file:2 line:195 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB22 [get_ports {VGA_G[0]}];  # "VGA-G1"
+set_property src_info {type:XDC file:2 line:197 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA22 [get_ports {VGA_G[1]}];  # "VGA-G2"
+set_property src_info {type:XDC file:2 line:199 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB21 [get_ports {VGA_G[2]}];  # "VGA-G3"
+set_property src_info {type:XDC file:2 line:201 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA21 [get_ports {VGA_G[3]}];  # "VGA-G4"
+set_property src_info {type:XDC file:2 line:203 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA19 [get_ports {VGA_HS}];  # "VGA-HS"
+set_property src_info {type:XDC file:2 line:204 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V20  [get_ports {VGA_R[0]}];  # "VGA-R1"
+set_property src_info {type:XDC file:2 line:206 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U20  [get_ports {VGA_R[1]}];  # "VGA-R2"
+set_property src_info {type:XDC file:2 line:208 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V19  [get_ports {VGA_R[2]}];  # "VGA-R3"
+set_property src_info {type:XDC file:2 line:210 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V18  [get_ports {VGA_R[3]}];  # "VGA-R4"
+set_property src_info {type:XDC file:2 line:212 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y19  [get_ports {VGA_VS}];  # "VGA-VS"
+set_property src_info {type:XDC file:2 line:374 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
+set_property src_info {type:XDC file:2 line:379 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS18 [get_ports -of_objects [get_iobanks 34]];
+set_property src_info {type:XDC file:2 line:384 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS18 [get_ports -of_objects [get_iobanks 35]];
+set_property src_info {type:XDC file:2 line:387 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]];

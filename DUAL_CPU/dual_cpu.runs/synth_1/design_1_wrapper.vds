@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Apr  2 03:09:31 2021
-# Process ID: 6952
+# Start of session at: Sun Apr  4 16:25:40 2021
+# Process ID: 38468
 # Current directory: C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/design_1_wrapper.vds
@@ -13,7 +13,7 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1100.008 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1098.500 ; gain = 0.000
 Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -21,59 +21,105 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23872
+INFO: [Synth 8-7075] Helper process launched with PID 33612
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1100.008 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1098.500 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
-INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1067' bound to instance 'design_1_i' of component 'design_1' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1106]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1259]
-INFO: [Synth 8-3491] module 'design_1_axi_dma_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'design_1_axi_dma_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1728]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_axi_dma_0_0_stub.vhdl:81]
-INFO: [Synth 8-3491] module 'design_1_axi_fifo_mm_s_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_axi_fifo_mm_s_0_0_stub.vhdl:5' bound to instance 'axi_fifo_mm_s_0' of component 'design_1_axi_fifo_mm_s_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1800]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_fifo_mm_s_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_axi_fifo_mm_s_0_0_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'design_1_myI2STx_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_myI2STx_0_0_stub.vhdl:5' bound to instance 'myI2STx_0' of component 'design_1_myI2STx_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1835]
-INFO: [Synth 8-638] synthesizing module 'design_1_myI2STx_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_myI2STx_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_myPrescaler_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_myPrescaler_0_0_stub.vhdl:5' bound to instance 'myPrescaler_0' of component 'design_1_myPrescaler_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1848]
-INFO: [Synth 8-638] synthesizing module 'design_1_myPrescaler_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_myPrescaler_0_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'design_1_myPrescaler_1_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_myPrescaler_1_0_stub.vhdl:5' bound to instance 'myPrescaler_1' of component 'design_1_myPrescaler_1_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1853]
-INFO: [Synth 8-638] synthesizing module 'design_1_myPrescaler_1_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_myPrescaler_1_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'design_1_mySPIRxTx_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_mySPIRxTx_0_0_stub.vhdl:5' bound to instance 'mySPIRxTx_0' of component 'design_1_mySPIRxTx_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1858]
-INFO: [Synth 8-638] synthesizing module 'design_1_mySPIRxTx_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_mySPIRxTx_0_0_stub.vhdl:27]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1877]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_processing_system7_0_0_stub.vhdl:119]
-INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:611]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:55]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1804' bound to instance 'design_1_i' of component 'design_1' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1849]
+INFO: [Synth 8-3491] module 'design_1_Asteroid_Menu_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_Asteroid_Menu_0_0_stub.vhdl:5' bound to instance 'Asteroid_Menu_0' of component 'design_1_Asteroid_Menu_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:2804]
+INFO: [Synth 8-638] synthesizing module 'design_1_Asteroid_Menu_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_Asteroid_Menu_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_Asteroid_graph_anima_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_Asteroid_graph_anima_0_0_stub.vhdl:5' bound to instance 'Asteroid_graph_anima_0' of component 'design_1_Asteroid_graph_anima_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:2817]
+INFO: [Synth 8-638] synthesizing module 'design_1_Asteroid_graph_anima_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_Asteroid_graph_anima_0_0_stub.vhdl:49]
+INFO: [Synth 8-3491] module 'design_1_GPU_controller_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_GPU_controller_0_0_stub.vhdl:5' bound to instance 'GPU_controller_0' of component 'design_1_GPU_controller_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:2858]
+INFO: [Synth 8-638] synthesizing module 'design_1_GPU_controller_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_GPU_controller_0_0_stub.vhdl:65]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:2002]
+INFO: [Synth 8-3491] module 'design_1_axi_dma_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'design_1_axi_dma_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:2915]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_axi_dma_0_0_stub.vhdl:81]
+INFO: [Synth 8-3491] module 'design_1_axi_fifo_mm_s_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_axi_fifo_mm_s_0_0_stub.vhdl:5' bound to instance 'axi_fifo_mm_s_0' of component 'design_1_axi_fifo_mm_s_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:2987]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_fifo_mm_s_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_axi_fifo_mm_s_0_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3022]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3046]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_lfsr_7_0_2' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_lfsr_7_0_2_stub.vhdl:5' bound to instance 'lfsr_7_0' of component 'design_1_lfsr_7_0_2' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3053]
+INFO: [Synth 8-638] synthesizing module 'design_1_lfsr_7_0_2' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_lfsr_7_0_2_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_myI2STx_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_myI2STx_0_0_stub.vhdl:5' bound to instance 'myI2STx_0' of component 'design_1_myI2STx_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3077]
+INFO: [Synth 8-638] synthesizing module 'design_1_myI2STx_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_myI2STx_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_myPrescaler_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_myPrescaler_0_0_stub.vhdl:5' bound to instance 'myPrescaler_0' of component 'design_1_myPrescaler_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3090]
+INFO: [Synth 8-638] synthesizing module 'design_1_myPrescaler_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_myPrescaler_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_myPrescaler_1_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_myPrescaler_1_0_stub.vhdl:5' bound to instance 'myPrescaler_1' of component 'design_1_myPrescaler_1_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3095]
+INFO: [Synth 8-638] synthesizing module 'design_1_myPrescaler_1_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_myPrescaler_1_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_mySPIRxTx_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_mySPIRxTx_0_0_stub.vhdl:5' bound to instance 'mySPIRxTx_0' of component 'design_1_mySPIRxTx_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3100]
+INFO: [Synth 8-638] synthesizing module 'design_1_mySPIRxTx_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_mySPIRxTx_0_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3119]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_processing_system7_0_0_stub.vhdl:119]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:995]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:55]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (1#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:55]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:153]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (2#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:153]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:277]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_3' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_3' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:460]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_3' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_auto_pc_3_stub.vhdl:70]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (3#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:277]
-INFO: [Synth 8-3491] module 'design_1_xbar_1' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1002]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_xbar_1_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_1' (4#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:611]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_1' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:2070]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_1' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_smartconnect_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'design_1_smartconnect_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:2083]
-INFO: [Synth 8-638] synthesizing module 'design_1_smartconnect_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-6952-DESKTOP-P28JKS5/realtime/design_1_smartconnect_0_0_stub.vhdl:94]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (5#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1106]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (6#1) [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:258]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (3#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_YFYJ3U' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:365]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_YFYJ3U' (4#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_17KQ732' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:470]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_17KQ732' (5#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:470]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:600]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:783]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (6#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:600]
+INFO: [Synth 8-3491] module 'design_1_xbar_1' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1682]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_xbar_1_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_1' (7#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:995]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_50M_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_rst_clk_wiz_0_50M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_50M' of component 'design_1_rst_clk_wiz_0_50M_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3373]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_50M_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_rst_clk_wiz_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_1' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3386]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_1' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_rst_ps7_0_100M_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_smartconnect_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'design_1_smartconnect_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3399]
+INFO: [Synth 8-638] synthesizing module 'design_1_smartconnect_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_smartconnect_0_0_stub.vhdl:94]
+INFO: [Synth 8-3491] module 'design_1_vga_sync_0_0' declared at 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_vga_sync_0_0_stub.vhdl:5' bound to instance 'vga_sync_0' of component 'design_1_vga_sync_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3485]
+INFO: [Synth 8-638] synthesizing module 'design_1_vga_sync_0_0' [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/.Xil/Vivado-38468-DESKTOP-P28JKS5/realtime/design_1_vga_sync_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3496]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 12 - type: integer 
+	Parameter DIN_FROM bound to: 11 - type: integer 
+	Parameter DIN_TO bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (8#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (9#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at 'c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_1_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3501]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 12 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (9#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (10#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_2_0' declared at 'c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_2_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:3506]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_2_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 12 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (10#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_2_0' (11#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (12#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/synth/design_1.vhd:1849]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (13#1) [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:55]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1135.359 ; gain = 35.352
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1143.309 ; gain = 44.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.359 ; gain = 35.352
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1143.309 ; gain = 44.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.359 ; gain = 35.352
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1143.309 ; gain = 44.809
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1135.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1143.309 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -90,8 +136,8 @@ Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sou
 Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
 Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
-Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_1/design_1_rst_ps7_0_100M_1/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_1/design_1_rst_ps7_0_100M_1/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_myPrescaler_1_0/design_1_myPrescaler_1_0/design_1_myPrescaler_1_0_in_context.xdc] for cell 'design_1_i/myPrescaler_1'
@@ -100,28 +146,52 @@ Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sou
 Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_in_context.xdc] for cell 'design_1_i/axi_fifo_mm_s_0'
 Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
 Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0_in_context.xdc] for cell 'design_1_i/GPU_controller_0'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0_in_context.xdc] for cell 'design_1_i/GPU_controller_0'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_Asteroid_graph_anima_0_0/design_1_Asteroid_graph_anima_0_0/design_1_Asteroid_graph_anima_0_0_in_context.xdc] for cell 'design_1_i/Asteroid_graph_anima_0'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_Asteroid_graph_anima_0_0/design_1_Asteroid_graph_anima_0_0/design_1_Asteroid_graph_anima_0_0_in_context.xdc] for cell 'design_1_i/Asteroid_graph_anima_0'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_Asteroid_Menu_0_0/design_1_Asteroid_Menu_0_0/design_1_Asteroid_Menu_0_0_in_context.xdc] for cell 'design_1_i/Asteroid_Menu_0'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_Asteroid_Menu_0_0/design_1_Asteroid_Menu_0_0/design_1_Asteroid_Menu_0_0_in_context.xdc] for cell 'design_1_i/Asteroid_Menu_0'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_vga_sync_0_0/design_1_vga_sync_0_0/design_1_vga_sync_0_0_in_context.xdc] for cell 'design_1_i/vga_sync_0'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_vga_sync_0_0/design_1_vga_sync_0_0/design_1_vga_sync_0_0_in_context.xdc] for cell 'design_1_i/vga_sync_0'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_50M_0/design_1_rst_clk_wiz_0_50M_0/design_1_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_50M'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_50M_0/design_1_rst_clk_wiz_0_50M_0/design_1_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_50M'
+Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_lfsr_7_0_2/design_1_lfsr_7_0_2/design_1_lfsr_7_0_2_in_context.xdc] for cell 'design_1_i/lfsr_7_0'
+Finished Parsing XDC File [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_lfsr_7_0_2/design_1_lfsr_7_0_2/design_1_lfsr_7_0_2_in_context.xdc] for cell 'design_1_i/lfsr_7_0'
 Parsing XDC File [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/myConstraints.xdc]
 Finished Parsing XDC File [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/myConstraints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/myConstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc:374]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc:379]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc:384]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc:387]
+Finished Parsing XDC File [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/constrs_1/new/Zedboard-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1169.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1176.793 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1169.285 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1176.793 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1169.285 ; gain = 69.277
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1176.793 ; gain = 78.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1169.285 ; gain = 69.277
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1176.793 ; gain = 78.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -399,11 +469,22 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (const
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/myPrescaler_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_fifo_mm_s_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/smartconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/GPU_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Asteroid_graph_anima_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Asteroid_Menu_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vga_sync_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_0_50M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/lfsr_7_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1169.285 ; gain = 69.277
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1176.793 ; gain = 78.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1169.285 ; gain = 69.277
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1176.793 ; gain = 78.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -425,25 +506,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.285 ; gain = 69.277
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1176.793 ; gain = 78.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1209.996 ; gain = 109.988
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1214.059 ; gain = 115.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1210.441 ; gain = 110.434
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1214.656 ; gain = 116.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1229.508 ; gain = 129.500
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1233.719 ; gain = 135.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -461,95 +542,111 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.293 ; gain = 134.285
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1240.426 ; gain = 141.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.293 ; gain = 134.285
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1240.426 ; gain = 141.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.293 ; gain = 134.285
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1240.426 ; gain = 141.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.293 ; gain = 134.285
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1240.426 ; gain = 141.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.293 ; gain = 134.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1240.426 ; gain = 141.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.293 ; gain = 134.285
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1240.426 ; gain = 141.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------------------------+----------+
-|      |BlackBox name                   |Instances |
-+------+--------------------------------+----------+
-|1     |design_1_xbar_1                 |         1|
-|2     |design_1_auto_pc_3              |         1|
-|3     |design_1_axi_dma_0_0            |         1|
-|4     |design_1_axi_fifo_mm_s_0_0      |         1|
-|5     |design_1_myI2STx_0_0            |         1|
-|6     |design_1_myPrescaler_0_0        |         1|
-|7     |design_1_myPrescaler_1_0        |         1|
-|8     |design_1_mySPIRxTx_0_0          |         1|
-|9     |design_1_processing_system7_0_0 |         1|
-|10    |design_1_rst_ps7_0_100M_1       |         1|
-|11    |design_1_smartconnect_0_0       |         1|
-+------+--------------------------------+----------+
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_xbar_1                   |         1|
+|2     |design_1_auto_pc_0                |         1|
+|3     |design_1_Asteroid_Menu_0_0        |         1|
+|4     |design_1_Asteroid_graph_anima_0_0 |         1|
+|5     |design_1_GPU_controller_0_0       |         1|
+|6     |design_1_axi_dma_0_0              |         1|
+|7     |design_1_axi_fifo_mm_s_0_0        |         1|
+|8     |design_1_axi_gpio_0_0             |         1|
+|9     |design_1_clk_wiz_0_0              |         1|
+|10    |design_1_lfsr_7_0_2               |         1|
+|11    |design_1_myI2STx_0_0              |         1|
+|12    |design_1_myPrescaler_0_0          |         1|
+|13    |design_1_myPrescaler_1_0          |         1|
+|14    |design_1_mySPIRxTx_0_0            |         1|
+|15    |design_1_processing_system7_0_0   |         1|
+|16    |design_1_rst_clk_wiz_0_50M_0      |         1|
+|17    |design_1_rst_ps7_0_100M_1         |         1|
+|18    |design_1_smartconnect_0_0         |         1|
+|19    |design_1_vga_sync_0_0             |         1|
++------+----------------------------------+----------+
 
 Report Cell Usage: 
-+------+-------------------------------------+------+
-|      |Cell                                 |Count |
-+------+-------------------------------------+------+
-|1     |design_1_auto_pc_3_bbox              |     1|
-|2     |design_1_axi_dma_0_0_bbox            |     1|
-|3     |design_1_axi_fifo_mm_s_0_0_bbox      |     1|
-|4     |design_1_myI2STx_0_0_bbox            |     1|
-|5     |design_1_myPrescaler_0_0_bbox        |     1|
-|6     |design_1_myPrescaler_1_0_bbox        |     1|
-|7     |design_1_mySPIRxTx_0_0_bbox          |     1|
-|8     |design_1_processing_system7_0_0_bbox |     1|
-|9     |design_1_rst_ps7_0_100M_1_bbox       |     1|
-|10    |design_1_smartconnect_0_0_bbox       |     1|
-|11    |design_1_xbar_1_bbox                 |     1|
-|12    |IBUF                                 |     1|
-|13    |OBUF                                 |     8|
-+------+-------------------------------------+------+
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |design_1_Asteroid_Menu_0_0_bbox        |     1|
+|2     |design_1_Asteroid_graph_anima_0_0_bbox |     1|
+|3     |design_1_GPU_controller_0_0_bbox       |     1|
+|4     |design_1_auto_pc_0_bbox                |     1|
+|5     |design_1_axi_dma_0_0_bbox              |     1|
+|6     |design_1_axi_fifo_mm_s_0_0_bbox        |     1|
+|7     |design_1_axi_gpio_0_0_bbox             |     1|
+|8     |design_1_clk_wiz_0_0_bbox              |     1|
+|9     |design_1_lfsr_7_0_2_bbox               |     1|
+|10    |design_1_myI2STx_0_0_bbox              |     1|
+|11    |design_1_myPrescaler_0_0_bbox          |     1|
+|12    |design_1_myPrescaler_1_0_bbox          |     1|
+|13    |design_1_mySPIRxTx_0_0_bbox            |     1|
+|14    |design_1_processing_system7_0_0_bbox   |     1|
+|15    |design_1_rst_clk_wiz_0_50M_0_bbox      |     1|
+|16    |design_1_rst_ps7_0_100M_1_bbox         |     1|
+|17    |design_1_smartconnect_0_0_bbox         |     1|
+|18    |design_1_vga_sync_0_0_bbox             |     1|
+|19    |design_1_xbar_1_bbox                   |     1|
+|20    |IBUF                                   |     6|
+|21    |OBUF                                   |    22|
++------+---------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.293 ; gain = 134.285
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1240.426 ; gain = 141.926
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 1234.293 ; gain = 100.359
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.293 ; gain = 134.285
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 1240.426 ; gain = 108.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1240.426 ; gain = 141.926
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1247.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1252.488 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1256.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1259.180 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+89 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 1256.102 ; gain = 156.094
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1259.180 ; gain = 160.680
 INFO: [Common 17-1381] The checkpoint 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  2 03:11:04 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  4 16:27:18 2021...
