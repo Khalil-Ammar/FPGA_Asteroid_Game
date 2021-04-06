@@ -28,6 +28,7 @@
 #define ENABLE_DIFFICULTY_LEVELS 0
 
 
+
 //
 //----------------------------------------------------
 // GLOBAL VARIABLE DECLARATIONS
@@ -41,16 +42,16 @@ struct Asteroid{
 };
 
 struct Bullet{
-	int dx;
-	int dy;
+	float dx;
+	float dy;
 	int x;
 	int y;
 	bool isValid;
 };
 
 struct EnemySaucer{
-	float dx;
-	float dy;
+	int dx;
+	int dy;
 	int x;
 	int y;
 	bool isValid;
@@ -78,6 +79,26 @@ extern struct Asteroid asteroidArray[INIT_ASTRD_NBR];
 extern struct Bullet bulletArray[MAX_BULLET_COUNT];
 extern struct Bullet enemyBulletArray[MAX_ENEMY_BULLET_COUNT];
 
+typedef enum {
+	START_GAME = 0,
+	AUDIO = 1,
+	DIFFICULTY = 2
+} MenuHighlight;
+
+typedef enum{
+	ON = 0,
+	OFF = 1
+} AudioSetting;
+
+typedef enum{
+	LOW = 0,
+	HIGH = 1
+} DifficultySetting;
+
+typedef enum{
+	GAME_SCREEN = 1,
+	MENU_SCREEN = 0
+} Screen;
 
 //----------------------------------------------------
 // PROTOTYPE FUNCTIONS
@@ -86,7 +107,10 @@ void BTN_Intr_Handler(void *baseaddr_p);
 bool testOverlap(int x1, int x2, int y1, int y2);
 int InterruptSystemSetup(XScuGic *XScuGicInstancePtr);
 int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr);
+void InitMenu();
+void MenuHandler();
 void InitSession();
+void InitGameSession();
 void ResetShip();
 void GameOver(bool hasWon);
 void RenderGameOverScreen();

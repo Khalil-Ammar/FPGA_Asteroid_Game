@@ -96,3 +96,10 @@ platform active {dual_core_hw}
 platform generate
 platform active {dual_core_hw}
 platform generate -domains 
+platform clean
+platform generate
+platform generate
+platform active {dual_core_hw}
+platform generate -domains 
+platform clean
+platform generate

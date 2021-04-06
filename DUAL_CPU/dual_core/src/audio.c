@@ -42,72 +42,11 @@ struct SpaceShip{
 XScuGic InterruptController; /* Instance of the Interrupt Controller */
 XGpio BTNInst;
 XScuGic INTCInst;
-int btn_value;
-struct SpaceShip shipInstance;
-bool hasMoved;
-bool hasFired;
 
 
 
 
-void BTN_Intr_Handler(void *InstancePtr)
-{
-
-	// Disable GPIO interrupts
-	XGpio_InterruptDisable(&BTNInst, BTN_INT);
-
-	// Ignore additional button presses
-	if ((XGpio_InterruptGetStatus(&BTNInst) & BTN_INT) !=
-			BTN_INT) {
-			return;
-		}
-	// read button value
-	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
-
-	//make sure only one move per click is registered
-	if(hasMoved == 0){
-		if(btn_value == 16) {
-			hasMoved = 1;
-			shipInstance.y = shipInstance.y - 6;
-			if (shipInstance.y<0){
-				shipInstance.y=shipInstance.y+480;
-			}
-		}
-
-		if(btn_value == 2){
-			hasMoved = 1;
-			shipInstance.y = shipInstance.y + 6;
-			if(shipInstance.y > 480){
-				shipInstance.y = shipInstance.y-480;
-			}
-		}
-
-		if(btn_value == 8){
-			hasMoved = 1;
-			shipInstance.x = shipInstance.x + 6;
-			if(shipInstance.x> 640){
-				shipInstance.x = shipInstance.x-640;
-			}
-		}
-
-		if(btn_value == 4){
-			hasMoved = 1;
-			shipInstance.x = shipInstance.x - 6;
-			if(shipInstance.x<0){
-				shipInstance.x = shipInstance.x+640;
-			}
-		}
-	}
-
-	if(btn_value == 1) {
-			hasFired = 1;
-	}
-
-    (void)XGpio_InterruptClear(&BTNInst, BTN_INT);
-
-    // Enable GPIO interrupts
-    XGpio_InterruptEnable(&BTNInst, BTN_INT);
-}
+void BTN_Intr_Handler(void *InstancePtr){};
 
 int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr){
 	/*

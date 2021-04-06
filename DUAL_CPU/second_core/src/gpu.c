@@ -4,6 +4,7 @@
 #include "gpu.h"
 #include "GPU_controller.h"
 #include "helloworld.h"
+#include "xparameters.h"
 
 
 
@@ -42,6 +43,8 @@ void InitRegisters(){
 
 	//TODO Khalil: Init enemy saucer registers when multiple enemy saucers are implemented
 }
+
+/********************************* Lives And Score *********************************/
 void RenderLives(int lives){
 	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[14], lives);
 }
@@ -57,6 +60,7 @@ void RenderScore(){
 	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[13], scoreRegister);
 }
 
+/********************************* In-Game Sprites *********************************/
 void RenderBullet(struct Bullet bulletInstance){
 	//Find an invalid/non-rendered bullet
 	u32 bulletReg = (bulletInstance.y << 10) + bulletInstance.x;
@@ -132,7 +136,6 @@ void RenderAsteroid(struct Asteroid asteroidInstance){
 		u32 reg = GPU_CONTROLLER_mReadReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1]);
 		if (reg == INVALID_SPRITE_MASK){
 			GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1], asteroidReg); // render asteroid
-			usleep(10);
 			return;
 		}
 	}
@@ -145,7 +148,7 @@ void DestroyBullet(struct Bullet bulletInstance){
 		u32 bulletToCompare = GPU_CONTROLLER_mReadReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+6]) & EXTRACT_COORDINATES_MASK; //extract lowest 20 bits
 		if (bulletToCompare == bulletToDestroy){
 			GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+6], INVALID_SPRITE_MASK); // destroy bullet
-			usleep(10);
+			usleep(1000);
 			return;
 		}
 	}
@@ -158,7 +161,7 @@ void DestroyEnemyBullet(struct Bullet bulletInstance){
 		u32 bulletToCompare = GPU_CONTROLLER_mReadReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+10]) & EXTRACT_COORDINATES_MASK; //extract lowest 20 bits
 		if (bulletToCompare == bulletToDestroy){
 			GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+10], INVALID_SPRITE_MASK); // destroy asteroid
-			usleep(10);
+			usleep(1000);
 			return;
 		}
 	}
@@ -171,10 +174,39 @@ void DestroyAsteroid(struct Asteroid asteroidInstance){
 		u32 asteroidToCompare = GPU_CONTROLLER_mReadReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1]) & EXTRACT_COORDINATES_MASK; //extract lowest 20 bits
 		if (asteroidToCompare == asteroidToDestroy){
 			GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1], INVALID_SPRITE_MASK); // destroy asteroid
-			usleep(10);
+			usleep(1000);
 			return;
 		}
 	}
+}
+
+/*************************** Menu Screens *****************************/
+void RenderScreen(Screen screen){
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[19], (int)screen);
+}
+
+void RenderMenuHighlight(MenuHighlight highlight){
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[15], (int)highlight);
+}
+
+void MenuSetAudio(AudioSetting audioSetting){
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[16], (int)audioSetting);
+}
+
+void MenuSetDifficulty(DifficultySetting difficultySetting){
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[17], (int)difficultySetting);
+}
+
+void MenuSetHighScore(int highScore){
+	int temp = highScore;
+	int digit;
+	u32 highScoreRegister;
+	for (int i = 0; i < 3; i++){
+		digit = temp % 10;
+		temp /= 10;
+		highScoreRegister += (digit << 4*i);
+	}
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[18], highScoreRegister);
 }
 
 void RenderGameOverScreen(){

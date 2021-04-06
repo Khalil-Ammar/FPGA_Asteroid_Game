@@ -23,22 +23,41 @@
 //----------------------------------------------------
 // GLOBAL VARIABLE DEFINITIONS
 //----------------------------------------------------
+
+// Interrupt variables
 XGpio BTNInst;
 XScuGic INTCInst;
 int btn_value;
-struct SpaceShip shipInstance;
-struct EnemySaucer enemySaucerInstance;
+
+// In-Game variables
 int score = 0;
+int highScore = 0;
 int fire = 0;
 int frame = 1;
 int asteroidCount = 0;
-int difficultyLevel = 1;
+
+// Flags
 bool isGameOver = 0;
 bool hasFired = 0;
 bool hasMoved = 0;
+bool menuOn = 0;
+bool menuAction = 0;
+bool isButtonPressed = 0;
+bool resetGame = 0;
+
+// Menu enums
+DifficultySetting difficultyLevel = LOW;
+AudioSetting audioSetting = ON;
+MenuHighlight currentHighlight;
+Screen currentScreen;
+
+// Game structs
+struct SpaceShip shipInstance;
+struct EnemySaucer enemySaucerInstance;
 struct Asteroid asteroidArray[INIT_ASTRD_NBR];
 struct Bullet bulletArray[MAX_BULLET_COUNT];
 struct Bullet enemyBulletArray[MAX_ENEMY_BULLET_COUNT];
+
 
 
 
@@ -62,7 +81,7 @@ int main (void)
   // INITIALIZE THE PERIPHERALS & SET DIRECTIONS OF GPIO
   //----------------------------------------------------
 
-  // Initialise Push Buttons
+  // Initialize Push Buttons
   status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
   if(status != XST_SUCCESS){
 	  return XST_FAILURE;
@@ -77,16 +96,42 @@ int main (void)
 	  return XST_FAILURE;
   }
 
+  // Local variables
   asteroidCount = INIT_ASTRD_NBR;
   int bulletCount = 0;
   int enemyBulletCount = 0;
   int lives = INIT_LIVES;
   double firex, firey, astx, asty;
 
-  // initialize session
+  // initialize registers and offset table
   InitSession();
 
+  // initialize menu screen
+  InitMenu();
+
   while(1){
+
+	 // Reset game upon user request
+	 if(resetGame){
+	   asteroidCount = INIT_ASTRD_NBR;
+	   bulletCount = 0;
+	   enemyBulletCount = 0;
+	   lives = INIT_LIVES;
+	   score = 0;
+
+	   // initialize registers and offset table
+	   InitSession();
+
+	   // initialize menu screen
+	   InitMenu();
+
+	   //Clear game over flags
+	   resetGame = 0;
+	   isGameOver = 0;
+	 }
+
+	// Process user interaction with the main menu
+	MenuHandler();
 
 	//Update ship position if it has moved
 	if(hasMoved){
@@ -101,36 +146,27 @@ int main (void)
 		enemyBullet.y = enemySaucerInstance.y + 36;
 		enemyBullet.isValid = 1;
 
-		//find slope to spaceship
+		//find angle with respect to spaceship
 		float delta_y = (enemyBullet.y - (shipInstance.y + 18));
 		float delta_x = (enemyBullet.x - (shipInstance.x + 18));
 		float realSlope = delta_y / delta_x;
+		float angle = atan(realSlope);
 
 
-		//Add aim uncertainty
-		float slope;
-		if(ENABLE_DIFFICULTY_LEVELS){
-		float slopeOffset = 1/(float)difficultyLevel;
-		float maxSlope = realSlope + (slopeOffset/2);
-		float minSlope = realSlope - (slopeOffset/2);
-		slope = (float)rand()/(float)(RAND_MAX/(maxSlope - minSlope)) + minSlope;
-		}
-		else{
-			slope = realSlope;
+		//Add aim uncertainty in low difficulty
+		if(difficultyLevel == LOW){
+			float maxAngle = angle + 0.3;
+			float minAngle = angle - 0.3;
+			angle = (float)rand()/(float)(RAND_MAX/(maxAngle - minAngle)) + minAngle; // +/- 50% of the initial angle
 		}
 
 
 		//set dx and dy for bullet based on spaceship's current position
-		if(shipInstance.x > enemyBullet.x){
-			enemyBullet.dx = 5;
-		}
-		else if(shipInstance.x < enemyBullet.x){
-			enemyBullet.dx = -5;
-		}
-		else{
-			enemyBullet.dx = 0;
-		}
-		enemyBullet.dy = slope * enemyBullet.dx;
+		int enemyBulletSpeed = 5;
+		enemyBullet.dx = cos(angle)* enemyBulletSpeed;
+		enemyBullet.dy = sin(angle)* enemyBulletSpeed;
+		enemyBullet.dx = shipInstance.x > enemyBullet.x ? abs(enemyBullet.dx) : -abs(enemyBullet.dx);
+		enemyBullet.dy = shipInstance.y > enemyBullet.y ? abs(enemyBullet.dy) : -abs(enemyBullet.dy);
 
 
 		// if there exists other bullets, replace one of the invalid ones
@@ -172,6 +208,7 @@ int main (void)
 			else{
 				bulletArray[0] = bulletInstance;
 			}
+			// increment count and render bullet
 			bulletCount++;
 			RenderBullet(bulletInstance);
 		}
@@ -211,7 +248,8 @@ int main (void)
 
 			// update bullet position
 			struct Bullet oldBulletInstance = bulletArray[i];
-			bulletArray[i].y = bulletArray[i].y-5;
+			bulletArray[i].y = bulletArray[i].y - 5;
+			bulletArray[i].y = bulletArray[i].y < 0 ? 0 : bulletArray[i].y;
 			UpdateBullet(oldBulletInstance, bulletArray[i]);
 
 			// destroy bullet if out-of-bounds
@@ -227,6 +265,10 @@ int main (void)
 	// Handle Asteroids
 	if(asteroidCount > 0){
 		for(int i = 0; i < INIT_ASTRD_NBR; i++){
+			//break if game over
+			if(isGameOver){
+				break;
+			}
 			// skip invalid asteroids.
 			if(!asteroidArray[i].isValid){
 				continue;
@@ -271,6 +313,7 @@ int main (void)
 			  RenderLives(lives);
 			  if(lives == 0){
 				  GameOver(0);	//Player lost
+				  break;
 			  }
 		    }
 
@@ -279,6 +322,8 @@ int main (void)
 				for(int j = 0; j < MAX_BULLET_COUNT; j++){
 					firex = bulletArray[j].x;
 					firey = bulletArray[j].y;
+
+					// If collision, destroy both bullet and asteroid and increase score.
 					if(testOverlap(firex, firex+1, astx, astx+36) && testOverlap(firey, firey+1, asty, asty+36)){
 						asteroidCount--;
 						bulletCount--;
@@ -288,18 +333,19 @@ int main (void)
 						DestroyBullet(bulletArray[j]);
 						score += SCORE_PER_ASTEROID;
 						RenderScore();
+						// Player wins if all asteroids destroyed
 						if(asteroidCount == 0){
 							GameOver(1); //Player won
+							break;
 						}
-						break;
 				    }
 				}
 			}
 		}
 	}
 
-	// Check if any enemy bullet has hit the spaecship
-	if (enemyBulletCount > 0){
+	// Check if any enemy bullet has hit the spaceship
+	if (!isGameOver && enemyBulletCount > 0){
 		int bulletX, bulletY;
 		for(int i = 0; i < MAX_ENEMY_BULLET_COUNT; i++){
 			//skip invalid bullets
@@ -322,6 +368,7 @@ int main (void)
 				RenderLives(lives);
 				if(lives == 0){
 					GameOver(0); // Player lost
+					break;
 				}
 			}
 		}
@@ -355,43 +402,77 @@ void BTN_Intr_Handler(void *InstancePtr)
 	// read button value
 	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
 
-	//make sure only one move per click is registered
-	if(hasMoved == 0){
+	//make sure only one action per click is registered while in-game
+	bool handlingAction = hasMoved || isButtonPressed || hasFired || menuAction;
+	if(!handlingAction){
+
+		//BTNU
 		if(btn_value == 16) {
-			hasMoved = 1;
-			shipInstance.y = shipInstance.y - 6;
-			if (shipInstance.y<0){
-				shipInstance.y=shipInstance.y+480;
+			if(menuOn){
+				menuAction = 1;
+				// avoid negative dividend for module operation
+				if(currentHighlight == START_GAME){
+					currentHighlight = DIFFICULTY;
+				}
+				else{
+					currentHighlight = (currentHighlight - 1) % (DIFFICULTY + 1);
+				}
+			}
+			else{
+				hasMoved = 1;
+				shipInstance.y = shipInstance.y - 6;
+				if (shipInstance.y<0){
+					shipInstance.y=shipInstance.y+480;
+				}
 			}
 		}
 
+		//BTND
 		if(btn_value == 2){
-			hasMoved = 1;
-			shipInstance.y = shipInstance.y + 6;
-			if(shipInstance.y > 480){
-				shipInstance.y = shipInstance.y-480;
+			if(menuOn){
+				menuAction = 1;
+				currentHighlight = (currentHighlight + 1) % (DIFFICULTY + 1);
+			}
+			else{
+				hasMoved = 1;
+				shipInstance.y = shipInstance.y + 6;
+				if(shipInstance.y > 480){
+					shipInstance.y = shipInstance.y-480;
+				}
 			}
 		}
 
+		//BTNL
 		if(btn_value == 8){
-			hasMoved = 1;
-			shipInstance.x = shipInstance.x + 6;
-			if(shipInstance.x> 640){
-				shipInstance.x = shipInstance.x-640;
+			if(!menuOn){
+				hasMoved = 1;
+				shipInstance.x = shipInstance.x + 6;
+				if(shipInstance.x> 640){
+					shipInstance.x = shipInstance.x-640;
+				}
 			}
 		}
 
+		//BTNR
 		if(btn_value == 4){
-			hasMoved = 1;
-			shipInstance.x = shipInstance.x - 6;
-			if(shipInstance.x<0){
-				shipInstance.x = shipInstance.x+640;
+			if(!menuOn){
+				hasMoved = 1;
+				shipInstance.x = shipInstance.x - 6;
+				if(shipInstance.x<0){
+					shipInstance.x = shipInstance.x+640;
+				}
 			}
 		}
 	}
 
+	//BTNC
 	if(btn_value == 1) {
+		if(menuOn){
+			isButtonPressed = 1;
+		}
+		else{
 			hasFired = 1;
+		}
 	}
 
     (void)XGpio_InterruptClear(&BTNInst, BTN_INT);
@@ -459,18 +540,38 @@ int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr)
 	return XST_SUCCESS;
 }
 
+void InitMenu(){
+	menuOn = 1;
+
+	//Render Menu
+	currentScreen = MENU_SCREEN;
+	RenderScreen(currentScreen);
+
+	//Highlight "START GAME"
+	currentHighlight = START_GAME;
+	RenderMenuHighlight(currentHighlight);
+
+	// Set default parameters
+	MenuSetAudio(audioSetting);
+	MenuSetDifficulty(difficultyLevel);
+	MenuSetHighScore(highScore);
+
+}
+
 void InitSession(){
 	//init register offset table
 	InitOffsetTable();
 
+	//init asteroid, bullet, and enemy bullet registers as invalid
+	InitRegisters();
+}
+
+void InitGameSession(){
 	//init score
 	InitScore();
 
 	//init lives
 	InitLives();
-
-	//init asteroid, bullet, and enemy bullet registers as invalid
-	InitRegisters();
 
 	// render user ship
 	shipInstance.x = SCREEN_WIDTH>>1;
@@ -504,6 +605,40 @@ void InitSession(){
 //----------------------------------------------------
 // HELPER FUNCTIONS
 //----------------------------------------------------
+void MenuHandler(){
+	while(menuOn){
+		// Highlight corresponding menu button
+		if(menuAction){
+			RenderMenuHighlight(currentHighlight);
+			usleep(0.1 * 1000 * 1000);
+			menuAction = 0;
+		}
+
+		// Handle button press
+		if(isButtonPressed){
+			switch(currentHighlight){
+				case START_GAME:
+					menuOn = 0;
+					currentScreen = GAME_SCREEN;
+					RenderScreen(currentScreen);
+					InitGameSession();
+					break;
+				case AUDIO:
+					audioSetting = audioSetting == ON ? OFF : ON;
+					MenuSetAudio(audioSetting);
+					usleep(0.1 * 1000 * 1000);
+					break;
+				case DIFFICULTY:
+					difficultyLevel = difficultyLevel == LOW ? HIGH : LOW;
+					MenuSetDifficulty(difficultyLevel);
+					usleep(0.1 * 1000 * 1000);
+					break;
+			}
+			isButtonPressed = 0;
+		}
+	}
+}
+
 void ResetShip(){
 	// reset ship coordinates
 	shipInstance.x = SCREEN_WIDTH>>1;
@@ -514,6 +649,8 @@ void ResetShip(){
 }
 
 void GameOver(bool hasWon){
+	// set game over flag
+	isGameOver = 1;
 	if(hasWon){
 		xil_printf("Game Over, You Win!");
 		xil_printf("Score: %i", score);
@@ -522,6 +659,8 @@ void GameOver(bool hasWon){
 		xil_printf("Game Over, You Lost!");
 		xil_printf("Score: %i", score);
 	}
-	RenderGameOverScreen();
+	// update high score and reset game
+	highScore = score > highScore ? score : highScore;
+	resetGame = 1;
 }
 
