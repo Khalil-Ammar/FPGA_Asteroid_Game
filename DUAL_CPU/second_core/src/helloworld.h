@@ -114,6 +114,11 @@ void InitGameSession();
 void ResetShip();
 void GameOver(bool hasWon);
 void RenderGameOverScreen();
+void PlayMenuSoundEffect();
+void PlayBangSoundEffect();
+void PlayThrustSoundEffect();
+void PlayLaserSoundEffect();
+void StopSoundEffect();
 
 
 #endif

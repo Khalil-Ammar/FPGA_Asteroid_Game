@@ -5378,3 +5378,1119 @@ con
 
 15:49:28 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
 15:50:52 INFO  : Disconnected from the channel tcfchan#52.
+15:55:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\temp_xsdb_launch_script.tcl
+15:55:35 INFO  : XSCT server has started successfully.
+15:55:38 INFO  : plnx-install-location is set to ''
+15:55:38 INFO  : Successfully done setting XSCT server connection channel  
+15:55:38 INFO  : Successfully done setting workspace for the tool. 
+15:55:51 INFO  : Platform repository initialization has completed.
+15:55:51 INFO  : Registering command handlers for Vitis TCF services
+15:55:53 INFO  : Successfully done query RDI_DATADIR 
+16:12:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:55 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:12:55 INFO  : 'jtag frequency' command is executed.
+16:12:56 INFO  : Context for 'APU' is selected.
+16:12:56 INFO  : System reset is completed.
+16:12:59 INFO  : 'after 3000' command is executed.
+16:12:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:13:02 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:13:02 INFO  : Context for 'APU' is selected.
+16:13:02 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:13:02 INFO  : 'configparams force-mem-access 1' command is executed.
+16:13:02 INFO  : Context for 'APU' is selected.
+16:13:02 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:13:03 INFO  : 'ps7_init' command is executed.
+16:13:03 INFO  : 'ps7_post_config' command is executed.
+16:13:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:04 ERROR : Cannot halt processor core, timeout
+16:13:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+----------------End of Script----------------
+
+16:13:04 ERROR : Cannot halt processor core, timeout
+16:13:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:22 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:13:22 INFO  : 'jtag frequency' command is executed.
+16:13:22 INFO  : Context for 'APU' is selected.
+16:13:22 INFO  : System reset is completed.
+16:13:25 INFO  : 'after 3000' command is executed.
+16:13:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:13:29 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:13:29 INFO  : Context for 'APU' is selected.
+16:13:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:13:29 INFO  : 'configparams force-mem-access 1' command is executed.
+16:13:29 INFO  : Context for 'APU' is selected.
+16:13:29 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:14:04 ERROR : 'ps7_init' is cancelled.
+16:14:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+16:14:04 ERROR : 'ps7_init' is cancelled.
+16:14:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:14:11 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:14:11 INFO  : 'jtag frequency' command is executed.
+16:14:11 INFO  : Context for 'APU' is selected.
+16:14:11 INFO  : System reset is completed.
+16:14:14 INFO  : 'after 3000' command is executed.
+16:14:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:14:17 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:14:17 INFO  : Context for 'APU' is selected.
+16:14:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:14:17 INFO  : 'configparams force-mem-access 1' command is executed.
+16:14:17 INFO  : Context for 'APU' is selected.
+16:14:17 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:14:18 INFO  : 'ps7_init' command is executed.
+16:14:19 INFO  : 'ps7_post_config' command is executed.
+16:14:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:14:19 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:14:19 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:14:20 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:14:20 INFO  : 'configparams force-mem-access 0' command is executed.
+16:14:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:14:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:14:21 INFO  : 'con' command is executed.
+16:14:23 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:14:24 INFO  : 'con' command is executed.
+16:14:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:14:24 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:15:45 INFO  : Disconnected from the channel tcfchan#1.
+16:17:26 INFO  : Result from executing command 'getProjects': dual_core_hw
+16:17:26 INFO  : Result from executing command 'getPlatforms': dual_core_hw|C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/dual_core_hw.xpfm
+16:17:27 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:17:43 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:18:49 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:18:51 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:19:31 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:19:34 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:19:57 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:19:59 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:20:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:28 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:20:28 INFO  : 'jtag frequency' command is executed.
+16:20:28 INFO  : Context for 'APU' is selected.
+16:20:28 INFO  : System reset is completed.
+16:20:31 INFO  : 'after 3000' command is executed.
+16:20:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:20:33 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:20:33 INFO  : Context for 'APU' is selected.
+16:20:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:20:34 INFO  : 'configparams force-mem-access 1' command is executed.
+16:20:34 INFO  : Context for 'APU' is selected.
+16:20:34 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:20:35 INFO  : 'ps7_init' command is executed.
+16:20:35 INFO  : 'ps7_post_config' command is executed.
+16:20:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:20:35 ERROR : Cannot halt processor core, timeout
+16:20:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+----------------End of Script----------------
+
+16:20:35 ERROR : Cannot halt processor core, timeout
+16:20:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:50 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:20:50 INFO  : 'jtag frequency' command is executed.
+16:20:50 INFO  : Context for 'APU' is selected.
+16:20:51 INFO  : System reset is completed.
+16:20:54 INFO  : 'after 3000' command is executed.
+16:20:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:20:57 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:20:57 INFO  : Context for 'APU' is selected.
+16:20:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:20:57 INFO  : 'configparams force-mem-access 1' command is executed.
+16:20:57 INFO  : Context for 'APU' is selected.
+16:20:57 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:21:28 ERROR : 'ps7_init' is cancelled.
+16:21:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+16:21:28 ERROR : 'ps7_init' is cancelled.
+16:21:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:21:36 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:21:36 INFO  : 'jtag frequency' command is executed.
+16:21:36 INFO  : Context for 'APU' is selected.
+16:21:36 INFO  : System reset is completed.
+16:21:39 INFO  : 'after 3000' command is executed.
+16:21:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:21:41 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:21:41 INFO  : Context for 'APU' is selected.
+16:21:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:21:41 INFO  : 'configparams force-mem-access 1' command is executed.
+16:21:41 INFO  : Context for 'APU' is selected.
+16:21:41 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:21:42 INFO  : 'ps7_init' command is executed.
+16:21:42 INFO  : 'ps7_post_config' command is executed.
+16:21:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:21:42 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:21:43 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:21:43 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:21:43 INFO  : 'configparams force-mem-access 0' command is executed.
+16:21:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:21:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:21:43 INFO  : 'con' command is executed.
+16:21:43 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:21:44 INFO  : 'con' command is executed.
+16:21:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:21:44 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:23:14 INFO  : Disconnected from the channel tcfchan#8.
+16:23:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:15 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:23:15 INFO  : 'jtag frequency' command is executed.
+16:23:15 INFO  : Context for 'APU' is selected.
+16:23:15 INFO  : System reset is completed.
+16:23:18 INFO  : 'after 3000' command is executed.
+16:23:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:23:20 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:23:20 INFO  : Context for 'APU' is selected.
+16:23:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:23:20 INFO  : 'configparams force-mem-access 1' command is executed.
+16:23:20 INFO  : Context for 'APU' is selected.
+16:23:20 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:23:21 INFO  : 'ps7_init' command is executed.
+16:23:21 INFO  : 'ps7_post_config' command is executed.
+16:23:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:21 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:23:21 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:23:22 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:23:22 INFO  : 'configparams force-mem-access 0' command is executed.
+16:23:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:23:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:22 INFO  : 'con' command is executed.
+16:23:22 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:23:22 INFO  : 'con' command is executed.
+16:23:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:23:22 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:25:45 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:25:48 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:26:07 INFO  : Disconnected from the channel tcfchan#9.
+16:26:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:07 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:26:07 INFO  : 'jtag frequency' command is executed.
+16:26:07 INFO  : Context for 'APU' is selected.
+16:26:08 INFO  : System reset is completed.
+16:26:11 INFO  : 'after 3000' command is executed.
+16:26:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:26:13 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:26:13 INFO  : Context for 'APU' is selected.
+16:26:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:26:13 INFO  : 'configparams force-mem-access 1' command is executed.
+16:26:13 INFO  : Context for 'APU' is selected.
+16:26:13 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:26:14 INFO  : 'ps7_init' command is executed.
+16:26:14 INFO  : 'ps7_post_config' command is executed.
+16:26:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:26:14 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:26:14 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:26:15 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:26:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:26:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:26:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:26:15 INFO  : 'con' command is executed.
+16:26:15 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:26:15 INFO  : 'con' command is executed.
+16:26:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:26:15 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:26:26 INFO  : Disconnected from the channel tcfchan#11.
+16:26:38 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:26:39 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:27:00 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:27:09 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:27:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:27:19 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:27:19 INFO  : 'jtag frequency' command is executed.
+16:27:19 INFO  : Context for 'APU' is selected.
+16:27:19 INFO  : System reset is completed.
+16:27:22 INFO  : 'after 3000' command is executed.
+16:27:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:27:26 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:27:26 INFO  : Context for 'APU' is selected.
+16:27:26 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:27:26 INFO  : 'configparams force-mem-access 1' command is executed.
+16:27:26 INFO  : Context for 'APU' is selected.
+16:27:26 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:27:27 INFO  : 'ps7_init' command is executed.
+16:27:27 INFO  : 'ps7_post_config' command is executed.
+16:27:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:27:28 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:27:28 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:27:28 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:27:28 INFO  : 'configparams force-mem-access 0' command is executed.
+16:27:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:27:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:27:29 INFO  : 'con' command is executed.
+16:27:29 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:27:29 INFO  : 'con' command is executed.
+16:27:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:27:29 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:28:57 INFO  : Disconnected from the channel tcfchan#13.
+16:28:59 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:29:01 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:29:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:27 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:29:27 INFO  : 'jtag frequency' command is executed.
+16:29:27 INFO  : Context for 'APU' is selected.
+16:29:27 INFO  : System reset is completed.
+16:29:30 INFO  : 'after 3000' command is executed.
+16:29:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:29:32 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:29:32 INFO  : Context for 'APU' is selected.
+16:29:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:29:32 INFO  : 'configparams force-mem-access 1' command is executed.
+16:29:32 INFO  : Context for 'APU' is selected.
+16:29:32 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:29:33 INFO  : 'ps7_init' command is executed.
+16:29:33 INFO  : 'ps7_post_config' command is executed.
+16:29:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:33 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:29:33 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:29:34 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:29:34 INFO  : 'configparams force-mem-access 0' command is executed.
+16:29:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:29:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:34 INFO  : 'con' command is executed.
+16:29:34 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:29:34 INFO  : 'con' command is executed.
+16:29:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:29:34 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:31:40 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:31:42 INFO  : Disconnected from the channel tcfchan#15.
+16:31:43 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:32:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:32:02 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:32:02 INFO  : 'jtag frequency' command is executed.
+16:32:02 INFO  : Context for 'APU' is selected.
+16:32:02 INFO  : System reset is completed.
+16:32:05 INFO  : 'after 3000' command is executed.
+16:32:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:32:08 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:32:08 INFO  : Context for 'APU' is selected.
+16:32:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:32:08 INFO  : 'configparams force-mem-access 1' command is executed.
+16:32:08 INFO  : Context for 'APU' is selected.
+16:32:08 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:32:08 INFO  : 'ps7_init' command is executed.
+16:32:08 INFO  : 'ps7_post_config' command is executed.
+16:32:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:09 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:32:09 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:32:09 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:32:09 INFO  : 'configparams force-mem-access 0' command is executed.
+16:32:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:32:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:09 INFO  : 'con' command is executed.
+16:32:09 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:32:10 INFO  : 'con' command is executed.
+16:32:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:32:10 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:36:03 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:36:05 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:36:08 INFO  : Disconnected from the channel tcfchan#17.
+16:36:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:29 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:36:29 INFO  : 'jtag frequency' command is executed.
+16:36:29 INFO  : Context for 'APU' is selected.
+16:36:29 INFO  : System reset is completed.
+16:36:32 INFO  : 'after 3000' command is executed.
+16:36:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:36:34 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:36:34 INFO  : Context for 'APU' is selected.
+16:36:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:36:34 INFO  : 'configparams force-mem-access 1' command is executed.
+16:36:34 INFO  : Context for 'APU' is selected.
+16:36:34 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:36:35 INFO  : 'ps7_init' command is executed.
+16:36:35 INFO  : 'ps7_post_config' command is executed.
+16:36:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:35 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:36:35 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:36:36 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:36:36 INFO  : 'configparams force-mem-access 0' command is executed.
+16:36:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:36:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:36 INFO  : 'con' command is executed.
+16:36:36 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:36:36 INFO  : 'con' command is executed.
+16:36:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:36:36 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:36:54 INFO  : Disconnected from the channel tcfchan#19.
+16:36:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:55 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:36:55 INFO  : 'jtag frequency' command is executed.
+16:36:55 INFO  : Context for 'APU' is selected.
+16:36:55 INFO  : System reset is completed.
+16:36:58 INFO  : 'after 3000' command is executed.
+16:36:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:37:00 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:37:01 INFO  : Context for 'APU' is selected.
+16:37:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:37:01 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:01 INFO  : Context for 'APU' is selected.
+16:37:01 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:37:01 INFO  : 'ps7_init' command is executed.
+16:37:01 INFO  : 'ps7_post_config' command is executed.
+16:37:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:02 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:37:02 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:37:02 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:37:02 INFO  : 'configparams force-mem-access 0' command is executed.
+16:37:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:37:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:02 INFO  : 'con' command is executed.
+16:37:02 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:37:03 INFO  : 'con' command is executed.
+16:37:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:37:03 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:40:36 INFO  : Disconnected from the channel tcfchan#20.
+16:40:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:36 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:40:36 INFO  : 'jtag frequency' command is executed.
+16:40:37 INFO  : Context for 'APU' is selected.
+16:40:37 INFO  : System reset is completed.
+16:40:40 INFO  : 'after 3000' command is executed.
+16:40:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:40:42 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:40:42 INFO  : Context for 'APU' is selected.
+16:40:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:40:42 INFO  : 'configparams force-mem-access 1' command is executed.
+16:40:42 INFO  : Context for 'APU' is selected.
+16:40:42 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:40:43 INFO  : 'ps7_init' command is executed.
+16:40:43 INFO  : 'ps7_post_config' command is executed.
+16:40:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:43 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:40:43 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:40:44 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:40:44 INFO  : 'configparams force-mem-access 0' command is executed.
+16:40:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:40:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:44 INFO  : 'con' command is executed.
+16:40:44 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:40:44 INFO  : 'con' command is executed.
+16:40:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:40:44 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:43:01 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:43:03 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:43:23 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:43:26 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:44:38 INFO  : Disconnected from the channel tcfchan#21.
+16:44:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:41 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:44:41 INFO  : 'jtag frequency' command is executed.
+16:44:41 INFO  : Context for 'APU' is selected.
+16:44:41 INFO  : System reset is completed.
+16:44:44 INFO  : 'after 3000' command is executed.
+16:44:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:44:46 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:44:46 INFO  : Context for 'APU' is selected.
+16:44:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:44:46 INFO  : 'configparams force-mem-access 1' command is executed.
+16:44:46 INFO  : Context for 'APU' is selected.
+16:44:46 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:44:47 INFO  : 'ps7_init' command is executed.
+16:44:47 INFO  : 'ps7_post_config' command is executed.
+16:44:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:44:47 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:44:47 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:44:48 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:44:48 INFO  : 'configparams force-mem-access 0' command is executed.
+16:44:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:44:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:44:48 INFO  : 'con' command is executed.
+16:44:48 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:44:48 INFO  : 'con' command is executed.
+16:44:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:44:48 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:47:18 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:47:20 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:48:14 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:48:16 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:49:23 INFO  : Disconnected from the channel tcfchan#24.
+16:49:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:25 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:49:25 INFO  : 'jtag frequency' command is executed.
+16:49:25 INFO  : Context for 'APU' is selected.
+16:49:25 INFO  : System reset is completed.
+16:49:28 INFO  : 'after 3000' command is executed.
+16:49:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:49:30 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:49:31 INFO  : Context for 'APU' is selected.
+16:49:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:49:31 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:31 INFO  : Context for 'APU' is selected.
+16:49:31 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:49:31 INFO  : 'ps7_init' command is executed.
+16:49:31 INFO  : 'ps7_post_config' command is executed.
+16:49:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:32 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:32 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:49:32 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:49:32 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:32 INFO  : 'con' command is executed.
+16:49:32 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:49:33 INFO  : 'con' command is executed.
+16:49:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:49:33 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:51:01 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:51:04 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:51:36 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:51:39 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:51:42 INFO  : Disconnected from the channel tcfchan#27.
+16:52:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:03 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:52:03 INFO  : 'jtag frequency' command is executed.
+16:52:03 INFO  : Context for 'APU' is selected.
+16:52:03 INFO  : System reset is completed.
+16:52:06 INFO  : 'after 3000' command is executed.
+16:52:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:52:08 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:52:08 INFO  : Context for 'APU' is selected.
+16:52:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:52:08 INFO  : 'configparams force-mem-access 1' command is executed.
+16:52:08 INFO  : Context for 'APU' is selected.
+16:52:08 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:52:09 INFO  : 'ps7_init' command is executed.
+16:52:09 INFO  : 'ps7_post_config' command is executed.
+16:52:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:09 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:52:09 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:52:10 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:52:10 INFO  : 'configparams force-mem-access 0' command is executed.
+16:52:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:52:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:10 INFO  : 'con' command is executed.
+16:52:10 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:52:11 INFO  : 'con' command is executed.
+16:52:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:52:11 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:53:16 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+16:53:17 INFO  : Disconnected from the channel tcfchan#30.
+16:53:19 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+16:53:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:43 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+16:53:43 INFO  : 'jtag frequency' command is executed.
+16:53:44 INFO  : Context for 'APU' is selected.
+16:53:44 INFO  : System reset is completed.
+16:53:47 INFO  : 'after 3000' command is executed.
+16:53:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+16:53:49 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+16:53:49 INFO  : Context for 'APU' is selected.
+16:53:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+16:53:49 INFO  : 'configparams force-mem-access 1' command is executed.
+16:53:49 INFO  : Context for 'APU' is selected.
+16:53:49 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+16:53:50 INFO  : 'ps7_init' command is executed.
+16:53:50 INFO  : 'ps7_post_config' command is executed.
+16:53:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:50 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:53:50 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:53:51 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+16:53:51 INFO  : 'configparams force-mem-access 0' command is executed.
+16:53:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:53:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:51 INFO  : 'con' command is executed.
+16:53:51 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+16:53:51 INFO  : 'con' command is executed.
+16:53:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+16:53:51 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+16:55:22 INFO  : Disconnected from the channel tcfchan#32.
+20:59:58 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:00:02 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:01:19 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:01:21 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:01:55 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:02:01 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:04:06 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:04:14 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:24:00 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:24:07 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:24:27 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:24:33 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:37:17 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:37:22 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:37:53 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:37:55 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:38:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:38:43 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+21:38:43 INFO  : 'jtag frequency' command is executed.
+21:38:43 INFO  : Context for 'APU' is selected.
+21:38:43 INFO  : System reset is completed.
+21:38:46 INFO  : 'after 3000' command is executed.
+21:38:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+21:38:49 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+21:38:49 INFO  : Context for 'APU' is selected.
+21:38:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+21:38:49 INFO  : 'configparams force-mem-access 1' command is executed.
+21:38:49 INFO  : Context for 'APU' is selected.
+21:38:49 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+21:38:49 INFO  : 'ps7_init' command is executed.
+21:38:49 INFO  : 'ps7_post_config' command is executed.
+21:38:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:38:50 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:38:50 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+21:38:50 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+21:38:50 INFO  : 'configparams force-mem-access 0' command is executed.
+21:38:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:38:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:38:50 INFO  : 'con' command is executed.
+21:38:50 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+21:38:51 INFO  : 'con' command is executed.
+21:38:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+21:38:51 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+21:42:40 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:42:41 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:43:06 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:43:07 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:44:04 INFO  : Disconnected from the channel tcfchan#41.
+21:44:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:44:04 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+21:44:04 INFO  : 'jtag frequency' command is executed.
+21:44:04 INFO  : Context for 'APU' is selected.
+21:44:05 INFO  : System reset is completed.
+21:44:08 INFO  : 'after 3000' command is executed.
+21:44:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+21:44:10 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+21:44:10 INFO  : Context for 'APU' is selected.
+21:44:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+21:44:10 INFO  : 'configparams force-mem-access 1' command is executed.
+21:44:10 INFO  : Context for 'APU' is selected.
+21:44:10 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+21:44:11 INFO  : 'ps7_init' command is executed.
+21:44:11 INFO  : 'ps7_post_config' command is executed.
+21:44:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:11 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:44:11 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+21:44:12 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+21:44:12 INFO  : 'configparams force-mem-access 0' command is executed.
+21:44:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:44:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:12 INFO  : 'con' command is executed.
+21:44:12 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+21:44:12 INFO  : 'con' command is executed.
+21:44:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+21:44:12 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+21:45:50 INFO  : Checking for BSP changes to sync application flags for project 'dual_core'...
+21:45:54 INFO  : Checking for BSP changes to sync application flags for project 'second_core'...
+21:46:31 INFO  : Disconnected from the channel tcfchan#44.
+21:46:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:46:32 INFO  : Jtag cable 'Digilent Zed 210248469160' is selected.
+21:46:32 INFO  : 'jtag frequency' command is executed.
+21:46:32 INFO  : Context for 'APU' is selected.
+21:46:32 INFO  : System reset is completed.
+21:46:35 INFO  : 'after 3000' command is executed.
+21:46:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}' command is executed.
+21:46:38 INFO  : Device configured successfully with "C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit"
+21:46:38 INFO  : Context for 'APU' is selected.
+21:46:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa'.
+21:46:38 INFO  : 'configparams force-mem-access 1' command is executed.
+21:46:38 INFO  : Context for 'APU' is selected.
+21:46:38 INFO  : Sourcing of 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl' is done.
+21:46:39 INFO  : 'ps7_init' command is executed.
+21:46:39 INFO  : 'ps7_post_config' command is executed.
+21:46:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:46:39 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:46:39 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+21:46:40 INFO  : The application 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf' is downloaded to processor 'ps7_cortexa9_1'.
+21:46:40 INFO  : 'configparams force-mem-access 0' command is executed.
+21:46:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469160" && level==0 && jtag_device_ctx=="jsn-Zed-210248469160-03727093-0"}
+fpga -file C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core_hw/export/dual_core_hw/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
+targets -set -nocase -filter {name =~ "*A9*#1"}
+dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:46:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:46:41 INFO  : 'con' command is executed.
+21:46:41 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+21:46:41 INFO  : 'con' command is executed.
+21:46:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con
+----------------End of Script----------------
+
+21:46:41 INFO  : Launch script is exported to file 'C:\Users\khali\ENSC_452_git\ENSC_452\DUAL_CPU\dual_core_system\_ide\scripts\systemdebugger_dual_core_system_standalone.tcl'
+21:49:51 INFO  : Disconnected from the channel tcfchan#46.

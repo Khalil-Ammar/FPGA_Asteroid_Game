@@ -136,6 +136,7 @@ int main (void)
 	//Update ship position if it has moved
 	if(hasMoved){
 		RenderShip();
+		PlayThrustSoundEffect(); // sound effect
 		hasMoved = 0;
 	}
 
@@ -185,6 +186,9 @@ int main (void)
 		// increment count and render bullet
 		enemyBulletCount++;
 		RenderEnemyBullet(enemyBullet);
+
+		//sound effect
+		PlayLaserSoundEffect();
 	}
 
 	// Render Bullet if user has fired
@@ -211,6 +215,9 @@ int main (void)
 			// increment count and render bullet
 			bulletCount++;
 			RenderBullet(bulletInstance);
+
+			//sound effect
+			PlayLaserSoundEffect();
 		}
 	}
 
@@ -311,6 +318,10 @@ int main (void)
 			  ResetShip();
 			  lives--;
 			  RenderLives(lives);
+
+			  //sound effect
+			  PlayBangSoundEffect();
+
 			  if(lives == 0){
 				  GameOver(0);	//Player lost
 				  break;
@@ -333,6 +344,10 @@ int main (void)
 						DestroyBullet(bulletArray[j]);
 						score += SCORE_PER_ASTEROID;
 						RenderScore();
+
+						//sound effect
+					    PlayBangSoundEffect();
+
 						// Player wins if all asteroids destroyed
 						if(asteroidCount == 0){
 							GameOver(1); //Player won
@@ -366,6 +381,10 @@ int main (void)
 				ResetShip();
 				lives--;
 				RenderLives(lives);
+
+				//sound effect
+			    PlayBangSoundEffect();
+
 				if(lives == 0){
 					GameOver(0); // Player lost
 					break;
@@ -556,6 +575,8 @@ void InitMenu(){
 	MenuSetDifficulty(difficultyLevel);
 	MenuSetHighScore(highScore);
 
+	// Play menu background music
+	PlayMenuSoundEffect();
 }
 
 void InitSession(){
@@ -610,7 +631,7 @@ void MenuHandler(){
 		// Highlight corresponding menu button
 		if(menuAction){
 			RenderMenuHighlight(currentHighlight);
-			usleep(0.1 * 1000 * 1000);
+			usleep(0.3 * 1000 * 1000);
 			menuAction = 0;
 		}
 
@@ -624,14 +645,21 @@ void MenuHandler(){
 					InitGameSession();
 					break;
 				case AUDIO:
-					audioSetting = audioSetting == ON ? OFF : ON;
+					if(audioSetting == ON){
+						audioSetting = OFF;
+						StopSoundEffect();
+					}
+					else if(audioSetting == OFF){
+						audioSetting = ON;
+						PlayMenuSoundEffect();
+					}
 					MenuSetAudio(audioSetting);
-					usleep(0.1 * 1000 * 1000);
+					usleep(0.3 * 1000 * 1000);
 					break;
 				case DIFFICULTY:
 					difficultyLevel = difficultyLevel == LOW ? HIGH : LOW;
 					MenuSetDifficulty(difficultyLevel);
-					usleep(0.1 * 1000 * 1000);
+					usleep(0.3 * 1000 * 1000);
 					break;
 			}
 			isButtonPressed = 0;
@@ -663,4 +691,55 @@ void GameOver(bool hasWon){
 	highScore = score > highScore ? score : highScore;
 	resetGame = 1;
 }
+
+void PlayMenuSoundEffect(){
+	if(audioSetting == ON){
+		MENU = 1;
+		COMM_VAL = 0;
+		while(COMM_VAL == 0){
+			// wait for ARM0
+		}
+	}
+}
+
+void PlayBangSoundEffect(){
+	if(audioSetting == ON){
+		BANG = 1;
+		COMM_VAL = 0;
+		while(COMM_VAL == 0){
+			// wait for ARM0
+		}
+	}
+}
+
+void PlayThrustSoundEffect(){
+	if(audioSetting == ON){
+		THRUST = 1;
+		COMM_VAL = 0;
+		while(COMM_VAL == 0){
+			// wait for ARM0
+		}
+	}
+}
+
+void PlayLaserSoundEffect(){
+	if(audioSetting == ON){
+		LASER = 1;
+		COMM_VAL = 0;
+		while(COMM_VAL == 0){
+			// wait for ARM0
+		}
+	}
+}
+
+void StopSoundEffect(){
+	STOP = 1;
+	COMM_VAL = 0;
+	while(COMM_VAL == 0){
+		// wait for ARM0
+	}
+}
+
+
+
 

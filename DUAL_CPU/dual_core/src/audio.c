@@ -1,13 +1,10 @@
 #include <stdbool.h>
+#include <string.h>
 #include "audio.h"
 #include "arm0.h"
 #include "xgpio.h"
 #include "xgpio.h"
 
-
-#define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
-#define BTN_INT 			XGPIO_IR_CH1_MASK
-#define BTNS_DEVICE_ID		XPAR_AXI_GPIO_0_DEVICE_ID
 
 
 #define fatalError(msg) throwFatalError(__PRETTY_FUNCTION__,msg)
@@ -21,30 +18,25 @@ FATFS FS_instance;
 adau1761_config codec;
 
 
-/*
- * Flags interrupt handlers use to notify the application context the events.
- */
-volatile int TxDone = 0;
-volatile int Error = 0;
-
 // This holds the memory allocated for the wav file currently played.
 u8 *audioBuffer = NULL;
-u8 *laserBuffer = NULL;
-u8 *deathBuffer = NULL;
-u8 *thrustBuffer= NULL;
 size_t audioBufferSize = 0;
 
-struct SpaceShip{
-	int x;
-	int y;
-};
+//file names for sound effects
+char mainMenuFileName[] = "MENU.WAV";
+char laserFileName[] = "LASER.WAV";
+char bangFileName[] = "BANG.WAV";
+char thrustFileName[] = "THRUST.WAV";
 
+// interrupt variables
 XScuGic InterruptController; /* Instance of the Interrupt Controller */
 XGpio BTNInst;
 XScuGic INTCInst;
 
 
-
+//########################################################
+//##########	Interrupt Functions		##################
+//########################################################
 
 void BTN_Intr_Handler(void *InstancePtr){};
 
@@ -135,7 +127,7 @@ int main()
     init_platform();
     COMM_VAL = 0;
 
-    // Initialise Push Buttons
+    // Initialize Push Buttons
 	int status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
 	if(status != XST_SUCCESS){
 	  return XST_FAILURE;
@@ -154,35 +146,40 @@ int main()
 	// S=b1 TEX=b100 AP=b11, Domain=b1111, C=b0, B=b0
 	Xil_SetTlbAttributes(0xFFFF0000,0x14de2);
 
-	print("ARM0: writing startaddress for ARM1\n\r");
+	// Write start address for ARM1
 	Xil_Out32(ARM1_STARTADR, ARM1_BASEADDR);
 	dmb(); //waits until write has finished
 
-	print("ARM0: sending the SEV to wake up ARM1\n\r");
+	// Send SEV to wake up ARM1
 	sev();
 
     setvbuf(stdin, NULL, _IONBF, 0);
 
-    COMM_VAL = 1;
-    while(COMM_VAL == 1){
-    	// wait
-    }
 
 	print("Initializing Codec\r\n");
     adau1761_init(&codec, XPAR_AXI_FIFO_MM_S_0_DEVICE_ID, XPAR_AXI_DMA_0_DEVICE_ID);
 
-    int exit_flag = 0;
+    bool done = 0;			// set to 1 when audio operation finished
+    bool exit_flag = 0;		// set to 1 when program needs to exit
+    COMM_VAL = 1;			//Pass control to ARM 1
     for(;;) {
+    	// exit program
+    	if(exit_flag == 1){
+    		break;
+    	}
+
     	while(COMM_VAL == 1){
     		// wait for ARM1
     	}
-    	if(exit_flag == 1){
+
+    	// pass control back to ARM1
+    	if(done == 1){
     		COMM_VAL = 1;
-    		exit_flag = 0;
+    		done = 0;
     		continue;
     	}
 
-    	print("Mounting SD Card\n\r");
+    	// Mount SD card
 		FRESULT result = f_mount(&FS_instance,"0:/", 1);
 		if (result != 0) {
 			print("Couldn't mount SD Card. Press RETURN to try again\r\n");
@@ -191,8 +188,8 @@ int main()
 		}
 
 
-		#define maxFiles 32
-		char files[maxFiles][32] = {0};
+
+		char files[MAX_FILES][15] = {0};
 		int filesNum = 0;
 
 		// Look for *.wav files and copy file names to files[]
@@ -225,58 +222,66 @@ int main()
 			getchar();
 			continue;
 		}
-		if (BACKGROUND_SONG){
-			print("Received instructions to play background music\r\n");
+
+		if (EXIT){
 			stopWavFile();
-			playWavFile(files[0]);
-			print("Returning Control to ARM1\r\n");
 			exit_flag = 1;
-			BACKGROUND_SONG = 0;
+			EXIT = 0;
 			continue;
 		}
-
-		// Rudimentary user interface
-		int currentFile = 0;
-		for(;;) {
-			for(int i=0;i<filesNum;++i) {
-				printf("%c%s\r\n",i==currentFile ? '*' : ' ',files[i]);
-			}
-			printf("UP    : Previous file\r\n");
-			printf("DOWN  : Next file\r\n");
-			print("P: Play\r\n");
-			print("S: Stop\r\n");
-			print("X: Exit \r\n\n\n");
-
-			int c = getchar();
-
-			if(c == 120){	// x
-				stopWavFile();
-				exit_flag = 1;
-				break;
-			}
-
-			switch(c){
-				case 112:	// p
-					playWavFile(files[currentFile]);
+		if (STOP){
+			stopWavFile();
+			done = 1;
+			STOP = 0;
+			continue;
+		}
+		else if (MENU){
+			stopWavFile();
+			for(int i = 0; i < MAX_FILES; i++){
+				if (strcmp(files[i], mainMenuFileName) == 0){
+					playWavFile(files[i]);
 					break;
-
-				case 115:	// s
-					stopWavFile();
-					break;
-
-				case 0x5B:	// down arrow
-					c = getchar();
-					if (c==0x42) {
-						if (currentFile+1<filesNum) {
-							++currentFile;
-						}
-					}
-					else if (c==0x41) {		// up arrow
-						if (currentFile>0) {
-							--currentFile;
-						}
-					}
+				}
 			}
+			done = 1;
+			MENU = 0;
+			continue;
+		}
+		else if (LASER){
+			stopWavFile();
+			for(int i = 0; i < MAX_FILES; i++){
+				if (strcmp(files[i], laserFileName) == 0){
+					playWavFile(files[i]);
+					break;
+				}
+			}
+			done = 1;
+			LASER = 0;
+			continue;
+		}
+		else if (BANG){
+			stopWavFile();
+			for(int i = 0; i < MAX_FILES; i++){
+				if (strcmp(files[i], bangFileName) == 0){
+					playWavFile(files[i]);
+					break;
+				}
+			}
+			done = 1;
+			BANG = 0;
+			continue;
+		}
+		else if (THRUST){
+			stopWavFile();
+			for(int i = 0; i < MAX_FILES; i++){
+				if (strcmp(files[i], thrustFileName) == 0){
+					playWavFile(files[i]);
+					break;
+				}
+			}
+			done = 1;
+			THRUST = 0;
+			continue;
 		}
     }
 
@@ -675,7 +680,7 @@ void playWavFile(const char *filename) {
     		audioBufferSize = nNewTotal*4;
     	}
 
-    	// Changing the volume and swap left/right channel and polarity
+    	// Swap left/right channel and polarity
     	{
     		u32 *pSource = (u32*) audioBuffer;
     		for(u32 i=0;i<audioBufferSize/4;++i) {

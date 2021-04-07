@@ -1,6 +1,5 @@
 #ifndef AUDIO_H
 #define AUDIO_H
-#include "audio.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,17 +15,22 @@
 #include "ff.h"
 #include "xparameters.h"
 
-// Define Constants
+// Constants
 #define DMA_BDUFFERSIZE 4000	// Size of the buffer which holds the DMA Buffer Descriptors (BDs)
-#define LOOP_ENABLED 1
+#define MAX_FILES 		5
 
-// Define addresses
+
+// Addresses
 #define MEM_BASE_ADDR XPAR_PS7_DDR_0_S_AXI_BASEADDR + 0x00100000
 
-// Define IDs
+// Interrupt parameters
 #define INTC_DEVICE_ID      XPAR_PS7_SCUGIC_0_DEVICE_ID
-//#define DMA_TX_INTR_ID		XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR
+#define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+#define BTN_INT 			XGPIO_IR_CH1_MASK
+#define BTNS_DEVICE_ID		XPAR_AXI_GPIO_0_DEVICE_ID
 
+
+// Structs
 typedef struct
 {
 	XLlFifo spiFifoController;
@@ -62,12 +66,22 @@ typedef struct {
 	u8 SubFormat[16];
 } fmtChunk_t;
 
-int adau1761_init(adau1761_config *pDevice, u32 DeviceId, u16 dmaId);
 
+// Global parameters
+extern FATFS FS_instance;
+extern adau1761_config codec;
+extern u8 *audioBuffer;
+extern size_t audioBufferSize;
+
+
+
+// Codec initialization
+int adau1761_init(adau1761_config *pDevice, u32 DeviceId, u16 dmaId);
 int adau1761_spiCheckInit(adau1761_config *pDevice);
 void adau1761_spiWrite(adau1761_config *pDevice,u16 addr, u8 wdata);
 u8 adau1761_spiRead(adau1761_config *pDevice,u16 addr);
 
+// DMA
 int adau1761_dmaSetup(adau1761_config *pDevice);
 void adau1761_dmaFreeProcessedBDs(adau1761_config *pDevice);
 int adau1761_dmaBusy(adau1761_config *pDevice);
@@ -75,34 +89,9 @@ void adau1761_dmaReset(adau1761_config *pDevice);
 void adau1761_dmaTransmit(adau1761_config *pDevice, u32 *buffer, size_t buffer_len, int nRepeats);
 void adau1761_dmaTransmitBLOB(adau1761_config *pDevice, u32 *buffer, size_t buffer_len);
 
-//static void DisableIntrSystem(XScuGic *IntcInstancePtr, u16 TxIntrId);
-//int SetupIntrSystem(XScuGic *IntcInstancePtr, XAxiDma * AxiDmaPtr, u16 TxIntrId);
-//static void TxIntrHandler(void *Callback);
-//static void TxCallBack(XAxiDma_BdRing * TxRingPtr);
-
+// WAV file handlers
 void stopWavFile();
 void playWavFile(const char *filename);
-
-
-extern FATFS FS_instance;
-extern adau1761_config codec;
-
-/*
- * Flags interrupt handlers use to notify the application context the events.
- */
-extern volatile int TxDone;
-extern volatile int Error;
-
-// This holds the memory allocated for the wav file currently played.
-extern u8 *audioBuffer;
-extern size_t audioBufferSize;
-
-
-
-
-
-
-
 
 
 

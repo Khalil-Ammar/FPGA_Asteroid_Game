@@ -12,8 +12,9 @@
 #define ARM1_STARTADR 		0xFFFFFFF0
 #define ARM1_BASEADDR 		0x10080000
 #define COMM_VAL			(*(volatile unsigned long *)(0xFFFF0000))
-#define BACKGROUND_SONG		(*(volatile unsigned long *)(0xFFFF0010))
+#define MENU				(*(volatile unsigned long *)(0xFFFF0010))
 #define LASER				(*(volatile unsigned long *)(0xFFFF0020))
-#define DEATH				(*(volatile unsigned long *)(0xFFFF0030))
+#define BANG				(*(volatile unsigned long *)(0xFFFF0030))
 #define THRUST				(*(volatile unsigned long *)(0xFFFF0040))
-#define STOP				(*(volatile unsigned long *)(0xFFFF0040))
+#define STOP				(*(volatile unsigned long *)(0xFFFF0050))
+#define EXIT				(*(volatile unsigned long *)(0xFFFF0060))

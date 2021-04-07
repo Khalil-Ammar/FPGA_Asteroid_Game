@@ -1,4 +1,4 @@
-15:48:42 **** Incremental Build of configuration Debug for project second_core ****
+21:45:54 **** Incremental Build of configuration Debug for project second_core ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size second_core.elf  |tee "second_core.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  46080	   1944	  22840	  70864	  114d0	second_core.elf
+  46592	   1944	  22840	  71376	  116d0	second_core.elf
 'Finished building: second_core.elf.size'
 ' '
 
-15:48:44 Build Finished (took 2s.15ms)
+21:45:56 Build Finished (took 1s.808ms)
 

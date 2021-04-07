@@ -103,3 +103,5 @@ platform active {dual_core_hw}
 platform generate -domains 
 platform clean
 platform generate
+platform clean
+platform generate
