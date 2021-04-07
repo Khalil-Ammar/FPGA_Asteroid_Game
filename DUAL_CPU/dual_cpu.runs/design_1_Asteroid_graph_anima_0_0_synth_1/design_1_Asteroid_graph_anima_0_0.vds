@@ -1,0 +1,323 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr  4 15:03:54 2021
+# Process ID: 28428
+# Current directory: C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/design_1_Asteroid_graph_anima_0_0_synth_1
+# Command line: vivado.exe -log design_1_Asteroid_graph_anima_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Asteroid_graph_anima_0_0.tcl
+# Log file: C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/design_1_Asteroid_graph_anima_0_0_synth_1/design_1_Asteroid_graph_anima_0_0.vds
+# Journal file: C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/design_1_Asteroid_graph_anima_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_Asteroid_graph_anima_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_Asteroid_graph_anima_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_Asteroid_graph_anima_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11036
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1099.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_Asteroid_graph_anima_0_0' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_Asteroid_graph_anima_0_0/synth/design_1_Asteroid_graph_anima_0_0.vhd:99]
+INFO: [Synth 8-3491] module 'Asteroid_graph_animate' declared at 'C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:6' bound to instance 'U0' of component 'Asteroid_graph_animate' [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_Asteroid_graph_anima_0_0/synth/design_1_Asteroid_graph_anima_0_0.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'Asteroid_graph_animate' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:28]
+INFO: [Synth 8-3491] module 'Asteroid' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:6' bound to instance 'U1' of component 'Asteroid' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:286]
+INFO: [Synth 8-638] synthesizing module 'Asteroid' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Asteroid' (1#1) [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:16]
+INFO: [Synth 8-3491] module 'Asteroid' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:6' bound to instance 'U1' of component 'Asteroid' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:286]
+INFO: [Synth 8-3491] module 'Asteroid' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:6' bound to instance 'U1' of component 'Asteroid' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:286]
+INFO: [Synth 8-3491] module 'Asteroid' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:6' bound to instance 'U1' of component 'Asteroid' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:286]
+INFO: [Synth 8-3491] module 'Asteroid' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:6' bound to instance 'U1' of component 'Asteroid' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:286]
+INFO: [Synth 8-3491] module 'Saucer' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:142' bound to instance 'X' of component 'Saucer' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:289]
+INFO: [Synth 8-638] synthesizing module 'Saucer' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'Saucer' (2#1) [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:152]
+INFO: [Synth 8-3491] module 'Bullet' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:104' bound to instance 'U2' of component 'Bullet' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:293]
+INFO: [Synth 8-638] synthesizing module 'Bullet' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'Bullet' (3#1) [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:115]
+INFO: [Synth 8-3491] module 'Bullet' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:104' bound to instance 'U2' of component 'Bullet' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:293]
+INFO: [Synth 8-3491] module 'Bullet' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:104' bound to instance 'U2' of component 'Bullet' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:293]
+INFO: [Synth 8-3491] module 'Ebullet' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:241' bound to instance 'U3' of component 'Ebullet' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:298]
+INFO: [Synth 8-638] synthesizing module 'Ebullet' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'Ebullet' (4#1) [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:252]
+INFO: [Synth 8-3491] module 'Ebullet' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:241' bound to instance 'U3' of component 'Ebullet' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:298]
+INFO: [Synth 8-3491] module 'Ebullet' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:241' bound to instance 'U3' of component 'Ebullet' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:298]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'Star' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:289]
+INFO: [Synth 8-256] done synthesizing module 'Star' (5#1) [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:289]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'Star' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:280' bound to instance 'U4' of component 'Star' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:303]
+INFO: [Synth 8-3491] module 'font_gen' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:321' bound to instance 'scoreLD' of component 'font_gen' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:307]
+INFO: [Synth 8-638] synthesizing module 'font_gen' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:332]
+INFO: [Synth 8-256] done synthesizing module 'font_gen' (6#1) [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:332]
+INFO: [Synth 8-3491] module 'font_gen' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:321' bound to instance 'scoreMD' of component 'font_gen' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:308]
+INFO: [Synth 8-3491] module 'font_gen' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:321' bound to instance 'scoreUD' of component 'font_gen' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:309]
+INFO: [Synth 8-3491] module 'font_gen' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:321' bound to instance 'lives1' of component 'font_gen' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:311]
+INFO: [Synth 8-3491] module 'font_gen' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:321' bound to instance 'lives2' of component 'font_gen' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:312]
+INFO: [Synth 8-3491] module 'font_gen' declared at 'C:/Users/khali/Downloads/AST3.0/Drawers.vhd:321' bound to instance 'lives3' of component 'font_gen' [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:313]
+WARNING: [Synth 8-614] signal 'menu_on' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'menu_rgb' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'font_on' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'lives' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'font_rgb' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'rd_sauc_on' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'sauc_rgb' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'efire_on' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'efire_rgb' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'star_on' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+WARNING: [Synth 8-614] signal 'star_rgb' is read in the process but is not in the sensitivity list [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:320]
+INFO: [Synth 8-256] done synthesizing module 'Asteroid_graph_animate' (7#1) [C:/Users/khali/Downloads/AST3.0/Asteroid_graph_animate.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'design_1_Asteroid_graph_anima_0_0' (8#1) [c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_Asteroid_graph_anima_0_0/synth/design_1_Asteroid_graph_anima_0_0.vhd:99]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1099.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1099.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1099.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1099.941 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1198.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 1198.676 ; gain = 0.242
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1198.676 ; gain = 98.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1198.676 ; gain = 98.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1198.676 ; gain = 98.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 1198.676 ; gain = 98.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 78    
+	   2 Input    8 Bit       Adders := 6     
+	   3 Input    5 Bit       Adders := 20    
+	   3 Input    4 Bit       Adders := 6     
++---Registers : 
+	               10 Bit    Registers := 26    
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 7     
+	  22 Input   12 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:34 . Memory (MB): peak = 1198.676 ; gain = 98.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-----------------------+-------------+---------------+----------------+
+|Module Name            | RTL Object  | Depth x Width | Implemented As | 
++-----------------------+-------------+---------------+----------------+
+|Asteroid               | as1_ROM[0]  | 32x28         | LUT            | 
+|Saucer                 | sauc_ROM[0] | 32x26         | LUT            | 
+|font_gen               | font_ROM[0] | 256x8         | LUT            | 
+|Asteroid_graph_animate | BALL_ROM[0] | 32x15         | LUT            | 
+|Asteroid               | as1_ROM[0]  | 32x28         | LUT            | 
+|Asteroid               | as1_ROM[0]  | 32x28         | LUT            | 
+|Asteroid               | as1_ROM[0]  | 32x28         | LUT            | 
+|Asteroid               | as1_ROM[0]  | 32x28         | LUT            | 
+|Asteroid               | as1_ROM[0]  | 32x28         | LUT            | 
+|font_gen               | font_ROM[0] | 256x8         | LUT            | 
+|font_gen               | font_ROM[0] | 256x8         | LUT            | 
+|font_gen               | font_ROM[0] | 256x8         | LUT            | 
+|font_gen               | font_ROM[0] | 256x8         | LUT            | 
+|font_gen               | font_ROM[0] | 256x8         | LUT            | 
+|Asteroid_graph_animate | BALL_ROM[0] | 32x15         | LUT            | 
++-----------------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:56 . Memory (MB): peak = 1198.676 ; gain = 98.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:56 . Memory (MB): peak = 1199.480 ; gain = 99.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin font_rgb[0] with 1st driver pin 'i_4085/O' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:557]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin font_rgb[0] with 2nd driver pin 'GND' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:557]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net font_rgb[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:557]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin font_rgb[0] with 1st driver pin 'i_4307/O' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:546]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin font_rgb[0] with 2nd driver pin 'GND' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:546]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net font_rgb[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:546]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin font_rgb[0] with 1st driver pin 'i_4529/O' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:546]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin font_rgb[0] with 2nd driver pin 'GND' [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:546]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net font_rgb[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/khali/Downloads/AST3.0/Drawers.vhd:546]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:01:58 . Memory (MB): peak = 1243.309 ; gain = 143.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:02:11 . Memory (MB): peak = 1258.125 ; gain = 158.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:02:11 . Memory (MB): peak = 1258.125 ; gain = 158.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:02:11 . Memory (MB): peak = 1258.125 ; gain = 158.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:02:11 . Memory (MB): peak = 1258.125 ; gain = 158.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:02:12 . Memory (MB): peak = 1258.125 ; gain = 158.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:02:12 . Memory (MB): peak = 1258.125 ; gain = 158.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   152|
+|2     |LUT1   |     8|
+|3     |LUT2   |   242|
+|4     |LUT3   |    64|
+|5     |LUT4   |   379|
+|6     |LUT5   |   214|
+|7     |LUT6   |   420|
+|8     |MUXF7  |    38|
+|9     |MUXF8  |    15|
+|10    |FDRE   |   260|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:02:12 . Memory (MB): peak = 1258.125 ; gain = 158.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 9 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:02:04 . Memory (MB): peak = 1258.125 ; gain = 59.449
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:02:12 . Memory (MB): peak = 1258.125 ; gain = 158.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1267.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 205 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1267.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 12 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:02:40 . Memory (MB): peak = 1267.980 ; gain = 168.039
+INFO: [Common 17-1381] The checkpoint 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/design_1_Asteroid_graph_anima_0_0_synth_1/design_1_Asteroid_graph_anima_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.runs/design_1_Asteroid_graph_anima_0_0_synth_1/design_1_Asteroid_graph_anima_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Asteroid_graph_anima_0_0_utilization_synth.rpt -pb design_1_Asteroid_graph_anima_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  4 15:06:55 2021...
