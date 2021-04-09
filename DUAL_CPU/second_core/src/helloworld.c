@@ -101,6 +101,7 @@ int main (void)
   int bulletCount = 0;
   int enemyBulletCount = 0;
   int lives = INIT_LIVES;
+  int asteroidSize = LARGE_ASTEROID_SIZE;
   double firex, firey, astx, asty;
 
   // initialize registers and offset table
@@ -143,13 +144,13 @@ int main (void)
 	// Enemy saucer shoots every "ENEMY_SHOOTING_DELAY" seconds up to a maximum of "MAX_ENEMY_BULLET_COUNT" bullets
 	if(((frame % (24*ENEMY_SHOOTING_DELAY)) == 0) && (enemyBulletCount < MAX_ENEMY_BULLET_COUNT)){
 		struct Bullet enemyBullet;
-		enemyBullet.x = enemySaucerInstance.x + 18;
-		enemyBullet.y = enemySaucerInstance.y + 36;
+		enemyBullet.x = enemySaucerInstance.x + SPRITE_SIZE/2;
+		enemyBullet.y = enemySaucerInstance.y + SPRITE_SIZE;
 		enemyBullet.isValid = 1;
 
 		//find angle with respect to spaceship
-		float delta_y = (enemyBullet.y - (shipInstance.y + 18));
-		float delta_x = (enemyBullet.x - (shipInstance.x + 18));
+		float delta_y = (enemyBullet.y - (shipInstance.y + SPRITE_SIZE/2));
+		float delta_x = (enemyBullet.x - (shipInstance.x + SPRITE_SIZE/2));
 		float realSlope = delta_y / delta_x;
 		float angle = atan(realSlope);
 
@@ -196,7 +197,7 @@ int main (void)
 		hasFired = 0;
 		if(bulletCount < MAX_BULLET_COUNT){
 			struct Bullet bulletInstance;
-			bulletInstance.x = shipInstance.x + 18;
+			bulletInstance.x = shipInstance.x + SPRITE_SIZE/2;
 			bulletInstance.y = shipInstance.y - 10;
 			bulletInstance.isValid = 1;
 
@@ -289,6 +290,9 @@ int main (void)
 			astx = asteroidArray[i].x;
 			asty = asteroidArray[i].y;
 
+			//Set asteroid size
+			asteroidSize = ((i == SMALL_ASTEROID_IDX_1) || (i == SMALL_ASTEROID_IDX_2)) ? SMALL_ASTEROID_SIZE : LARGE_ASTEROID_SIZE;
+
 
 			// check for out-of-bounds condition
 			if(astx >= 640 || astx <= 0 || asty >= 480 || asty <= 0){
@@ -312,7 +316,7 @@ int main (void)
 			}
 
 			// Test asteroid/ship collision
-			else if(testOverlap(shipInstance.x, shipInstance.x+36, astx, astx+36) && testOverlap(shipInstance.y, shipInstance.y+36, asty, asty+36))
+			else if(testOverlap(shipInstance.x, shipInstance.x+SPRITE_SIZE, astx, astx+asteroidSize) && testOverlap(shipInstance.y, shipInstance.y+SPRITE_SIZE, asty, asty+asteroidSize))
 		    {
 			  //reset ship and decrease lives
 			  ResetShip();
@@ -335,7 +339,7 @@ int main (void)
 					firey = bulletArray[j].y;
 
 					// If collision, destroy both bullet and asteroid and increase score.
-					if(testOverlap(firex, firex+1, astx, astx+36) && testOverlap(firey, firey+1, asty, asty+36)){
+					if(testOverlap(firex, firex+1, astx, astx+asteroidSize) && testOverlap(firey, firey+1, asty, asty+asteroidSize)){
 						asteroidCount--;
 						bulletCount--;
 						bulletArray[j].isValid = 0;
@@ -371,7 +375,7 @@ int main (void)
 			// check collision
 			bulletX = enemyBulletArray[i].x;
 			bulletY = enemyBulletArray[i].y;
-			if(testOverlap(bulletX, bulletX+1, shipInstance.x, shipInstance.x+36) && testOverlap(bulletY, bulletY+1, shipInstance.y, shipInstance.y+36)){
+			if(testOverlap(bulletX, bulletX+1, shipInstance.x, shipInstance.x+SPRITE_SIZE) && testOverlap(bulletY, bulletY+1, shipInstance.y, shipInstance.y+SPRITE_SIZE)){
 				// remove bullet
 				enemyBulletCount--;
 				enemyBulletArray[i].isValid = 0;

@@ -7,9 +7,14 @@
 
 
 // Hardware parameters
-#define SCREEN_WIDTH 640
-#define SCREEN_HEIGHT 480
-#define REFRESH_RATE 24 // in Hz
+#define SCREEN_WIDTH 			640
+#define SCREEN_HEIGHT 			480
+#define REFRESH_RATE 			24 // in Hz
+#define SPRITE_SIZE				32
+#define LARGE_ASTEROID_SIZE 	SPRITE_SIZE
+#define SMALL_ASTEROID_SIZE 	16
+#define SMALL_ASTEROID_IDX_1	1
+#define SMALL_ASTEROID_IDX_2	3
 
 // Interrupt Controller and Inputs
 #define INTC_DEVICE_ID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
@@ -26,6 +31,7 @@
 #define	INIT_LIVES 3
 #define SCORE_PER_ASTEROID 100
 #define ENABLE_DIFFICULTY_LEVELS 0
+
 
 
 

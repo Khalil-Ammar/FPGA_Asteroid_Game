@@ -105,3 +105,4 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform generate -domains standalone_domain,dual_arm_zynq,zynq_fsbl 
