@@ -249,7 +249,7 @@ input [3 : 0] S_AXI_GP0_WSTRB;
 input [5 : 0] S_AXI_GP0_ARID;
 input [5 : 0] S_AXI_GP0_AWID;
 input [5 : 0] S_AXI_GP0_WID;
-input [0 : 0] IRQ_F2P;
+input [1 : 0] IRQ_F2P;
 output FCLK_CLK0;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;

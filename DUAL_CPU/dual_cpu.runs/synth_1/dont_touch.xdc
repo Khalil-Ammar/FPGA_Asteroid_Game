@@ -41,20 +41,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_smartconnect_0_0 || ORIG_REF_NAME==design_1_smartconnect_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_GPU_controller_0_0 || ORIG_REF_NAME==design_1_GPU_controller_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_Asteroid_graph_anima_0_0/design_1_Asteroid_graph_anima_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_Asteroid_graph_anima_0_0 || ORIG_REF_NAME==design_1_Asteroid_graph_anima_0_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_Asteroid_Menu_0_0/design_1_Asteroid_Menu_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_Asteroid_Menu_0_0 || ORIG_REF_NAME==design_1_Asteroid_Menu_0_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_vga_sync_0_0/design_1_vga_sync_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_vga_sync_0_0 || ORIG_REF_NAME==design_1_vga_sync_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_clk_wiz_0_0 || ORIG_REF_NAME==design_1_clk_wiz_0_0} -quiet] -quiet
@@ -74,7 +62,25 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xl
 # IP: bd/design_1/ip/design_1_lfsr_7_0_2/design_1_lfsr_7_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_lfsr_7_0_2 || ORIG_REF_NAME==design_1_lfsr_7_0_2} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_Asteroid_graph_anima_0_0/design_1_Asteroid_graph_anima_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_Asteroid_graph_anima_0_0 || ORIG_REF_NAME==design_1_Asteroid_graph_anima_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_Asteroid_Menu_0_0/design_1_Asteroid_Menu_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_Asteroid_Menu_0_0 || ORIG_REF_NAME==design_1_Asteroid_Menu_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_vga_sync_0_0/design_1_vga_sync_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_vga_sync_0_0 || ORIG_REF_NAME==design_1_vga_sync_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_GPU_controller_0_0 || ORIG_REF_NAME==design_1_GPU_controller_0_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_1_0 || ORIG_REF_NAME==design_1_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_xlconcat_0_0/design_1_xlconcat_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xlconcat_0_0 || ORIG_REF_NAME==design_1_xlconcat_0_0} -quiet] -quiet
 
 # XDC: c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/design_1_ooc.xdc

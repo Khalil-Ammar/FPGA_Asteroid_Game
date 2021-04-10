@@ -106,3 +106,12 @@ platform generate
 platform clean
 platform generate
 platform generate -domains standalone_domain,dual_arm_zynq,zynq_fsbl 
+platform active {dual_core_hw}
+platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
+platform generate -domains 
+platform generate
+platform active {dual_core_hw}
+platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
+platform active {dual_core_hw}
+platform config -updatehw {C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/design_1_wrapper.xsa}
+platform generate

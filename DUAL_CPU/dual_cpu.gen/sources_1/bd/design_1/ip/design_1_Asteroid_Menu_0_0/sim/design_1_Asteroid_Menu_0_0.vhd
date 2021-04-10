@@ -55,13 +55,16 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_Asteroid_Menu_0_0 IS
   PORT (
-    menu_control : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-    sound_setting : IN STD_LOGIC;
-    menu_on : IN STD_LOGIC;
-    diff_setting : IN STD_LOGIC;
-    high_score : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     pix_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     pix_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    video_on : IN STD_LOGIC;
+    menu_control : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    sound_setting : IN STD_LOGIC;
+    menu_on : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    diff_setting : IN STD_LOGIC;
+    score : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    lives : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    high_score : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     stars : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
     game_on : OUT STD_LOGIC;
     menu_rgb : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
@@ -73,13 +76,16 @@ ARCHITECTURE design_1_Asteroid_Menu_0_0_arch OF design_1_Asteroid_Menu_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_1_Asteroid_Menu_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT Asteroid_Menu IS
     PORT (
-      menu_control : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-      sound_setting : IN STD_LOGIC;
-      menu_on : IN STD_LOGIC;
-      diff_setting : IN STD_LOGIC;
-      high_score : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       pix_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       pix_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      video_on : IN STD_LOGIC;
+      menu_control : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      sound_setting : IN STD_LOGIC;
+      menu_on : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      diff_setting : IN STD_LOGIC;
+      score : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      lives : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      high_score : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       stars : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
       game_on : OUT STD_LOGIC;
       menu_rgb : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
@@ -90,13 +96,16 @@ ARCHITECTURE design_1_Asteroid_Menu_0_0_arch OF design_1_Asteroid_Menu_0_0 IS
 BEGIN
   U0 : Asteroid_Menu
     PORT MAP (
+      pix_x => pix_x,
+      pix_y => pix_y,
+      video_on => video_on,
       menu_control => menu_control,
       sound_setting => sound_setting,
       menu_on => menu_on,
       diff_setting => diff_setting,
+      score => score,
+      lives => lives,
       high_score => high_score,
-      pix_x => pix_x,
-      pix_y => pix_y,
       stars => stars,
       game_on => game_on,
       menu_rgb => menu_rgb

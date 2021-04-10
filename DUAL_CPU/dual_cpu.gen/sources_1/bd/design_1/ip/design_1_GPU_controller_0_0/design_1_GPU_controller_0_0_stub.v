@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sun Apr  4 15:03:51 2021
+// Date        : Fri Apr  9 14:00:29 2021
 // Host        : DESKTOP-P28JKS5 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0_stub.v
@@ -17,12 +17,12 @@
 module design_1_GPU_controller_0_0(ship_x, ship_y, as1_x, as1_y, as2_x, as2_y, as3_x, 
   as3_y, as4_x, as4_y, as5_x, as5_y, fire1_x, fire1_y, fire2_x, fire2_y, fire3_x, fire3_y, sauc_x, sauc_y, 
   efire1_x, efire1_y, efire2_x, efire2_y, efire3_x, efire3_y, score, lives, menu_control, 
-  sound_setting, diff_setting, high_score, game_on, s00_axi_aclk, s00_axi_aresetn, 
+  sound_setting, diff_setting, high_score, menu_on, s00_axi_aclk, s00_axi_aresetn, 
   s00_axi_awaddr, s00_axi_awprot, s00_axi_awvalid, s00_axi_awready, s00_axi_wdata, 
   s00_axi_wstrb, s00_axi_wvalid, s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, 
   s00_axi_bready, s00_axi_araddr, s00_axi_arprot, s00_axi_arvalid, s00_axi_arready, 
   s00_axi_rdata, s00_axi_rresp, s00_axi_rvalid, s00_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="ship_x[9:0],ship_y[9:0],as1_x[9:0],as1_y[9:0],as2_x[9:0],as2_y[9:0],as3_x[9:0],as3_y[9:0],as4_x[9:0],as4_y[9:0],as5_x[9:0],as5_y[9:0],fire1_x[9:0],fire1_y[9:0],fire2_x[9:0],fire2_y[9:0],fire3_x[9:0],fire3_y[9:0],sauc_x[9:0],sauc_y[9:0],efire1_x[9:0],efire1_y[9:0],efire2_x[9:0],efire2_y[9:0],efire3_x[9:0],efire3_y[9:0],score[31:0],lives[2:0],menu_control[1:0],sound_setting,diff_setting,high_score[31:0],game_on,s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[6:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[6:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
+/* synthesis syn_black_box black_box_pad_pin="ship_x[9:0],ship_y[9:0],as1_x[9:0],as1_y[9:0],as2_x[9:0],as2_y[9:0],as3_x[9:0],as3_y[9:0],as4_x[9:0],as4_y[9:0],as5_x[9:0],as5_y[9:0],fire1_x[9:0],fire1_y[9:0],fire2_x[9:0],fire2_y[9:0],fire3_x[9:0],fire3_y[9:0],sauc_x[9:0],sauc_y[9:0],efire1_x[9:0],efire1_y[9:0],efire2_x[9:0],efire2_y[9:0],efire3_x[9:0],efire3_y[9:0],score[31:0],lives[2:0],menu_control[1:0],sound_setting,diff_setting,high_score[31:0],menu_on[1:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[6:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[6:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
   output [9:0]ship_x;
   output [9:0]ship_y;
   output [9:0]as1_x;
@@ -55,7 +55,7 @@ module design_1_GPU_controller_0_0(ship_x, ship_y, as1_x, as1_y, as2_x, as2_y, a
   output sound_setting;
   output diff_setting;
   output [31:0]high_score;
-  output game_on;
+  output [1:0]menu_on;
   input s00_axi_aclk;
   input s00_axi_aresetn;
   input [6:0]s00_axi_awaddr;

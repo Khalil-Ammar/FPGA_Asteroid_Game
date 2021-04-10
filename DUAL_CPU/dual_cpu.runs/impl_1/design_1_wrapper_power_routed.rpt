@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Sun Apr  4 16:35:39 2021
+| Date             : Fri Apr  9 20:28:33 2021
 | Host             : DESKTOP-P28JKS5 running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.871        |
+| Total On-Chip Power (W)  | 1.872        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.715        |
+| Dynamic (W)              | 1.716        |
 | Device Static (W)        | 0.156        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 63.4         |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.040 |        7 |       --- |             --- |
-| Slice Logic              |     0.012 |    24125 |       --- |             --- |
-|   LUT as Logic           |     0.010 |     7724 |     53200 |           14.52 |
-|   Register               |    <0.001 |    10963 |    106400 |           10.30 |
+| Clocks                   |     0.041 |        7 |       --- |             --- |
+| Slice Logic              |     0.012 |    26644 |       --- |             --- |
+|   LUT as Logic           |     0.010 |     9223 |     53200 |           17.34 |
+|   Register               |    <0.001 |    11113 |    106400 |           10.44 |
 |   LUT as Distributed RAM |    <0.001 |      514 |     17400 |            2.95 |
-|   CARRY4                 |    <0.001 |      370 |     13300 |            2.78 |
+|   CARRY4                 |    <0.001 |      554 |     13300 |            4.17 |
 |   LUT as Shift Register  |    <0.001 |      308 |     17400 |            1.77 |
-|   F7/F8 Muxes            |    <0.001 |      347 |     53200 |            0.65 |
-|   Others                 |     0.000 |     1273 |       --- |             --- |
-| Signals                  |     0.016 |    16576 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |      549 |     53200 |            1.03 |
+|   Others                 |     0.000 |     1319 |       --- |             --- |
+| Signals                  |     0.016 |    17735 |       --- |             --- |
 | Block RAM                |     0.008 |       65 |       140 |           46.43 |
 | MMCM                     |     0.106 |        1 |         4 |           25.00 |
-| I/O                      |     0.002 |       28 |       200 |           14.00 |
+| I/O                      |     0.003 |       36 |       200 |           18.00 |
 | PS7                      |     1.531 |        1 |       --- |             --- |
 | Static Power             |     0.156 |          |           |                 |
-| Total                    |     1.871 |          |           |                 |
+| Total                    |     1.872 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,8 +77,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.094 |       0.075 |      0.018 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.074 |       0.059 |      0.016 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.095 |       0.076 |      0.018 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.075 |       0.059 |      0.016 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -157,11 +157,11 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| design_1_wrapper           |     1.715 |
+| design_1_wrapper           |     1.716 |
 |   dbg_hub                  |     0.003 |
 |     inst                   |     0.003 |
 |       BSCANID.u_xsdbm_id   |     0.003 |
-|   design_1_i               |     1.692 |
+|   design_1_i               |     1.693 |
 |     Asteroid_graph_anima_0 |     0.002 |
 |       U0                   |     0.002 |
 |     GPU_controller_0       |     0.003 |
@@ -174,14 +174,13 @@ Table of Contents
 |       inst                 |     0.106 |
 |     processing_system7_0   |     1.533 |
 |       inst                 |     1.533 |
-|     ps7_0_axi_periph       |     0.005 |
-|       s00_couplers         |     0.004 |
-|       xbar                 |     0.001 |
+|     ps7_0_axi_periph       |     0.004 |
+|       s00_couplers         |     0.003 |
 |     smartconnect_0         |     0.027 |
 |       inst                 |     0.027 |
-|   u_ila_0                  |     0.017 |
-|     inst                   |     0.017 |
-|       ila_core_inst        |     0.017 |
+|   u_ila_0                  |     0.018 |
+|     inst                   |     0.018 |
+|       ila_core_inst        |     0.018 |
 +----------------------------+-----------+
 
 

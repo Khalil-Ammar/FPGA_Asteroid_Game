@@ -29,9 +29,9 @@ char bangFileName[] = "BANG.WAV";
 char thrustFileName[] = "THRUST.WAV";
 
 // interrupt variables
-XScuGic InterruptController; /* Instance of the Interrupt Controller */
 XGpio BTNInst;
 XScuGic INTCInst;
+XGpio SWInst;
 
 
 //########################################################
@@ -39,6 +39,7 @@ XScuGic INTCInst;
 //########################################################
 
 void BTN_Intr_Handler(void *InstancePtr){};
+void SW_Intr_Handler(void *InstancePtr){};
 
 int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr){
 	/*
@@ -55,15 +56,19 @@ int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr){
 	return XST_SUCCESS;
 }
 
-int InterruptSystemSetup(XScuGic *XScuGicInstancePtr)
+int GpioInterruptSystemSetup(XScuGic *XScuGicInstancePtr)
 {
-	// Enable interrupt
-	XGpio_InterruptEnable(&BTNInst, BTN_INT);
+	// Enable Button interrupt
+	XGpio_InterruptEnable(&BTNInst, CH1_INTR_MASK);
 	XGpio_InterruptGlobalEnable(&BTNInst);
 
+	//Enable SW interrupt
+	XGpio_InterruptEnable(&SWInst, CH1_INTR_MASK);
+	XGpio_InterruptGlobalEnable(&SWInst);
+
 	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
-			 	 	 	 	 	 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
-			 	 	 	 	 	 XScuGicInstancePtr);
+								 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+								 XScuGicInstancePtr);
 	Xil_ExceptionEnable();
 
 
@@ -71,7 +76,7 @@ int InterruptSystemSetup(XScuGic *XScuGicInstancePtr)
 
 }
 
-int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr)
+int IntcInitFunction(u16 DeviceId, XGpio *BtnInstancePtr, XGpio *SwInstancePtr)
 {
 	XScuGic_Config *IntcConfig;
 	int status;
@@ -84,36 +89,62 @@ int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr)
 	if(status != XST_SUCCESS) return XST_FAILURE;
 
 	/*
-	 * set gpio interrupt target cpu
+	 * set btn interrupt target cpu
 	 */
 
 	intr_target_reg = XScuGic_DistReadReg(&INTCInst,
-			XSCUGIC_SPI_TARGET_OFFSET_CALC(INTC_GPIO_INTERRUPT_ID));
+			XSCUGIC_SPI_TARGET_OFFSET_CALC(INTC_BTN_INTERRUPT_ID));
 
-	intr_target_reg &= ~(0x000000FF << ((INTC_GPIO_INTERRUPT_ID%4)*8));
-	intr_target_reg |=  (0x00000002 << ((INTC_GPIO_INTERRUPT_ID%4)*8));//CPU1 ack gpio
+	intr_target_reg &= ~(0x000000FF << ((INTC_BTN_INTERRUPT_ID%4)*8));
+	intr_target_reg |=  (0x00000002 << ((INTC_BTN_INTERRUPT_ID%4)*8));//CPU1 ack gpio
 
 	XScuGic_DistWriteReg(&INTCInst,
-			XSCUGIC_SPI_TARGET_OFFSET_CALC(INTC_GPIO_INTERRUPT_ID),
+			XSCUGIC_SPI_TARGET_OFFSET_CALC(INTC_BTN_INTERRUPT_ID),
 			intr_target_reg);
 
-	// Call to interrupt setup
-	status = InterruptSystemSetup(&INTCInst);
+	/*
+	 * set switches interrupt target cpu
+	 */
+
+	intr_target_reg = XScuGic_DistReadReg(&INTCInst,
+			XSCUGIC_SPI_TARGET_OFFSET_CALC(INTC_SW_INTERRUPT_ID));
+
+	intr_target_reg &= ~(0x000000FF << ((INTC_SW_INTERRUPT_ID%4)*8));
+	intr_target_reg |=  (0x00000002 << ((INTC_SW_INTERRUPT_ID%4)*8));//CPU1 ack uart
+
+	XScuGic_DistWriteReg(&INTCInst,
+			XSCUGIC_SPI_TARGET_OFFSET_CALC(INTC_SW_INTERRUPT_ID),
+			intr_target_reg);
+
+	// Call to GPIO interrupt setup
+	status = GpioInterruptSystemSetup(&INTCInst);
 	if(status != XST_SUCCESS) return XST_FAILURE;
 
-	// Connect GPIO interrupt to handler
+	// Connect BTN interrupt to handler
 	status = XScuGic_Connect(&INTCInst,
-					  	  	 INTC_GPIO_INTERRUPT_ID,
+					  	  	 INTC_BTN_INTERRUPT_ID,
 					  	  	 (Xil_ExceptionHandler)BTN_Intr_Handler,
-					  	  	 (void *)GpioInstancePtr);
+					  	  	 (void *)BtnInstancePtr);
 	if(status != XST_SUCCESS) return XST_FAILURE;
 
-	// Enable GPIO interrupts interrupt
-	XGpio_InterruptEnable(GpioInstancePtr, 1);
-	XGpio_InterruptGlobalEnable(GpioInstancePtr);
+	// Connect SW interrupt to handler
+	status = XScuGic_Connect(&INTCInst,
+							 INTC_SW_INTERRUPT_ID,
+							 (Xil_ExceptionHandler)SW_Intr_Handler,
+							 (void *)SwInstancePtr);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+	// Enable button interrupts
+	XGpio_InterruptEnable(BtnInstancePtr, 1);
+	XGpio_InterruptGlobalEnable(BtnInstancePtr);
 
-	// Enable GPIO and timer interrupts in the controller
-	XScuGic_Enable(&INTCInst, INTC_GPIO_INTERRUPT_ID);
+	// Enable switches interrupts
+	XGpio_InterruptEnable(SwInstancePtr, 1);
+	XGpio_InterruptGlobalEnable(SwInstancePtr);
+
+
+	// Enable BTN and SW interrupts in the controller
+	XScuGic_Enable(&INTCInst, INTC_BTN_INTERRUPT_ID);
+	XScuGic_Enable(&INTCInst, INTC_SW_INTERRUPT_ID);
 
 	return XST_SUCCESS;
 }
@@ -136,8 +167,17 @@ int main()
 	// Set all buttons direction to inputs
 	XGpio_SetDataDirection(&BTNInst, 1, 0xFF);
 
+	// Initialize Switches
+	status = XGpio_Initialize(&SWInst, SW_DEVICE_ID);
+	if(status != XST_SUCCESS){
+	  return XST_FAILURE;
+	}
+
+	// Set all switches direction to inputs
+	XGpio_SetDataDirection(&SWInst, 1, 0xFF);
+
     // Initialize interrupt controller
-	status = IntcInitFunction(INTC_DEVICE_ID, &BTNInst);
+	status = IntcInitFunction(INTC_DEVICE_ID, &BTNInst, &SWInst);
 	if(status != XST_SUCCESS){
 	  return XST_FAILURE;
 	}

@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include "gpu.h"
 #include "GPU_controller.h"
-#include "helloworld.h"
 #include "xparameters.h"
+#include "game_logic.h"
 
 
 
@@ -27,7 +27,7 @@ void InitOffsetTable(){
 
 void InitRegisters(){
 	//init asteroid registers
-	for(int i = 0; i < INIT_ASTRD_NBR; i++){
+	for(int i = 0; i < INIT_ASTRD_NBR_HIGH; i++){
 		GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1], INVALID_SPRITE_MASK);
 	}
 
@@ -51,7 +51,7 @@ void RenderLives(int lives){
 void RenderScore(){
 	int temp = score;
 	int digit;
-	u32 scoreRegister;
+	u32 scoreRegister = 0;
 	for (int i = 0; i < 3; i++){
 		digit = temp % 10;
 		temp /= 10;
@@ -104,6 +104,21 @@ void UpdateEnemyBullet(struct Bullet oldBulletInstance, struct Bullet newBulletI
 
 }
 
+void UpdateAsteroid(struct Asteroid oldAsteroidInstance, struct Asteroid newAsteroidInstance){
+	u32 oldAsteroid = (oldAsteroidInstance.y << 10) + oldAsteroidInstance.x;
+	u32 newAsteroid = (newAsteroidInstance.y << 10) + newAsteroidInstance.x;
+
+	//find old bullet instance and replace with new instance
+	for(int i = 0; i < maxAsteroids; i++){
+		u32 asteroidToCompare = GPU_CONTROLLER_mReadReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1]) & EXTRACT_COORDINATES_MASK; //extract lowest 20 bits
+		if (asteroidToCompare == oldAsteroid){
+			GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1], newAsteroid); // update bullet position
+			return;
+		}
+	}
+
+}
+
 void RenderEnemyBullet(struct Bullet bulletInstance){
 	//Find an invalid/non-rendered bullet
 	u32 bulletReg = (bulletInstance.y << 10) + bulletInstance.x;
@@ -132,7 +147,7 @@ void RenderEnemySaucer(struct EnemySaucer enemySaucerInstance){
 void RenderAsteroid(struct Asteroid asteroidInstance){
 	//Find an invalid/non-rendered asteroid
 	u32 asteroidReg = (asteroidInstance.y << 10) + asteroidInstance.x;
-	for(int i = 0; i < INIT_ASTRD_NBR; i++){
+	for(int i = 0; i < maxAsteroids; i++){
 		u32 reg = GPU_CONTROLLER_mReadReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1]);
 		if (reg == INVALID_SPRITE_MASK){
 			GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1], asteroidReg); // render asteroid
@@ -170,7 +185,7 @@ void DestroyEnemyBullet(struct Bullet bulletInstance){
 void DestroyAsteroid(struct Asteroid asteroidInstance){
 	//Search through valid asteroids and compare to input instance
 	u32 asteroidToDestroy = (asteroidInstance.y << 10) + asteroidInstance.x;
-	for(int i = 0; i < INIT_ASTRD_NBR; i++){
+	for(int i = 0; i < maxAsteroids; i++){
 		u32 asteroidToCompare = GPU_CONTROLLER_mReadReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1]) & EXTRACT_COORDINATES_MASK; //extract lowest 20 bits
 		if (asteroidToCompare == asteroidToDestroy){
 			GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[i+1], INVALID_SPRITE_MASK); // destroy asteroid
@@ -185,10 +200,13 @@ void RenderScreen(Screen screen){
 	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[19], (int)screen);
 }
 
-void RenderMenuHighlight(MenuHighlight highlight){
+void RenderMainMenuHighlight(MainMenuHighlight highlight){
 	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[15], (int)highlight);
 }
 
+void RenderPauseMenuHighlight(PauseMenuHighlight highlight){
+	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[15], (int)highlight);
+}
 void MenuSetAudio(AudioSetting audioSetting){
 	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[16], (int)audioSetting);
 }
@@ -200,8 +218,8 @@ void MenuSetDifficulty(DifficultySetting difficultySetting){
 void MenuSetHighScore(int highScore){
 	int temp = highScore;
 	int digit;
-	u32 highScoreRegister;
-	for (int i = 0; i < 3; i++){
+	u32 highScoreRegister = 0;
+ 	for (int i = 0; i < 3; i++){
 		digit = temp % 10;
 		temp /= 10;
 		highScoreRegister += (digit << 4*i);
@@ -209,8 +227,4 @@ void MenuSetHighScore(int highScore){
 	GPU_CONTROLLER_mWriteReg(XPAR_GPU_CONTROLLER_0_S00_AXI_BASEADDR, offsetTable[18], highScoreRegister);
 }
 
-void RenderGameOverScreen(){
-	xil_printf("Placeholder for Game Over Screen.");
-	exit(0);
-}
 

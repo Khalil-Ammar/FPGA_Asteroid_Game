@@ -151,7 +151,7 @@ module design_1_processing_system7_0_0 (
   input bit [5 : 0] S_AXI_GP0_ARID,
   input bit [5 : 0] S_AXI_GP0_AWID,
   input bit [5 : 0] S_AXI_GP0_WID,
-  input bit [0 : 0] IRQ_F2P,
+  input bit [1 : 0] IRQ_F2P,
   output bit_as_bool FCLK_CLK0,
   output bit_as_bool FCLK_RESET0_N,
   output bit [53 : 0] MIO,
@@ -268,7 +268,7 @@ module design_1_processing_system7_0_0 (TTC0_WAVE0_OUT,TTC0_WAVE1_OUT,TTC0_WAVE2
   input bit [5 : 0] S_AXI_GP0_ARID;
   input bit [5 : 0] S_AXI_GP0_AWID;
   input bit [5 : 0] S_AXI_GP0_WID;
-  input bit [0 : 0] IRQ_F2P;
+  input bit [1 : 0] IRQ_F2P;
   output wire FCLK_CLK0;
   output wire FCLK_RESET0_N;
   inout wire [53 : 0] MIO;
@@ -382,7 +382,7 @@ module design_1_processing_system7_0_0 (TTC0_WAVE0_OUT,TTC0_WAVE1_OUT,TTC0_WAVE2
   input bit [5 : 0] S_AXI_GP0_ARID;
   input bit [5 : 0] S_AXI_GP0_AWID;
   input bit [5 : 0] S_AXI_GP0_WID;
-  input bit [0 : 0] IRQ_F2P;
+  input bit [1 : 0] IRQ_F2P;
   output wire FCLK_CLK0;
   output wire FCLK_RESET0_N;
   inout wire [53 : 0] MIO;

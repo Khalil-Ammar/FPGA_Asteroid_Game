@@ -2,7 +2,8 @@
 #define GPU_H
 
 #include "xparameters.h"
-#include "helloworld.h"
+
+#include "game_logic.h"
 
 // GPU Controller
 #define GPU_CONTROLLER_S00_AXI_SLV_REG0_OFFSET 0
@@ -45,6 +46,7 @@ void RenderAsteroid(struct Asteroid asteroidInstance);
 void RenderShip();
 void UpdateBullet(struct Bullet oldBulletInstance, struct Bullet newBulletInstance);
 void UpdateEnemyBullet(struct Bullet oldBulletInstance, struct Bullet newBulletInstance);
+void UpdateAsteroid(struct Asteroid oldAsteroidInstance, struct Asteroid newAsteroidInstance);
 void DestroyBullet(struct Bullet bulletInstance);
 void DestroyEnemyBullet(struct Bullet bulletInstance);
 void DestroyEnemySaucer(struct EnemySaucer enemySaucerInstance);
@@ -58,7 +60,8 @@ void InitScore();
 
 // Menu Screen
 void RenderScreen(Screen screen);
-void RenderMenuHighlight(MenuHighlight highlight);
+void RenderMainMenuHighlight(MainMenuHighlight highlight);
+void RenderPauseMenuHighlight(PauseMenuHighlight highlight);
 void MenuSetAudio(AudioSetting audioSetting);
 void MenuSetDifficulty(DifficultySetting difficultySetting);
 void MenuSetHighScore(int highScore);

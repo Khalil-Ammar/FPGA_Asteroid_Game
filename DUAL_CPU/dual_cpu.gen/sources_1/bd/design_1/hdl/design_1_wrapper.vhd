@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Sun Apr  4 16:17:23 2021
+--Date        : Fri Apr  9 20:16:09 2021
 --Host        : DESKTOP-P28JKS5 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -48,7 +48,8 @@ entity design_1_wrapper is
     mosi : out STD_LOGIC;
     sclk : out STD_LOGIC;
     sdata : out STD_LOGIC;
-    ss : out STD_LOGIC
+    ss : out STD_LOGIC;
+    sws_8bits_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
 end design_1_wrapper;
 
@@ -69,12 +70,7 @@ architecture STRUCTURE of design_1_wrapper is
     VGA_B : out STD_LOGIC_VECTOR ( 3 downto 0 );
     VGA_G : out STD_LOGIC_VECTOR ( 3 downto 0 );
     VGA_R : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
+    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -90,7 +86,13 @@ architecture STRUCTURE of design_1_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    sws_8bits_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component design_1;
 begin
@@ -131,6 +133,7 @@ design_1_i: component design_1
       mosi => mosi,
       sclk => sclk,
       sdata => sdata,
-      ss => ss
+      ss => ss,
+      sws_8bits_tri_i(7 downto 0) => sws_8bits_tri_i(7 downto 0)
     );
 end STRUCTURE;

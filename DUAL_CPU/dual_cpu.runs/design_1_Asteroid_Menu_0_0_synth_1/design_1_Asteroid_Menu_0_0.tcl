@@ -91,10 +91,10 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/khali/Downloads/AST3.0/Drawers.vhd
-  C:/Users/khali/Downloads/AST3.0/Asteroid_menu.vhd
+  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/sources_1/Drawers.vhd
+  C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/sources_1/Asteroid_menu.vhd
 }
-read_ip -quiet c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/sources_1/bd/design_1/ip/design_1_Asteroid_Menu_0_0/design_1_Asteroid_Menu_0_0.xci
+read_ip -quiet C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.srcs/sources_1/bd/design_1/ip/design_1_Asteroid_Menu_0_0/design_1_Asteroid_Menu_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1617578462">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1618024644">
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
@@ -11,25 +11,25 @@
   <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../Downloads/AST3.0/Drawers.vhd">
+    <File Path="$PSRCDIR/sources_1/Drawers.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/AST3.0/Asteroid_graph_animate.vhd">
+    <File Path="$PSRCDIR/sources_1/Asteroid_graph_animate.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/AST3.0/Asteroid_menu.vhd">
+    <File Path="$PSRCDIR/sources_1/Asteroid_menu.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/AST3.0/vga_sync.vhd">
+    <File Path="$PSRCDIR/sources_1/vga_sync.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -82,6 +82,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_myI2STx_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_fifo_mm_s_0_0"/>
@@ -91,12 +92,11 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_myPrescaler_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_GPU_controller_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_0_50M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_Asteroid_graph_anima_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_vga_sync_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_Asteroid_Menu_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_lfsr_7_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_smartconnect_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_GPU_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Asteroid_Menu_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_vga_sync_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Asteroid_graph_anima_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_1_0"/>
 </GenRun>

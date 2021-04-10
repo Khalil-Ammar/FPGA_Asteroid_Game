@@ -27,4 +27,7 @@ dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_core/Debug/dual_core.elf
 targets -set -nocase -filter {name =~ "*A9*#1"}
 dow C:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/second_core/Debug/second_core.elf
 configparams force-mem-access 0
-bpadd -addr &main
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+targets -set -nocase -filter {name =~ "*A9*#1"}
+con

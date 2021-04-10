@@ -14,20 +14,25 @@
 #include "xaxidma.h"
 #include "ff.h"
 #include "xparameters.h"
+#include "xuartps.h"
+#include "xgpio.h"
 
 // Constants
-#define DMA_BDUFFERSIZE 4000	// Size of the buffer which holds the DMA Buffer Descriptors (BDs)
-#define MAX_FILES 		5
+#define DMA_BDUFFERSIZE 	4000	// Size of the buffer which holds the DMA Buffer Descriptors (BDs)
+#define MAX_FILES 			5
+#define UART_BUFFER_SIZE	1
 
 
 // Addresses
 #define MEM_BASE_ADDR XPAR_PS7_DDR_0_S_AXI_BASEADDR + 0x00100000
 
 // Interrupt parameters
-#define INTC_DEVICE_ID      XPAR_PS7_SCUGIC_0_DEVICE_ID
-#define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
-#define BTN_INT 			XGPIO_IR_CH1_MASK
-#define BTNS_DEVICE_ID		XPAR_AXI_GPIO_0_DEVICE_ID
+#define INTC_DEVICE_ID      	XPAR_PS7_SCUGIC_0_DEVICE_ID
+#define INTC_BTN_INTERRUPT_ID 	XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+#define INTC_SW_INTERRUPT_ID 	XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR
+#define CH1_INTR_MASK 			XGPIO_IR_CH1_MASK
+#define BTNS_DEVICE_ID			XPAR_AXI_GPIO_0_DEVICE_ID
+#define SW_DEVICE_ID			XPAR_AXI_GPIO_1_DEVICE_ID
 
 
 // Structs
@@ -72,6 +77,13 @@ extern FATFS FS_instance;
 extern adau1761_config codec;
 extern u8 *audioBuffer;
 extern size_t audioBufferSize;
+
+//Interrupt Setup
+void BTN_Intr_Handler(void *InstancePtr);
+void SW_Intr_Handler(void *InstancePtr);
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
+int GpioInterruptSystemSetup(XScuGic *XScuGicInstancePtr);
+int IntcInitFunction(u16 DeviceId, XGpio *BtnInstancePtr, XGpio *SwInstancePtr);
 
 
 

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sun Apr  4 15:03:51 2021
+// Date        : Fri Apr  9 14:00:29 2021
 // Host        : DESKTOP-P28JKS5 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0_sim_netlist.v
@@ -47,7 +47,7 @@ module design_1_GPU_controller_0_0
     sound_setting,
     diff_setting,
     high_score,
-    game_on,
+    menu_on,
     s00_axi_aclk,
     s00_axi_aresetn,
     s00_axi_awaddr,
@@ -101,7 +101,7 @@ module design_1_GPU_controller_0_0
   output sound_setting;
   output diff_setting;
   output [31:0]high_score;
-  output game_on;
+  output [1:0]menu_on;
   (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 32, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 7, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [6:0]s00_axi_awaddr;
@@ -148,10 +148,10 @@ module design_1_GPU_controller_0_0
   wire [9:0]fire2_y;
   wire [9:0]fire3_x;
   wire [9:0]fire3_y;
-  wire game_on;
   wire [31:0]high_score;
   wire [2:0]lives;
   wire [1:0]menu_control;
+  wire [1:0]menu_on;
   wire s00_axi_aclk;
   wire [6:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -209,10 +209,10 @@ module design_1_GPU_controller_0_0
         .fire2_y(fire2_y),
         .fire3_x(fire3_x),
         .fire3_y(fire3_y),
-        .game_on(game_on),
         .high_score(high_score),
         .lives(lives),
         .menu_control(menu_control),
+        .menu_on(menu_on),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_araddr(s00_axi_araddr[6:2]),
         .s00_axi_aresetn(s00_axi_aresetn),
@@ -271,7 +271,7 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0
     sound_setting,
     diff_setting,
     high_score,
-    game_on,
+    menu_on,
     S_AXI_ARREADY,
     s00_axi_rdata,
     s00_axi_rvalid,
@@ -321,7 +321,7 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0
   output sound_setting;
   output diff_setting;
   output [31:0]high_score;
-  output game_on;
+  output [1:0]menu_on;
   output S_AXI_ARREADY;
   output [31:0]s00_axi_rdata;
   output s00_axi_rvalid;
@@ -368,10 +368,10 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0
   wire [9:0]fire2_y;
   wire [9:0]fire3_x;
   wire [9:0]fire3_y;
-  wire game_on;
   wire [31:0]high_score;
   wire [2:0]lives;
   wire [1:0]menu_control;
+  wire [1:0]menu_on;
   wire s00_axi_aclk;
   wire [4:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -405,10 +405,10 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0
         .axi_bvalid_reg_0(axi_bvalid_i_1_n_0),
         .axi_rvalid_reg_0(axi_rvalid_i_1_n_0),
         .diff_setting(diff_setting),
-        .game_on(game_on),
         .high_score(high_score),
         .lives(lives),
         .menu_control(menu_control),
+        .menu_on(menu_on),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_araddr(s00_axi_araddr),
         .s00_axi_arvalid(s00_axi_arvalid),
@@ -496,7 +496,7 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
     sound_setting,
     diff_setting,
     high_score,
-    game_on,
+    menu_on,
     s00_axi_rdata,
     SR,
     s00_axi_aclk,
@@ -535,7 +535,7 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
   output sound_setting;
   output diff_setting;
   output [31:0]high_score;
-  output game_on;
+  output [1:0]menu_on;
   output [31:0]s00_axi_rdata;
   input [0:0]SR;
   input s00_axi_aclk;
@@ -949,10 +949,10 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
   wire axi_rvalid_reg_0;
   wire axi_wready0;
   wire diff_setting;
-  wire game_on;
   wire [31:0]high_score;
   wire [2:0]lives;
   wire [1:0]menu_control;
+  wire [1:0]menu_on;
   wire [4:0]p_0_in;
   wire [31:7]p_1_in;
   wire [31:0]reg_data_out;
@@ -1018,9 +1018,9 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
   wire \slv_reg18[23]_i_1_n_0 ;
   wire \slv_reg18[31]_i_1_n_0 ;
   wire \slv_reg18[7]_i_1_n_0 ;
-  wire [31:1]slv_reg19;
-  wire \slv_reg19[0]_i_1_n_0 ;
+  wire [31:2]slv_reg19;
   wire \slv_reg19[15]_i_1_n_0 ;
+  wire \slv_reg19[1]_i_1_n_0 ;
   wire \slv_reg19[23]_i_1_n_0 ;
   wire \slv_reg19[31]_i_1_n_0 ;
   wire \slv_reg1[19]_i_1_n_0 ;
@@ -1327,7 +1327,7 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[0]_i_8 
-       (.I0(game_on),
+       (.I0(menu_on[0]),
         .I1(high_score[0]),
         .I2(\axi_araddr_reg[3]_rep_n_0 ),
         .I3(diff_setting),
@@ -2317,7 +2317,7 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[1]_i_8 
-       (.I0(slv_reg19[1]),
+       (.I0(menu_on[1]),
         .I1(high_score[1]),
         .I2(\axi_araddr_reg[3]_rep_n_0 ),
         .I3(slv_reg17[1]),
@@ -7324,16 +7324,6 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
         .R(SR));
   LUT6 #(
     .INIT(64'h0000000008000000)) 
-    \slv_reg19[0]_i_1 
-       (.I0(s00_axi_wstrb[0]),
-        .I1(p_0_in[1]),
-        .I2(p_0_in[2]),
-        .I3(\slv_reg1[9]_i_2_n_0 ),
-        .I4(p_0_in[4]),
-        .I5(p_0_in[3]),
-        .O(\slv_reg19[0]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000008000000)) 
     \slv_reg19[15]_i_1 
        (.I0(s00_axi_wstrb[1]),
         .I1(p_0_in[1]),
@@ -7342,6 +7332,16 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
         .I4(p_0_in[4]),
         .I5(p_0_in[3]),
         .O(\slv_reg19[15]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000008000000)) 
+    \slv_reg19[1]_i_1 
+       (.I0(s00_axi_wstrb[0]),
+        .I1(p_0_in[1]),
+        .I2(p_0_in[2]),
+        .I3(\slv_reg1[9]_i_2_n_0 ),
+        .I4(p_0_in[4]),
+        .I5(p_0_in[3]),
+        .O(\slv_reg19[1]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h0000000008000000)) 
     \slv_reg19[23]_i_1 
@@ -7364,9 +7364,9 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
         .O(\slv_reg19[31]_i_1_n_0 ));
   FDRE \slv_reg19_reg[0] 
        (.C(s00_axi_aclk),
-        .CE(\slv_reg19[0]_i_1_n_0 ),
+        .CE(\slv_reg19[1]_i_1_n_0 ),
         .D(s00_axi_wdata[0]),
-        .Q(game_on),
+        .Q(menu_on[0]),
         .R(SR));
   FDRE \slv_reg19_reg[10] 
        (.C(s00_axi_aclk),
@@ -7430,9 +7430,9 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
         .R(SR));
   FDRE \slv_reg19_reg[1] 
        (.C(s00_axi_aclk),
-        .CE(\slv_reg19[0]_i_1_n_0 ),
+        .CE(\slv_reg19[1]_i_1_n_0 ),
         .D(s00_axi_wdata[1]),
-        .Q(slv_reg19[1]),
+        .Q(menu_on[1]),
         .R(SR));
   FDRE \slv_reg19_reg[20] 
        (.C(s00_axi_aclk),
@@ -7496,7 +7496,7 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
         .R(SR));
   FDRE \slv_reg19_reg[2] 
        (.C(s00_axi_aclk),
-        .CE(\slv_reg19[0]_i_1_n_0 ),
+        .CE(\slv_reg19[1]_i_1_n_0 ),
         .D(s00_axi_wdata[2]),
         .Q(slv_reg19[2]),
         .R(SR));
@@ -7514,31 +7514,31 @@ module design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI
         .R(SR));
   FDRE \slv_reg19_reg[3] 
        (.C(s00_axi_aclk),
-        .CE(\slv_reg19[0]_i_1_n_0 ),
+        .CE(\slv_reg19[1]_i_1_n_0 ),
         .D(s00_axi_wdata[3]),
         .Q(slv_reg19[3]),
         .R(SR));
   FDRE \slv_reg19_reg[4] 
        (.C(s00_axi_aclk),
-        .CE(\slv_reg19[0]_i_1_n_0 ),
+        .CE(\slv_reg19[1]_i_1_n_0 ),
         .D(s00_axi_wdata[4]),
         .Q(slv_reg19[4]),
         .R(SR));
   FDRE \slv_reg19_reg[5] 
        (.C(s00_axi_aclk),
-        .CE(\slv_reg19[0]_i_1_n_0 ),
+        .CE(\slv_reg19[1]_i_1_n_0 ),
         .D(s00_axi_wdata[5]),
         .Q(slv_reg19[5]),
         .R(SR));
   FDRE \slv_reg19_reg[6] 
        (.C(s00_axi_aclk),
-        .CE(\slv_reg19[0]_i_1_n_0 ),
+        .CE(\slv_reg19[1]_i_1_n_0 ),
         .D(s00_axi_wdata[6]),
         .Q(slv_reg19[6]),
         .R(SR));
   FDRE \slv_reg19_reg[7] 
        (.C(s00_axi_aclk),
-        .CE(\slv_reg19[0]_i_1_n_0 ),
+        .CE(\slv_reg19[1]_i_1_n_0 ),
         .D(s00_axi_wdata[7]),
         .Q(slv_reg19[7]),
         .R(SR));

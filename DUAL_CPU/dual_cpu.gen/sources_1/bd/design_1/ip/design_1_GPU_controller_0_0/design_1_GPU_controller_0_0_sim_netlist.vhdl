@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Sun Apr  4 15:03:51 2021
+-- Date        : Fri Apr  9 14:00:30 2021
 -- Host        : DESKTOP-P28JKS5 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/khali/ENSC_452_git/ENSC_452/DUAL_CPU/dual_cpu.gen/sources_1/bd/design_1/ip/design_1_GPU_controller_0_0/design_1_GPU_controller_0_0_sim_netlist.vhdl
@@ -41,7 +41,7 @@ entity design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AXI is
     sound_setting : out STD_LOGIC;
     diff_setting : out STD_LOGIC;
     high_score : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    game_on : out STD_LOGIC;
+    menu_on : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     s00_axi_aclk : in STD_LOGIC;
@@ -456,10 +456,10 @@ architecture STRUCTURE of design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AX
   signal \axi_rdata_reg[9]_i_5_n_0\ : STD_LOGIC;
   signal axi_wready0 : STD_LOGIC;
   signal \^diff_setting\ : STD_LOGIC;
-  signal \^game_on\ : STD_LOGIC;
   signal \^high_score\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal \^lives\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^menu_control\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \^menu_on\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal p_0_in : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal p_1_in : STD_LOGIC_VECTOR ( 31 downto 7 );
   signal reg_data_out : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -515,9 +515,9 @@ architecture STRUCTURE of design_1_GPU_controller_0_0_GPU_controller_v2_0_S00_AX
   signal \slv_reg18[23]_i_1_n_0\ : STD_LOGIC;
   signal \slv_reg18[31]_i_1_n_0\ : STD_LOGIC;
   signal \slv_reg18[7]_i_1_n_0\ : STD_LOGIC;
-  signal slv_reg19 : STD_LOGIC_VECTOR ( 31 downto 1 );
-  signal \slv_reg19[0]_i_1_n_0\ : STD_LOGIC;
+  signal slv_reg19 : STD_LOGIC_VECTOR ( 31 downto 2 );
   signal \slv_reg19[15]_i_1_n_0\ : STD_LOGIC;
+  signal \slv_reg19[1]_i_1_n_0\ : STD_LOGIC;
   signal \slv_reg19[23]_i_1_n_0\ : STD_LOGIC;
   signal \slv_reg19[31]_i_1_n_0\ : STD_LOGIC;
   signal \slv_reg1[19]_i_1_n_0\ : STD_LOGIC;
@@ -648,10 +648,10 @@ begin
   S_AXI_WREADY <= \^s_axi_wready\;
   aw_en_reg_0 <= \^aw_en_reg_0\;
   diff_setting <= \^diff_setting\;
-  game_on <= \^game_on\;
   high_score(31 downto 0) <= \^high_score\(31 downto 0);
   lives(2 downto 0) <= \^lives\(2 downto 0);
   menu_control(1 downto 0) <= \^menu_control\(1 downto 0);
+  menu_on(1 downto 0) <= \^menu_on\(1 downto 0);
   s00_axi_rvalid <= \^s00_axi_rvalid\;
   score(31 downto 0) <= \^score\(31 downto 0);
   \slv_reg10_reg[19]_0\(19 downto 0) <= \^slv_reg10_reg[19]_0\(19 downto 0);
@@ -911,7 +911,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => \^game_on\,
+      I0 => \^menu_on\(0),
       I1 => \^high_score\(0),
       I2 => \axi_araddr_reg[3]_rep_n_0\,
       I3 => \^diff_setting\,
@@ -2198,7 +2198,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => slv_reg19(1),
+      I0 => \^menu_on\(1),
       I1 => \^high_score\(1),
       I2 => \axi_araddr_reg[3]_rep_n_0\,
       I3 => slv_reg17(1),
@@ -8840,19 +8840,6 @@ axi_wready_reg: unisim.vcomponents.FDRE
       Q => \^high_score\(9),
       R => SR(0)
     );
-\slv_reg19[0]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000008000000"
-    )
-        port map (
-      I0 => s00_axi_wstrb(0),
-      I1 => p_0_in(1),
-      I2 => p_0_in(2),
-      I3 => \slv_reg1[9]_i_2_n_0\,
-      I4 => p_0_in(4),
-      I5 => p_0_in(3),
-      O => \slv_reg19[0]_i_1_n_0\
-    );
 \slv_reg19[15]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000000008000000"
@@ -8865,6 +8852,19 @@ axi_wready_reg: unisim.vcomponents.FDRE
       I4 => p_0_in(4),
       I5 => p_0_in(3),
       O => \slv_reg19[15]_i_1_n_0\
+    );
+\slv_reg19[1]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000008000000"
+    )
+        port map (
+      I0 => s00_axi_wstrb(0),
+      I1 => p_0_in(1),
+      I2 => p_0_in(2),
+      I3 => \slv_reg1[9]_i_2_n_0\,
+      I4 => p_0_in(4),
+      I5 => p_0_in(3),
+      O => \slv_reg19[1]_i_1_n_0\
     );
 \slv_reg19[23]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -8895,9 +8895,9 @@ axi_wready_reg: unisim.vcomponents.FDRE
 \slv_reg19_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \slv_reg19[0]_i_1_n_0\,
+      CE => \slv_reg19[1]_i_1_n_0\,
       D => s00_axi_wdata(0),
-      Q => \^game_on\,
+      Q => \^menu_on\(0),
       R => SR(0)
     );
 \slv_reg19_reg[10]\: unisim.vcomponents.FDRE
@@ -8983,9 +8983,9 @@ axi_wready_reg: unisim.vcomponents.FDRE
 \slv_reg19_reg[1]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \slv_reg19[0]_i_1_n_0\,
+      CE => \slv_reg19[1]_i_1_n_0\,
       D => s00_axi_wdata(1),
-      Q => slv_reg19(1),
+      Q => \^menu_on\(1),
       R => SR(0)
     );
 \slv_reg19_reg[20]\: unisim.vcomponents.FDRE
@@ -9071,7 +9071,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
 \slv_reg19_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \slv_reg19[0]_i_1_n_0\,
+      CE => \slv_reg19[1]_i_1_n_0\,
       D => s00_axi_wdata(2),
       Q => slv_reg19(2),
       R => SR(0)
@@ -9095,7 +9095,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
 \slv_reg19_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \slv_reg19[0]_i_1_n_0\,
+      CE => \slv_reg19[1]_i_1_n_0\,
       D => s00_axi_wdata(3),
       Q => slv_reg19(3),
       R => SR(0)
@@ -9103,7 +9103,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
 \slv_reg19_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \slv_reg19[0]_i_1_n_0\,
+      CE => \slv_reg19[1]_i_1_n_0\,
       D => s00_axi_wdata(4),
       Q => slv_reg19(4),
       R => SR(0)
@@ -9111,7 +9111,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
 \slv_reg19_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \slv_reg19[0]_i_1_n_0\,
+      CE => \slv_reg19[1]_i_1_n_0\,
       D => s00_axi_wdata(5),
       Q => slv_reg19(5),
       R => SR(0)
@@ -9119,7 +9119,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
 \slv_reg19_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \slv_reg19[0]_i_1_n_0\,
+      CE => \slv_reg19[1]_i_1_n_0\,
       D => s00_axi_wdata(6),
       Q => slv_reg19(6),
       R => SR(0)
@@ -9127,7 +9127,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
 \slv_reg19_reg[7]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \slv_reg19[0]_i_1_n_0\,
+      CE => \slv_reg19[1]_i_1_n_0\,
       D => s00_axi_wdata(7),
       Q => slv_reg19(7),
       R => SR(0)
@@ -15669,7 +15669,7 @@ entity design_1_GPU_controller_0_0_GPU_controller_v2_0 is
     sound_setting : out STD_LOGIC;
     diff_setting : out STD_LOGIC;
     high_score : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    game_on : out STD_LOGIC;
+    menu_on : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S_AXI_ARREADY : out STD_LOGIC;
     s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_rvalid : out STD_LOGIC;
@@ -15720,10 +15720,10 @@ GPU_controller_v2_0_S00_AXI_inst: entity work.design_1_GPU_controller_0_0_GPU_co
       axi_bvalid_reg_0 => axi_bvalid_i_1_n_0,
       axi_rvalid_reg_0 => axi_rvalid_i_1_n_0,
       diff_setting => diff_setting,
-      game_on => game_on,
       high_score(31 downto 0) => high_score(31 downto 0),
       lives(2 downto 0) => lives(2 downto 0),
       menu_control(1 downto 0) => menu_control(1 downto 0),
+      menu_on(1 downto 0) => menu_on(1 downto 0),
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_araddr(4 downto 0) => s00_axi_araddr(4 downto 0),
       s00_axi_arvalid => s00_axi_arvalid,
@@ -15846,7 +15846,7 @@ entity design_1_GPU_controller_0_0 is
     sound_setting : out STD_LOGIC;
     diff_setting : out STD_LOGIC;
     high_score : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    game_on : out STD_LOGIC;
+    menu_on : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -15944,10 +15944,10 @@ U0: entity work.design_1_GPU_controller_0_0_GPU_controller_v2_0
       fire2_y(9 downto 0) => fire2_y(9 downto 0),
       fire3_x(9 downto 0) => fire3_x(9 downto 0),
       fire3_y(9 downto 0) => fire3_y(9 downto 0),
-      game_on => game_on,
       high_score(31 downto 0) => high_score(31 downto 0),
       lives(2 downto 0) => lives(2 downto 0),
       menu_control(1 downto 0) => menu_control(1 downto 0),
+      menu_on(1 downto 0) => menu_on(1 downto 0),
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_araddr(4 downto 0) => s00_axi_araddr(6 downto 2),
       s00_axi_aresetn => s00_axi_aresetn,

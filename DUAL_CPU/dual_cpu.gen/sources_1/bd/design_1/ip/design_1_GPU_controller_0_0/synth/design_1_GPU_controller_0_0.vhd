@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:GPU_controller:2.0
--- IP Revision: 7
+-- IP Revision: 9
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -87,7 +87,7 @@ ENTITY design_1_GPU_controller_0_0 IS
     sound_setting : OUT STD_LOGIC;
     diff_setting : OUT STD_LOGIC;
     high_score : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    game_on : OUT STD_LOGIC;
+    menu_on : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -153,7 +153,7 @@ ARCHITECTURE design_1_GPU_controller_0_0_arch OF design_1_GPU_controller_0_0 IS
       sound_setting : OUT STD_LOGIC;
       diff_setting : OUT STD_LOGIC;
       high_score : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      game_on : OUT STD_LOGIC;
+      menu_on : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -182,7 +182,7 @@ ARCHITECTURE design_1_GPU_controller_0_0_arch OF design_1_GPU_controller_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_GPU_controller_0_0_arch : ARCHITECTURE IS "design_1_GPU_controller_0_0,GPU_controller_v2_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_GPU_controller_0_0_arch: ARCHITECTURE IS "design_1_GPU_controller_0_0,GPU_controller_v2_0,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=GPU_controller,x_ipVersion=2.0,x_ipCoreRevision=7,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_GPU_controller_0_0_arch: ARCHITECTURE IS "design_1_GPU_controller_0_0,GPU_controller_v2_0,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=GPU_controller,x_ipVersion=2.0,x_ipCoreRevision=9,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI RREADY";
@@ -249,7 +249,7 @@ BEGIN
       sound_setting => sound_setting,
       diff_setting => diff_setting,
       high_score => high_score,
-      game_on => game_on,
+      menu_on => menu_on,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

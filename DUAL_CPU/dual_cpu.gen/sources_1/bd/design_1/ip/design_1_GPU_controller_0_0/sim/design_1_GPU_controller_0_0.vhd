@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:GPU_controller:2.0
--- IP Revision: 7
+-- IP Revision: 9
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -87,7 +87,7 @@ ENTITY design_1_GPU_controller_0_0 IS
     sound_setting : OUT STD_LOGIC;
     diff_setting : OUT STD_LOGIC;
     high_score : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    game_on : OUT STD_LOGIC;
+    menu_on : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -153,7 +153,7 @@ ARCHITECTURE design_1_GPU_controller_0_0_arch OF design_1_GPU_controller_0_0 IS
       sound_setting : OUT STD_LOGIC;
       diff_setting : OUT STD_LOGIC;
       high_score : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      game_on : OUT STD_LOGIC;
+      menu_on : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -243,7 +243,7 @@ BEGIN
       sound_setting => sound_setting,
       diff_setting => diff_setting,
       high_score => high_score,
-      game_on => game_on,
+      menu_on => menu_on,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

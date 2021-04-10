@@ -58,9 +58,10 @@ ENTITY design_1_Asteroid_graph_anima_0_0 IS
     clk : IN STD_LOGIC;
     reset : IN STD_LOGIC;
     video_on : IN STD_LOGIC;
-    lfsr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
-    ball_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-    ball_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    pixel_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    pixel_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    ship_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    ship_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     as1_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     as1_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     as2_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
@@ -85,14 +86,12 @@ ENTITY design_1_Asteroid_graph_anima_0_0 IS
     fire2_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     fire3_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     fire3_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-    pixel_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-    pixel_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     score : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     lives : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     menu_rgb : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-    menu_on : IN STD_LOGIC;
-    graph_rgb : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-    stars : OUT STD_LOGIC_VECTOR(19 DOWNTO 0)
+    game_on : IN STD_LOGIC;
+    stars : OUT STD_LOGIC_VECTOR(19 DOWNTO 0);
+    graph_rgb : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
   );
 END design_1_Asteroid_graph_anima_0_0;
 
@@ -104,9 +103,10 @@ ARCHITECTURE design_1_Asteroid_graph_anima_0_0_arch OF design_1_Asteroid_graph_a
       clk : IN STD_LOGIC;
       reset : IN STD_LOGIC;
       video_on : IN STD_LOGIC;
-      lfsr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
-      ball_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-      ball_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      pixel_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      pixel_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      ship_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      ship_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       as1_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       as1_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       as2_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
@@ -131,14 +131,12 @@ ARCHITECTURE design_1_Asteroid_graph_anima_0_0_arch OF design_1_Asteroid_graph_a
       fire2_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       fire3_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       fire3_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-      pixel_x : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-      pixel_y : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       score : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       lives : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       menu_rgb : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      menu_on : IN STD_LOGIC;
-      graph_rgb : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-      stars : OUT STD_LOGIC_VECTOR(19 DOWNTO 0)
+      game_on : IN STD_LOGIC;
+      stars : OUT STD_LOGIC_VECTOR(19 DOWNTO 0);
+      graph_rgb : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
     );
   END COMPONENT Asteroid_graph_animate;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
@@ -155,9 +153,10 @@ BEGIN
       clk => clk,
       reset => reset,
       video_on => video_on,
-      lfsr => lfsr,
-      ball_x => ball_x,
-      ball_y => ball_y,
+      pixel_x => pixel_x,
+      pixel_y => pixel_y,
+      ship_x => ship_x,
+      ship_y => ship_y,
       as1_x => as1_x,
       as1_y => as1_y,
       as2_x => as2_x,
@@ -182,13 +181,11 @@ BEGIN
       fire2_y => fire2_y,
       fire3_x => fire3_x,
       fire3_y => fire3_y,
-      pixel_x => pixel_x,
-      pixel_y => pixel_y,
       score => score,
       lives => lives,
       menu_rgb => menu_rgb,
-      menu_on => menu_on,
-      graph_rgb => graph_rgb,
-      stars => stars
+      game_on => game_on,
+      stars => stars,
+      graph_rgb => graph_rgb
     );
 END design_1_Asteroid_graph_anima_0_0_arch;
