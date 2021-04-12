@@ -14,7 +14,7 @@
 // Hardware parameters
 #define SCREEN_WIDTH 			640
 #define SCREEN_HEIGHT 			480
-#define REFRESH_RATE 			24 // in Hz
+#define REFRESH_RATE 			25 // in Hz
 #define SPRITE_SIZE				32
 #define LARGE_ASTEROID_SIZE 	SPRITE_SIZE
 #define SMALL_ASTEROID_SIZE 	24
@@ -178,7 +178,7 @@ void PauseMenuHandler();
 void InitSession();
 void InitGameSession();
 void ResetShip();
-void GameOver(bool hasWon);
+void GameOver();
 void ResetGame();
 void QuitGame();
 void RespawnAsteroid(int index);

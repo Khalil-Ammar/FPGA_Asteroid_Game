@@ -9,7 +9,7 @@
 #
 # execute in XSCT console in Vitis workspace using the following commands
 #	cd [getws] 
-#	source {../export/update_platform_slim.tcl}
+#	source {./update_platform_slim.tcl}
 #
 # XSCT Programming Reference
 # https://www.xilinx.com/html_docs/xilinx2019_2/vitis_doc/

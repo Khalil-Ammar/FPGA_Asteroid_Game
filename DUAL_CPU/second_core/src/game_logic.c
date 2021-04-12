@@ -141,22 +141,26 @@ int main (void)
 	// Handle main menu if ON
 	if(mainMenuOn){
 		MainMenuHandler();
+		continue;
 	}
 
 	// Handle pause menu if ON
 	else if(pauseMenuOn){
 		InitPauseMenu();
 		PauseMenuHandler();
+		continue;
 	}
 
 	// Reset game upon user request
 	else if(resetGame){
 		ResetGame();
+		continue;
 	}
 
 	 //Quit game upon user request
 	else if(quitGame){
 		QuitGame();
+		continue;
 	}
 
 	else{
@@ -367,7 +371,7 @@ int main (void)
 				  PlayBangSoundEffect();
 
 				  if(lives == 0){
-					  GameOver(0);	//Player lost
+					  GameOver();	//Player lost
 					  break;
 				  }
 				}
@@ -438,7 +442,7 @@ int main (void)
 					PlayBangSoundEffect();
 
 					if(lives == 0){
-						GameOver(0); // Player lost
+						GameOver(); // Player lost
 						break;
 					}
 				}
@@ -731,6 +735,9 @@ void InitPauseMenu(){
 	//Display high score
 	MenuSetHighScore(highScore);
 
+	// Play menu background music
+	PlayMenuSoundEffect();
+
 }
 
 void InitSession(){
@@ -882,7 +889,7 @@ void RespawnAsteroid(int index){
 	RenderAsteroid(asteroidInst);
 }
 
-void GameOver(bool hasWon){
+void GameOver(){
 	// set game over flag
 	isGameOver = 1;
 
@@ -930,6 +937,8 @@ void QuitGame(){
 
 	// Go back to main menu
 	InitMainMenu();
+	isButtonPressed = 0;
+	menuAction = 1;
 
 	//Clear game over flags
 	quitGame = 0;
